@@ -1,0 +1,10 @@
+Script started on 2019-08-27 10:19:18-04:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+yjun1@remote03:~/i220a/work/lab1$ ls
+lab1.log
+yjun1@remote03:~/i220a/work/lab1$ ls -l
+total 0
+-rw-r----- 1 yjun1 yjun1 0 Aug 27 10:19 lab1.log
+yjun1@remote03:~/i220a/work/lab1$ exit
+exit
+
+Script done on 2019-08-27 10:19:31-04:00 [COMMAND_EXIT_CODE="0"]
