@@ -1,0 +1,624 @@
+Script started on 2019-08-29 12:01:56-04:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="80" LINES="24"]
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2$ cd ex1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1$ cd [K[K[Kls -l
+total 24
+-rwxr-xr-x 1 yjun1 yjun1 16608 Aug 29 12:01 hello
+-rw-r----- 1 yjun1 yjun1    75 Aug 27 09:30 hello.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1$ a[Kmake -p | l ess
+make: *** No targets specified and no makefile found.  Stop.
+[?1049h[22;0;0t[?1h=# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Aug 29 12:02:35 2019
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+:[K[K# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/yjun1/.Xauthority
+# environment
+GDMSESSION = lightdm-xsession
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1
+# makefile
+SHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# environment
+VTE_VERSION = 5402
+# environment
+:[K[K[HMXDG_SESSION_TYPE = x11
+[HM# environment
+[HMXDG_SESSION_CLASS = user
+[HM# environment
+[HM.SHELLFLAGS := -c
+[HM# default
+[HMDESKTOP_SESSION = lightdm-xsession
+[HM# environment
+[HM?F = $(notdir $?)
+[HM# automatic
+[HM<D = $(patsubst %/,%,$(dir $<))
+[HM# automatic
+[HM
+[HM# Variables
+[HM
+[HM# Make data base, printed on Thu Aug 29 12:02:35 2019
+[HM
+[HM# There is NO WARRANTY, to the extent permitted by law.
+[HM# This is free software: you are free to change and redistribute it.
+[HM# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+[HM# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+[HM# Built for x86_64-pc-linux-gnu
+[HM# GNU Make 4.2.1
+[24;1H[K:[K[K# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/yjun1/.Xauthority
+# environment
+GDMSESSION = lightdm-xsession
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1
+# makefile
+SHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# environment
+VTE_VERSION = 5402
+# environment
+:[K[K[HMXDG_SESSION_TYPE = x11
+[HM# environment
+[HMXDG_SESSION_CLASS = user
+[HM# environment
+[HM.SHELLFLAGS := -c
+[HM# default
+[HMDESKTOP_SESSION = lightdm-xsession
+[HM# environment
+[HM?F = $(notdir $?)
+[HM# automatic
+[HM<D = $(patsubst %/,%,$(dir $<))
+[HM# automatic
+[HM
+[HM# Variables
+[HM
+[HM# Make data base, printed on Thu Aug 29 12:02:35 2019
+[HM
+[HM# There is NO WARRANTY, to the extent permitted by law.
+[HM# This is free software: you are free to change and redistribute it.
+[HM# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+[HM# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+[HM# Built for x86_64-pc-linux-gnu
+[HM# GNU Make 4.2.1
+[24;1H[K:[K[K# default
+CWEAVE = cweave
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /home/yjun1/.Xauthority
+# environment
+GDMSESSION = lightdm-xsession
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1
+# makefile
+SHELL = /bin/sh
+# default
+RM = rm -f
+# default
+CO = co
+# environment
+VTE_VERSION = 5402
+# environment
+:[K[K[?1l>[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1$ make -p | g rep cc[K[KCC
+make: *** No targets specified and no makefile found.  Stop.
+CC = cc
+CPP = $(CC) -E
+KRB5CCNAME = FILE:/tmp/krb5cc_14384_FaYOgI
+YACC = yacc
+YACC.m = $(YACC) $(YFLAGS)
+YACC.y = $(YACC) $(YFLAGS)
+LINK.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_MACH)
+LINK.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+LINK.s = $(CC) $(ASFLAGS) $(LDFLAGS) $(TARGET_MACH)
+PREPROCESS.S = $(CC) -E $(CPPFLAGS)
+QT_ACCESSIBILITY = 1
+COMPILE.S = $(CC) $(ASFLAGS) $(CPPFLAGS) $(TARGET_MACH) -c
+COMPILE.c = $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+LINK.o = $(CC) $(LDFLAGS) $(TARGET_ARCH)
+# SCCS: could not be stat'd.
+	$(YACC.y) $< 
+	$(YACC.y) $< 
+	$(YACC.m) $< 
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+%:: SCCS/s.%
+	$(GET) $(GFLAGS) $(SCCS_OUTPUT_OPTION) $<
+	$(YACC.m) $< 
+	$(YACC.y) $< 
+	$(YACC.y) $< 
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex1$ q[Kcd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2$ cd ex2
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex2$ make
+Makefile:2: *** missing separator.  Stop.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex2$ emacs makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex2$ emacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex2$ make
+echo "hello $USER"
+hello yjun1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex2$ cd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2$ cd ex3
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+cc -g -Wall -std=c11   -c -o quadr.o quadr.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc  quadr.o main.o -o quadr
+/usr/bin/ld: quadr.o: in function `quadratic_roots':
+/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3/quadr.c:10: undefined reference to `sqrt'
+/usr/bin/ld: /import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3/quadr.c:11: undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+cc -lm quadr.o main.o -o quadr
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ls
+main.c	Makefile   quadr    quadr.h  README
+main.o	Makefile~  quadr.c  quadr.o  test.data
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ./quadr
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+make: 'quadr' is up to date.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ./quadr
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ls
+main.c	Makefile   quadr    quadr.h  README
+main.o	Makefile~  quadr.c  quadr.o  test.data
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs quadr [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kr
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs[K[K[K[K[K./quadr
+test.data
+<stdin>:1: must have 3 doubles: bad input line test.data
+2 3 6
+a = 2, b = 3, c = 6, root1 = -nan, root2 = -nan
+2 4  3  3     3 4 5
+a = 3, b = 4, c = 5, root1 = -nan, root2 = -nan
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ./data[K[K[K[Kquart[Kr[Kt[K[Kdr
+dr test.data
+<stdin>:1: must have 3 doubles: bad input line dr test.data
+./  yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ./d[Kquadr tes t.data
+a = 2, b = 6, c = 4, root1 = -1, root2 = -2
+a = 1, b = 5, c = -2, root1 = 0.372281, root2 = -5.37228
+a = 2, b = 3, c = 4, root1 = -nan, root2 = -nan
+test.data:4: must have 3 doubles: bad input line 1 2+ 3
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ./qud[Kadr tes t.data
+a = 2, b = 6, c = 4, root1 = -1, root2 = -2
+a = 1, b = 5, c = -2, root1 = 0.372281, root2 = -5.37228
+a = 2, b = 3, c = 4, root1 = -nan, root2 = -nan
+a = 1, b = 2, c = 3, root1 = -nan, root2 = -nan
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ touch qud[Kadr .h
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ls -l
+total 68
+-rw-r-----  1 yjun1 yjun1  1224 Aug 27 09:30 main.c
+-rw-r--r--  1 yjun1 yjun1  8616 Aug 29 12:07 main.o
+-rw-r-----+ 1 yjun1 yjun1   176 Aug 29 12:15 Makefile
+-rw-r-----  1 yjun1 yjun1   176 Aug 29 12:11 Makefile~
+-rwxr-xr-x  1 yjun1 yjun1 20992 Aug 29 12:11 quadr
+-rw-r-----  1 yjun1 yjun1   270 Aug 27 09:30 quadr.c
+-rw-r-----  1 yjun1 yjun1   155 Aug 29 12:22 quadr.h
+-rw-r--r--  1 yjun1 yjun1  4000 Aug 29 12:07 quadr.o
+-rw-r-----  1 yjun1 yjun1   129 Aug 27 09:30 README
+-rw-r-----  1 yjun1 yjun1    27 Aug 29 12:21 test.data
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+make: 'quadr' is up to date.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs m[KMakef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make dp[Kepend [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+cc -MM  *.c
+main.o: main.c quadr.h
+quadr.o: quadr.c quadr.h
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ macs[K[K[K[Kemacs m[KMakef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+cc -g -Wall -std=c11   -c -o quadr.o quadr.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc quadr.o main.o -o -lm quadr
+/usr/bin/ld: quadr: stdin: invalid version 2 (max 0)
+/usr/bin/ld: quadr: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs quad[K[K[K[KMakef [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ ls
+main.c	Makefile   quadr    quadr.h  README
+main.o	Makefile~  quadr.c  quadr.o  test.data
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vi [Km Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 325C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m[9Cmain.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m[9Cmain.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll"Makefile" 18L, 325C[1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;1H[24;63H3,1  [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [4;1H[24;63H4[4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [5;1H[24;63H5,0-1[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [6;1H[24;63H6,1  [6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [7;8H[24;63H7,1-8[7;8H[?25h[?25l[24;53H~@k[7;8H[24;53H   [8;1H[24;63H8,0-1[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [9;1H[24;63H9,1  [9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [10;8H[24;63H10,1-8[10;8H[?25h[?25l[24;53H~@k[10;8H[24;53H   [10;16H[24;66H2-16[10;16H[?25h[?25l[24;53H~@k[10;16H[24;53H   [10;8H[24;66H1-8 [10;8H[?25h[?25l[24;53H~@k[10;8H[24;53H   [10;8H[?25h[?25l[24;53H~@k[10;8H[24;53H   [10;8H[?25h[?25l[24;53Hi[10;8H[24;53H [10;1H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H10,1[10CAll[10;1H[?25h[?25l[24;66H2-9[10;9H[?25h[?25l[24;66H3-17[10;17H[?25h[?25l[1C[1m[96m[46m([m[1m[96mCC[m[1m[96m[46m)[m[95m [m[24;66H4-18[10;18H[?25h[?25l[1m[96m(CC)[m[95m [m[24;63H9,8    [9;8H[?25h[?25l[24;63H8,1[8;1H[?25h[?25l[7;18H[1m[96m[46m([m[1m[96mCC[m[1m[96m[46m)[m[95m [m[24;63H7,4-18[7;18H[?25h[?25l[1m[96m(CC)[m[95m [m[24;65H3-17[7;17H[?25h[?25l[24;65H2-9 [7;9H[?25h[?25l[24;65H1  [7;1H[?25h[?25l[24;63H6[6;1H[?25h[?25l[1C[1m[96m[46m([m[1m[96mPROJECT[m[1m[96m[46m)[m[1m[96m:[m [24;65H2[6;2H[?25h[?25l[24;65H3[6;3H[?25h[?25l[1m[96m(PROJECT):[m [24;65H4[6;4H[?25h[?25l[24;65H5[6;5H[?25h[?25l[24;65H6[6;6H[?25h[?25l[24;65H7[6;7H[?25h[?25l[24;65H8[6;8H[?25h[?25l[24;65H9[6;9H[?25h[?25l[6;2H[1m[96m[46m([m[1m[96mPROJECT[m[1m[96m[46m)[m[1m[96m:[m [24;65H10[6;10H[?25h[?25l[24;66H1[6;11H[?25h[?25l[6;2H[1m[96m(PROJECT):[m [24;66H2[6;12H[?25h[?25l[24;66H3-17[6;17H[?25h[?25l[24;66H4-18[6;18H[?25h[?25l[7;18H[1m[96m[46m([m[1m[96mCC[m[1m[96m[46m)[m[95m [m[24;63H7,4-18 [7;18H[?25h[?25l[1m[96m(CC)[m[95m [m[24;63H8,1   [8;1H[?25h[?25l[24;63H9,8[9;8H[?25h[?25l[10;18H[1m[96m[46m([m[1m[96mCC[m[1m[96m[46m)[m[95m [m[24;63H10,4-18[10;18H[?25h[?25l[1m[96m(CC)[m[95m [m[24;64H1,1   [11;1H[?25h[?25l[24;64H2,7[12;7H[?25h[?25l[24;64H3,4-18[13;18H[?25h[?25l[24;66H3-17[13;17H[?25h[?25l[24;66H2-9 [13;9H[?25h[?25l[24;66H1  [13;1H[?25h[?25l[24;64H4[14;1H[?25h[?25l[24;64H5[15;1H[?25h[?25l[24;66H2[15;2H[?25h[?25l[24;66H3[15;3H[?25h[?25l[24;66H4[15;4H[?25h[?25l[24;66H5[15;5H[?25h[?25l[24;66H6[15;6H[?25h[?25l[24;66H7[15;7H[?25h[?25l[24;66H8[15;8H[?25h[?25l[24;66H9[15;9H[?25h[?25l[24;66H10-17[15;17H[?25h[?25l[24;67H1-18[15;18H[?25h[?25l[24;67H0-17[15;17H[?25h[?25l[15;9Hmain.c quadr.h[15;24H[K[24;66H9    ]2;Makefile + (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[15;9H[?25h[?25lmain.c quadr.h[15;22H[K[24;66H8[15;8H[?25h[?25l main.c quadr.h[24;66H9[15;9H[?25h[?25l        main.c quadr.h[24;66H10-17[15;17H[?25h[?25l[24;64H6[16;17H[?25h[?25l[16;9Hquadr.c[7Ch[16;25H[K[24;66H9    [16;9H[?25h[?25l       [7Cc quadr.h[24;66H10-17[16;17H[?25h[24;1H[K[16;16H[?25l[24;53H^[[16;16H[24;53H  [16;17H[24;63H16,9-16[7CAll[16;16H[?25h[?25l[24;53HZ[16;16H[?25h[?25l[24;54HZ[16;16H[?1006l[?1002l[?2004l[24;1H"Makefile"[24;53H[K[24;12H18L, 325C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C deped[K[Kend [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+cc -MM  *.c
+main.o: main.c quadr.h
+quadr.o: quadr.c quadr.h
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+cc quadr.o main.o -o -lm quadr
+/usr/bin/ld: quadr: stdin: invalid version 2 (max 0)
+/usr/bin/ld: quadr: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefil e
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 325C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m[9Cmain.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,9-16[7CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[16;16H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m[9Cmain.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,9-16[7CAll"Makefile" 18L, 325C[16;16H[?25h[?25l[24;64H7,31  [17;31H[?25h[?25l[24;53H^D[17;31H[24;53H  [18;1H[24;64H8,0-1[18;1H[?25h[?25l[24;64H3,32-46[13;46H[?25h[?25l[24;64H8,0-1  [18;1H[?25h[?25l[24;63H4,13  [4;13H[?25h[?25l[24;63H18,0-1[18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53Hx[18;1H[24;53H [18;1H[24;53Hdl[18;1H[24;53H  [18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53Hx[18;1H[24;53H [18;1H[24;53Hdl[18;1H[24;53H  [18;1H[?25h[?25l[24;53Hx[18;1H[24;53H [18;1H[24;53Hdl[18;1H[24;53H  [18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53Hq[18;1H[?25h[?25l[24;54H^M[18;1H[24;53H   [18;1H[?25h[?25l[24;53Hq[18;1H[?25h[?25l[24;54H^M[18;1H[24;53H   [18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53H^[[18;1H[24;53H  [18;1H[24;53H^[[18;1H[24;53H  [18;1H[?25h[?25l[24;53H~@k[18;1H[24;53H   [17;51H[24;64H7,51 [17;51H[?25h[?25l[24;53H~@k[17;51H[24;53H   [16;31H[24;64H6,24-31[16;31H[?25h[?25l[24;53H~@k[16;31H[24;53H   [16;31H[?25h[?25l[24;53H~@k[16;31H[24;53H   [15;30H[24;64H5,23-30[15;30H[?25h[?25l[24;53H~@k[15;30H[24;53H   [14;1H[24;64H4,0-1  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H^[[14;1H[24;53H  [14;1H[24;53H^[[14;1H[24;53H  [14;1H[?25h[?25l[24;53H:[14;1H[24;1H[K[24;1H:[?2004h[?25hQ[?25l[?25h[?25l[24;2H[K[24;2H[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 325C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m[9Cmain.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H14,0-1[8CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[14;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m[9Cmain.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H14,0-1[8CAll"Makefile" 18L, 325C[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [15;1H[24;64H5,1  [15;1H[?25h[?25l[24;53H~@k[15;1H[24;53H   [15;2H[24;66H2[15;2H[?25h[?25l[24;53H~@k[15;2H[24;53H   [15;3H[24;66H3[15;3H[?25h[?25l[24;53H~@k[15;3H[24;53H   [15;4H[24;66H4[15;4H[?25h[?25l[24;53H~@k[15;4H[24;53H   [15;5H[24;66H5[15;5H[?25h[?25l[24;53H~@k[15;5H[24;53H   [15;6H[24;66H6[15;6H[?25h[?25l[24;53H~@k[15;6H[24;53H   [15;7H[24;66H7[15;7H[?25h[?25l[24;53H~@k[15;7H[24;53H   [15;8H[24;66H8[15;8H[?25h[?25l[24;53H~@k[15;8H[24;53H   [15;16H[24;66H9-16[15;16H[?25h[?25l[24;53H~@k[15;16H[24;53H   [15;8H[24;66H8   [15;8H[?25h[?25l[24;53H~@k[15;8H[24;53H   [15;7H[24;66H7[15;7H[?25h[?25l[24;53H~@k[15;7H[24;53H   [15;8H[24;66H8[15;8H[?25h[?25l[24;53H~@k[15;8H[24;53H   [15;7H[24;66H7[15;7H[?25h[?25l[24;53H~@k[15;7H[24;53H   [15;8H[24;66H8[15;8H[?25h[?25l[24;53Hi[15;8H[24;53H [15;8H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H15,8[10CAll[15;8H[?25h[?25l[24;66H9[15;9H[?25h[?25lmain.c quadr.h[15;24H[K[24;66H8]2;Makefile + (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[15;8H[?25h[?25lmain.o  [24;66H7[15;7H[?25h[?25l[1m[96mmain.o:[m[24;66H8[15;8H[?25h[?25l[24;66H9[15;9H[?25h[?25lmain.c quadr.h[15;22H[K[24;66H8[15;8H[?25h[?25l main.c quadr.h[24;66H9[15;9H[?25h[24;1H[K[15;8H[?25l[24;53H^[[15;8H[24;53H  [15;9H[24;63H15,8[10CAll[15;8H[?25h[?25l[24;53HZ[15;8H[?25h[?25l[24;54HZ[15;8H[?1006l[?1002l[?2004l[24;1H"Makefile"[24;53H[K[24;12H18L, 324C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cc quadr.o main.o -o -lm quadr
+/usr/bin/ld: quadr: stdin: invalid version 2 (max 0)
+/usr/bin/ld: quadr: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ makevim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 324C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m main.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H15,8[10CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[15;8H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m main.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H15,8[10CAll"Makefile" 18L, 324C[15;8H[?25h[?25l[24;53HZ[15;8H[?25h[?25l[24;54HZ[15;8H[24;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 324C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m main.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H15,8[10CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[15;8H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m main.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H15,8[10CAll"Makefile" 18L, 324C[15;8H[?25h[?25l[24;53H~@k[15;8H[24;53H   [14;1H[24;64H4,0-1[14;1H[?25h[?25l[24;53H~@k[14;1H[24;53H   [13;8H[24;64H3,1-8[13;8H[?25h[?25l[24;53H~@k[13;8H[24;53H   [12;1H[24;64H2,1  [12;1H[?25h[?25l[24;53H~@k[12;1H[24;53H   [11;1H[24;64H1,0-1[11;1H[?25h[?25l[24;53H~@k[11;1H[24;53H   [10;8H[24;64H0,1-8[10;8H[?25h[?25l[24;53H~@k[10;8H[24;53H   [9;1H[24;63H9,1   [9;1H[?25h[?25l[24;53H~@k[9;1H[24;53H   [8;1H[24;63H8,0-1[8;1H[?25h[?25l[24;53H~@k[8;1H[24;53H   [7;8H[24;63H7,1-8[7;8H[?25h[?25l[24;53H~@k[7;8H[24;53H   [6;1H[24;63H6,1  [6;1H[?25h[?25l[24;53H~@k[6;1H[24;53H   [5;1H[24;63H5,0-1[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [4;1H[24;63H4,1  [4;1H[?25h[?25l[24;53H~@k[4;1H[24;53H   [3;1H[24;63H3[3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;1H[24;63H1,1  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [1;2H[24;65H2[1;2H[?25h[?25l[24;53H~@k[1;2H[24;53H   [1;3H[24;65H3[1;3H[?25h[?25l[24;53H~@k[1;3H[24;53H   [1;4H[24;65H4[1;4H[?25h[?25l[24;53H~@k[1;4H[24;53H   [1;5H[24;65H5[1;5H[?25h[?25l[24;53H~@k[1;5H[24;53H   [1;6H[24;65H6[1;6H[?25h[?25l[24;53H~@k[1;6H[24;53H   [1;7H[24;65H7[1;7H[?25h[?25l[24;53H~@k[1;7H[24;53H   [1;8H[24;65H8[1;8H[?25h[?25l[24;53H~@k[1;8H[24;53H   [1;9H[24;65H9[1;9H[?25h[?25l[24;53H~@k[1;9H[24;53H   [1;10H[24;65H10[1;10H[?25h[?25l[24;53H~@k[1;10H[24;53H   [1;11H[24;66H1[1;11H[?25h[?25l[24;53H~@k[1;11H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;11H[24;63H3,11 [3;11H[?25h[?25l[24;53HZ[3;11H[?25h[?25l[24;54HZ[3;11H[24;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 324C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m main.c quadr.h
+[36mquadr.o:[m[8Cquadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H3,11[10CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[3;11H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m main.c quadr.h
+[1m[96mquadr.o:[m[8Cquadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H3,11[10CAll"Makefile" 18L, 324C[3;11H[?25h[?25l[24;53H~@k[3;11H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [1;1H[24;63H1,1  [1;1H[?25h[?25l[24;53H~@k[1;1H[24;53H   [2;1H[24;63H2,0-1[2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [2;1H[?25h[?25l[24;53H~@k[2;1H[24;53H   [3;1H[24;63H3,1  [3;1H[?25h[?25l[24;53H~@k[3;1H[24;53H   [3;2H[24;65H2[3;2H[?25h[?25l[24;53H~@k[3;2H[24;53H   [3;3H[24;65H3[3;3H[?25h[?25l[24;53H~@k[3;3H[24;53H   [3;4H[24;65H4[3;4H[?25h[?25l[24;53H~@k[3;4H[24;53H   [3;5H[24;65H5[3;5H[?25h[?25l[24;53H~@k[3;5H[24;53H   [3;6H[24;65H6[3;6H[?25h[?25l[24;53H~@k[3;6H[24;53H   [3;7H[24;65H7[3;7H[?25h[?25l[24;53H~@k[3;7H[24;53H   [3;8H[24;65H8[3;8H[?25h[?25l[24;53H~@k[3;8H[24;53H   [3;9H[24;65H9[3;9H[?25h[?25l[24;53H~@k[3;9H[24;53H   [3;10H[24;65H10[3;10H[?25h[?25l[24;53H~@k[3;10H[24;53H   [3;11H[24;66H1[3;11H[?25h[?25l[24;53H~@k[3;11H[24;53H   [4;11H[24;63H4[4;11H[?25h[?25l[24;53H~@k[4;11H[24;53H   [4;12H[24;66H2[4;12H[?25h[?25l[24;53H~@k[4;12H[24;53H   [5;1H[24;63H5,0-1[5;1H[?25h[?25l[24;53H~@k[5;1H[24;53H   [6;16H[24;63H6,12-16[6;16H[?25h[?25l[24;53H~@k[6;16H[24;53H   [6;17H[24;66H3-17[6;17H[?25h[?25l[24;53H~@k[6;17H[24;53H   [6;16H[24;66H2-16[6;16H[?25h[?25l[24;53H~@k[6;16H[24;53H   [6;11H[24;66H1   [6;11H[?25h[?25l[24;53H~@k[6;11H[24;53H   [6;16H[24;66H2-16[6;16H[?25h[?25l[24;53H~@k[6;16H[24;53H   [6;17H[24;66H3-17[6;17H[?25h[?25l[24;53Hi[6;17H[24;53H [6;17H[24;1H[1m-- INSERT --[m[24;13H[K[24;63H6,13-17[7CAll[6;17H[?25h[?25lquadr.o main.o[6;26H[K[24;66H2   ]2;Makefile + (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[6;12H[?25h[?25l     quadr.o main.o[24;66H3-17[6;17H[?25h[?25l[24;66H2   [6;12H[?25h[?25l[24;66H3-17[6;17H[?25h[?25l[24;66H2   [6;12H[?25h[?25l[6;2H[1m[96m[46m([m[1m[96mPROJECT[m[1m[96m[46m)[m[1m[96m:[m [24;66H1[6;11H[?25h[?25l[24;66H0[6;10H[?25h[?25l[6;2H[1m[96m(PROJECT):[m [24;63H7,2-9[7;9H[?25h[?25l[24;65H3-17[7;17H[?25h[?25l[1C[1m[96m[46m([m[1m[96mCC[m[1m[96m[46m)[m[95m [m[24;65H4-18[7;18H[?25h[?25l[1m[96m(CC)[m[95m [m[24;65H3-17[7;17H[?25h[?25l[24;65H2-9 [7;9H[?25h[?25l[24;65H1  [7;1H[?25h[?25l[24;63H8[8;1H[?25h[?25l[24;63H9[9;1H[?25h[?25l[24;63H10,1[10;1H[?25h[?25l[24;66H2-9[10;9H[?25h[?25l[24;66H3-17[10;17H[?25h[?25l[24;64H1,1   [11;1H[?25h[?25l[24;64H2,7[12;7H[?25h[?25l[24;64H3,3-17[13;17H[?25h[?25l[24;66H2-9 [13;9H[?25h[?25l[24;66H1  [13;1H[?25h[?25l[24;64H4[14;1H[?25h[?25l[24;64H5[15;1H[?25h[?25l[24;64H6[16;1H[?25h[?25l[24;66H2[16;2H[?25h[?25l[24;66H3[16;3H[?25h[?25l[24;66H4[16;4H[?25h[?25l[24;66H5[16;5H[?25h[?25l[24;66H6[16;6H[?25h[?25l[24;66H7[16;7H[?25h[?25l[24;66H8[16;8H[?25h[?25l[24;66H9[16;9H[?25h[?25l[24;66H10-17[16;17H[?25h[?25l[16;9Hquadr.c[7Ch[16;25H[K[24;66H9    [16;9H[?25h[?25l       [7Cc quadr.h[24;66H10-17[16;17H[?25h[24;1H[K[16;16H[?25l[24;53H^[[16;16H[24;53H  [16;17H[24;63H16,9-16[7CAll[16;16H[?25h[?25l[24;53HX[16;16H[24;53H [16;16H[24;53Hdh[16;16H[24;53H  [16;8Hquadr.o quadr.c[7Ch[16;25H[K[24;66H8   [16;8H[?25h[?25l[24;53HZ[16;8H[?25h[?25l[24;54HZ[16;8H[?1006l[?1002l[?2004l[24;1H"Makefile"[24;53H[K[24;12H18L, 323C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 323C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m main.c quadr.h
+quadr.o quadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,8[10CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[16;8H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m main.c quadr.h
+quadr.o quadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,8[10CAll"Makefile" 18L, 323C[16;8H[?25h[?25l[24;53HZ[16;8H[?25h[?25l[24;54HZ[16;8H[24;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+Makefile:16: *** missing separator.  Stop.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ makevim Makefile
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"Makefile" 18L, 323C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[36mPROJECT [m= quadr
+
+[36mCFLAGS [m= -g -Wall -std=c11
+[36mLDFLAGS [m= -lm
+
+[36m$(PROJECT):[m     quadr.o main.o
+[31m                [m[36m$(CC)[m[31m quadr.o main.o -o [m[36m$(LDFLAGS)[m[31m [m[36m$@
+
+depend:[m
+[31m                [m[36m$(CC)[m[31m -MM [m[36m$(CPPFLAGS)[m[31m *.c[m
+
+[36mclean:[m
+[31m                rm -f *.o [m[36m$(PROJECT)[m[31m [m[36m$(PROJECT)[m[31m.tar.gz[m
+
+[36mmain.o:[m main.c quadr.h
+quadr.o quadr.c quadr.h
+[34m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,8[10CAll]2;Makefile (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[16;8H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[1m[96mPROJECT [m= quadr
+
+[1m[96mCFLAGS [m= -g -Wall -std=c11
+[1m[96mLDFLAGS [m= -lm
+
+[1m[96m$(PROJECT):[m     quadr.o main.o
+[95m                [m[1m[96m$(CC)[m[95m quadr.o main.o -o [m[1m[96m$(LDFLAGS)[m[95m [m[1m[96m$@
+
+depend:[m
+[95m                [m[1m[96m$(CC)[m[95m -MM [m[1m[96m$(CPPFLAGS)[m[95m *.c[m
+
+[1m[96mclean:[m
+[95m                rm -f *.o [m[1m[96m$(PROJECT)[m[95m [m[1m[96m$(PROJECT)[m[95m.tar.gz[m
+
+[1m[96mmain.o:[m main.c quadr.h
+quadr.o quadr.c quadr.h
+[96m#automatically generated dependencies produced to make depend[m
+
+[94m~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H16,8[10CAll"Makefile" 18L, 323C[16;8H[?25h[?25l[24;53H:[16;8H[24;1H[K[24;1H:[?2004h[?25h [?25l[16;8H[24;63H16,8[10CAll[16;8H[?25h[?25l[24;53Hi[16;8H[24;53H [16;8H[24;1H[1m-- INSERT --[m[24;63H[K[24;63H16,8[10CAll[16;8H[?25h[?25l[1m[96mquadr.o:[m       [7Cc quadr.h[24;66H9]2;Makefile + (~/git-repos/i220a/work/lab2/ex3) - VIM]1;Makefile[16;9H[?25h[?25l[24;66H10-17[16;17H[?25h[?25l[16;9Hquadr.c[7Ch[16;25H[K[24;66H9    [16;9H[?25h[?25l       [7Cc quadr.h[24;66H10-17[16;17H[?25h[24;1H[K[16;16H[?25l[24;53H^[[16;16H[24;53H  [16;17H[24;63H16,9-16[7CAll[16;16H[?25h[?25l[24;53HZ[16;16H[?25h[?25l[24;54HZ[16;16H[?1006l[?1002l[?2004l[24;1H"Makefile"[24;53H[K[24;12H18L, 324C written]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?25h[?1049l[23;0;0tyjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ vim Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+cc quadr.o main.o -o -lm quadr
+/usr/bin/ld: quadr: stdin: invalid version 2 (max 0)
+/usr/bin/ld: quadr: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ emacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make
+cc quadr.o main.o -o -lm quadr
+/usr/bin/ld: quadr: stdin: invalid version 2 (max 0)
+/usr/bin/ld: quadr: error adding symbols: bad value
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:7: quadr] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ mak[K[K[Km[Kemacs Makef ile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ make dist
+tar -cf quadr.tar 
+tar: Cowardly refusing to create an empty archive
+Try 'tar --help' or 'tar --usage' for more information.
+make: *** [Makefile:20: quadr.tar.gz] Error 2
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ git push
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': yes
+Warning: Permanently added 'github.com,140.82.114.4' (RSA) to the list of known hosts.
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ git push
+ERROR: Repository not found.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab2/ex3$ git [K[K[K[Kexit
+
+Script done on 2019-08-29 13:08:55-04:00 [COMMAND_EXIT_CODE="128"]
