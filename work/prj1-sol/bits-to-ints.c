@@ -55,12 +55,11 @@ int getbits(FILE *inFile, bool *isEof){
 		}
 	}
 	*isEof = true;
-	error("error occured");	 
 	return -1;
 }
 
-int getByte(FILE *inFile,bool *isEof){
-	unsigned char byte = 0;
+long long getByte(FILE *inFile,bool *isEof){
+	long long byte = 0;
 	int temp[CHAR_BIT];
 	for(int i = 0; i < CHAR_BIT; i++){
 		temp[i] = getbits(inFile,isEof) << i;

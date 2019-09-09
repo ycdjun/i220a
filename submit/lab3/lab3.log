@@ -1,0 +1,446 @@
+Script started on 2019-09-05 11:38:45-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="190" LINES="49"]
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3$ cd files/ex1
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ls -l
+total 32
+-rwxr-xr-x 1 yjun1 yjun1 19360 Sep  5 11:35 hello
+-rw-r----- 1 yjun1 yjun1   343 Sep  5 10:53 hello.c
+-rw-r----- 1 yjun1 yjun1    35 Sep  5 10:53 Makefile
+-rw-r----- 1 yjun1 yjun1    61 Sep  5 10:53 README
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ./hello
+usage: ./hello NAME...
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ./hello bart lisa
+hello bart
+hello lisa
+hello (null)
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ gdb
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word".
+(gdb) hello
+Undefined command: "hello".  Try "help".
+(gdb) db[K[Kgdb hello
+Undefined command: "gdb".  Try "help".
+(gdb) d[Kq
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ d[Kgdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start bart lisa
+Temporary breakpoint 1 at 0x118b: file hello.c, line 13.
+Starting program: /import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex1/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe778) at hello.c:13
+13	  if (argc == 1) {
+(gdb) l
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+12	{
+13	  if (argc == 1) {
+14	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+15	    exit(1);
+16	  }
+17	  else {
+(gdb) l 4
+1	#include <stdio.h>
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+(gdb) b q[K[K say_ehllo[K[K[K[K[Khello [K[K[K[K[K[K[K[K[K[K[K[Kb say_ehl[K[K[Khello
+Breakpoint 2 at 0x555555555161: file hello.c, line 7.
+(gdb) p argc
+$1 = 3
+(gdb) p argv
+$2 = (const char **) 0x7fffffffe778
+(gdb) p argv[]0[K[K0]
+$3 = 0x7fffffffea66 "/import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex1/hello"
+(gdb) p argv[1]
+$4 = 0x7fffffffeaaa "bart"
+(gdb) p argv[2]
+$5 = 0x7fffffffeaaf "lisa"
+(gdb) p argv[3]
+$6 = 0x0
+(gdb) n
+18	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+19	      say_hello(argv[i]);
+(gdb) p i
+$7 = 1
+(gdb) c.say_eh[K[Khello
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Breakpoint 2, say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) l
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) backst[K[Ktrace
+#0  say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778) at hello.c:19
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778) at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) down
+#0  say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$8 = 0x7fffffffeaaa "bart"
+(gdb) c.say_hello
+A syntax error in expression, near `.say_hello'.
+(gdb) c.say_ehll[K[K[K[Khello
+A syntax error in expression, near `.say_hello'.
+(gdb) c.say_hello()
+A syntax error in expression, near `.say_hello()'.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 7037] will be killed.
+
+Quit anyway? (y or n) y
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ gd[K[K./hello bart lisa
+hello bart
+hello lisa
+hello (null)
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start bart lisa
+Temporary breakpoint 1 at 0x118b: file hello.c, line 13.
+Starting program: /import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex1/hello bart lisa
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe778) at hello.c:13
+13	  if (argc == 1) {
+(gdb) l
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+12	{
+13	  if (argc == 1) {
+14	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+15	    exit(1);
+16	  }
+17	  else {
+(gdb) l4
+Undefined command: "l4".  Try "help".
+(gdb) l 4
+1	#include <stdio.h>
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+(gdb) b say_hello
+Breakpoint 2 at 0x555555555161: file hello.c, line 7.
+(gdb) p argc
+$1 = 3
+(gdb) p aer[K[Krgc[Kv[0]
+$2 = 0x7fffffffea66 "/import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex1/hello"
+(gdb) p argv[0]10][C[1P]
+$3 = 0x7fffffffeaaa "bart"
+(gdb) p argv[1]2][1P2]
+$4 = 0x7fffffffeaaf "lisa"
+(gdb) n
+18	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+19	      say_hello(argv[i]);
+(gdb) print [K[K[K[K[K i
+$5 = 1
+(gdb) c.say_hello()
+Not stopped at any breakpoint; argument ignored.
+Continuing.
+
+Breakpoint 2, say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) l
+2	#include <stdlib.h>
+3	
+4	static void
+5	say_hello(const char *name)
+6	{
+7	  printf("hello %s\n", name);
+8	}
+9	
+10	int 
+11	main(int argc, const char *argv[])
+(gdb) backtrace
+#0  say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778) at hello.c:19
+(gdb) p argc
+No symbol "argc" in current context.
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778) at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) arg[K[K[Kp argc
+$6 = 3
+(gdb) p argc[Kv
+$7 = (const char **) 0x7fffffffe778
+(gdb) p i
+$8 = 1
+(gdb) down
+#0  say_hello (name=0x7fffffffeaaa "bart") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) say_hello()
+Undefined command: "say_hello".  Try "help".
+(gdb) say_hello
+Undefined command: "say_hello".  Try "help".
+(gdb) p bane[K[K[K[Kname
+$9 = 0x7fffffffeaaa "bart"
+(gdb) c.say_hello
+A syntax error in expression, near `.say_hello'.
+(gdb) say[K[K[Kc
+Continuing.
+hello bart
+
+Breakpoint 2, say_hello (name=0x7fffffffeaaf "lisa") at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$10 = 0x7fffffffeaaf "lisa"
+(gdb) c
+Continuing.
+hello lisa
+
+Breakpoint 2, say_hello (name=0x0) at hello.c:7
+7	  printf("hello %s\n", name);
+(gdb) p name
+$11 = 0x0
+(gdb) up
+#1  0x00005555555551e5 in main (argc=3, argv=0x7fffffffe778) at hello.c:19
+19	      say_hello(argv[i]);
+(gdb) p i
+$12 = 3
+(gdb) p argc
+$13 = 3
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 8396] will be killed.
+
+Quit anyway? (y or n) y
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ emacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ./hello bart lisa
+hello bart
+hello lisa
+hello (null)
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ eam[K[Kmacs hl[Kello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ emacs hello.c./hello bart lisa
+hello bart
+hello lisa
+hello (null)
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ./hello bart lisa[4Pemacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ,[K./hello
+usage: ./hello NAME...
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ ./hello emac[K[K[K[Kbart lisa
+hello bart
+hello lisa
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex1$ cd ..
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files$ cd [K[K[Kls
+ex1  ex2  Makefile
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files$ cd ex2
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ls
+hello.c  Makefile  README
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./ehllo[K[K[K[K[Khello 
+usage: ./hello NAME...
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./hello LI[K[Klisa bart
+Hello Lisa
+Hello Bart
+Segmentation fault
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./hello lisa  [Ksimpon[K[Kson [K[K[K[K[K[K[K[K[K[K[K[K[K[K 'lisa simpson' 'bart simpson'
+Hello Lisa Simpson�U
+Hello Bart Simpson�U
+Segmentation fault
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) start bart [K[K[K[K[K'bart simposon[K[K[K[Ksop[Kn' 'lisa simpson[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klisa simpson' 'bart simpson'
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex2/hello 'lisa simpson' 'bart simpson'
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe768) at hello.c:35
+35	  if (argc == 1) {
+(gdb) l
+30	}
+31	
+32	int
+33	main(int argc, const char *argv[])
+34	{
+35	  if (argc == 1) {
+36	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+37	    exit(1);
+38	  }
+39	  else {
+(gdb) l40
+Undefined command: "l40".  Try "help".
+(gdb) l 40
+35	  if (argc == 1) {
+36	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+37	    exit(1);
+38	  }
+39	  else {
+40	    for (int i = 1; i <= argc; i++) {
+41	      const char *name = argv[i];
+42	      char friendlyName[strlen(name)];
+43	      upcase_words(name, friendlyName);
+44	      say_hello(friendlyName);
+(gdb) l 45
+40	    for (int i = 1; i <= argc; i++) {
+41	      const char *name = argv[i];
+42	      char friendlyName[strlen(name)];
+43	      upcase_words(name, friendlyName);
+44	      say_hello(friendlyName);
+45	    }
+46	  }
+47	  return 0;
+48	}
+(gdb) d[Kn
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Lisa SimpsonUU
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) n
+42	      char friendlyName[strlen(name)];
+(gdb) n
+43	      upcase_words(name, friendlyName);
+(gdb) n
+44	      say_hello(friendlyName);
+(gdb) n
+Hello Bart SimpsonUU
+40	    for (int i = 1; i <= argc; i++) {
+(gdb) n
+41	      const char *name = argv[i];
+(gdb) c
+Continuing.
+
+Program received signal SIGSEGV, Segmentation fault.
+__strlen_sse2 () at ../sysdeps/x86_64/multiarch/../strlen.S:120
+120	../sysdeps/x86_64/multiarch/../strlen.S: No such file or directory.
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 10191] will be killed.
+
+Quit anyway? (y or n) y
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs helo[Klo.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:42:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  const char *[01;35m[Kname[m[K = argv[i];
+              [01;35m[K^~~~[m[K
+[01m[Khello.c:46:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+       [01;31m[K}[m[K
+       [01;31m[K^[m[K
+[01m[Khello.c:53:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+make: *** [<builtin>: hello] Error 1
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:42:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  const char *[01;35m[Kname[m[K = argv[i];
+              [01;35m[K^~~~[m[K
+[01m[Khello.c:45:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  const char *[01;35m[Kname[m[K = '\0';
+              [01;35m[K^~~~[m[K
+[01m[Khello.c:47:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kname[m[K’ undeclared (first use in this function); did you mean ‘[01m[Krename[m[K’?
+       char friendlyName[strlen([01;31m[Kname[m[K)];
+                                [01;31m[K^~~~[m[K
+                                [32m[Krename[m[K
+[01m[Khello.c:47:32:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Khello.c:47:12:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[KfriendlyName[m[K’ [[01;35m[K-Wunused-variable[m[K]
+       char [01;35m[KfriendlyName[m[K[strlen(name)];
+            [01;35m[K^~~~~~~~~~~~[m[K
+make: *** [<builtin>: hello] Error 1
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs helloc.[K[K.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ hel[K[K[K.
