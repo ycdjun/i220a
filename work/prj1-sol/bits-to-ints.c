@@ -44,7 +44,7 @@
  */
 
 int getbits(FILE *inFile, bool *isEof){
-	int c = ' ';
+	char c = ' ';
 	while(isspace(c)){
 		c = fgetc(inFile);
 		if(c == '1'){
@@ -53,9 +53,17 @@ int getbits(FILE *inFile, bool *isEof){
 		else if(c == '0'){
 			return 0;
 		}
+		else{
+			if(!isspace(c) && c != '1' && c != '0'){
+				*isEof = true;
+				fatal("Invalid character '%c' , c");
+				
+			}
+		}
 	}
 	*isEof = true;
 	return -1;
+	
 }
 
 long long getByte(FILE *inFile,bool *isEof){
@@ -63,19 +71,25 @@ long long getByte(FILE *inFile,bool *isEof){
 	int temp[CHAR_BIT];
 	for(int i = 0; i < CHAR_BIT; i++){
 		temp[i] = getbits(inFile,isEof) << i;
-		byte = byte | temp[i];
+		byte |= temp[i];
 	}
 	return byte;
 }
+
+BitsValue getWord(FILE *inFile, int nBits, bool *isEof){
+	BitsValue temp = 0;
+	for(int i = 0; i< nBits/8;i++){
+		temp |= getByte(inFile,isEof) << ((nBits-8) - (8 * i));
+	}
+	return temp;
+}
+	
 
 BitsValue
 bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
 {
   //nBits value should make sense
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
-  BitsValue value = 0;
-	for(int i = 0; i< nBits/8;i++){
-		value |= getByte(inFile,isEof) << ((nBits-8) - (8 * i));
-	}	
+  BitsValue value = getWord(inFile, nBits, isEof);
   return value;
 }

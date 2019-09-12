@@ -44,6 +44,9 @@ typedef unsigned long long BitsValue;
 int getbits(FILE *inFile,bool *isEof);
 
 long long getByte(FILE *inFile,bool *isEof);
+
+BitsValue getWord(FILE *inFile, int nBits, bool *isEof);
+
 BitsValue bits_to_ints(FILE *inFile, const char *inName, int nBits,
                        bool *isEof);
 
