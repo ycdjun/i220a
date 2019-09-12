@@ -47,6 +47,10 @@ int getbits(FILE *inFile, bool *isEof){
 	char c = ' ';
 	while(isspace(c)){
 		c = fgetc(inFile);
+		if(c == EOF){
+			*isEof = true;
+			return -1;
+		}
 		if(c == '1'){
 			return 1;
 		}

@@ -41,15 +41,12 @@ typedef unsigned long long BitsValue;
  *  in inFile, then a suitable error message should be printed and the
  *  function should return with *isEof set to true.
  */
-<<<<<<< HEAD
-=======
 int getbits(FILE *inFile,bool *isEof);
 
 long long getByte(FILE *inFile,bool *isEof);
 
 BitsValue getWord(FILE *inFile, int nBits, bool *isEof);
 
->>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80
 BitsValue bits_to_ints(FILE *inFile, const char *inName, int nBits,
                        bool *isEof);
 
