@@ -1,0 +1,330 @@
+Script started on 2019-09-08 10:43:20-0400
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ gdb bn[Kb[Kits-to-ints[Ks
+
+Command 'gdb' not found, but can be installed with:
+
+sudo apt install gdb
+
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ sudo apt install d[Kgdb
+[sudo] password for ycdjun: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  gdbserver libbabeltrace1 libc6-dbg libdw1
+Suggested packages:
+  gdb-doc
+The following NEW packages will be installed:
+  gdb gdbserver libbabeltrace1 libc6-dbg libdw1
+0 upgraded, 5 newly installed, 0 to remove and 31 not upgraded.
+Need to get 8738 kB of archives.
+After this operation, 51.5 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+[33m0% [Working][0m            Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdw1 amd64 0.170-0.4ubuntu0.1 [203 kB]
+[33m0% [1 libdw1 3794 B/203 kB 2%][0m[33m                              6% [Working][0m            Get:2 http://archive.ubuntu.com/ubuntu bionic/main amd64 libbabeltrace1 amd64 1.5.5-1 [154 kB]
+[33m6% [2 libbabeltrace1 12.0 kB/154 kB 8%][0m[33m                                       11% [Working][0m             Get:3 http://archive.ubuntu.com/ubuntu bionic/main amd64 gdb amd64 8.1-0ubuntu3 [2937 kB]
+[33m11% [3 gdb 12.0 kB/2937 kB 0%][0m[33m14% [3 gdb 280 kB/2937 kB 10%][0m[33m17% [3 gdb 607 kB/2937 kB 21%][0m[33m20% [3 gdb 924 kB/2937 kB 31%][0m[33m23% [3 gdb 1262 kB/2937 kB 43%][0m[33m26% [3 gdb 1657 kB/2937 kB 56%][0m[33m30% [3 gdb 1995 kB/2937 kB 68%][0m[33m33% [3 gdb 2331 kB/2937 kB 79%][0m[33m36% [3 gdb 2700 kB/2937 kB 92%][0m[33m37% [3 gdb 2849 kB/2937 kB 97%][0m[33m                               42% [Working][0m             Get:4 http://archive.ubuntu.com/ubuntu bionic/main amd64 gdbserver amd64 8.1-0ubuntu3 [282 kB]
+[33m42% [4 gdbserver 12.0 kB/282 kB 4%]                                                                         546 kB/s 9s[0m[33m45% [4 gdbserver 268 kB/282 kB 95%]                                                                         546 kB/s 9s[0m[33m49% [Working]                                                                                               546 kB/s 9s[0m                                                                                                                       Get:5 http://archive.ubuntu.com/ubuntu bionic/main amd64 libc6-dbg amd64 2.27-3ubuntu1 [5161 kB]
+[33m49% [5 libc6-dbg 12.0 kB/5161 kB 0%]                                                                        546 kB/s 9s[0m[33m51% [5 libc6-dbg 287 kB/5161 kB 6%]                                                                         546 kB/s 8s[0m[33m54% [5 libc6-dbg 547 kB/5161 kB 11%]                                                                        546 kB/s 8s[0m[33m57% [5 libc6-dbg 922 kB/5161 kB 18%]                                                                        546 kB/s 7s[0m[33m61% [5 libc6-dbg 1298 kB/5161 kB 25%]                                                                       546 kB/s 7s[0m[33m63% [5 libc6-dbg 1585 kB/5161 kB 31%]                                                                       546 kB/s 6s[0m[33m67% [5 libc6-dbg 1963 kB/5161 kB 38%]                                                                       546 kB/s 5s[0m[33m70% [5 libc6-dbg 2321 kB/5161 kB 45%]                                                                       546 kB/s 5s[0m[33m73% [5 libc6-dbg 2689 kB/5161 kB 52%]                                                                       546 kB/s 4s[0m[33m76% [5 libc6-dbg 2993 kB/5161 kB 58%]                                                                       546 kB/s 3s[0m[33m80% [5 libc6-dbg 3359 kB/5161 kB 65%]                                                                       546 kB/s 3s[0m[33m83% [5 libc6-dbg 3743 kB/5161 kB 73%]                                                                       636 kB/s 2s[0m[33m86% [5 libc6-dbg 4062 kB/5161 kB 79%]                                                                       636 kB/s 1s[0m[33m89% [5 libc6-dbg 4358 kB/5161 kB 84%]                                                                       636 kB/s 1s[0m[33m91% [5 libc6-dbg 4663 kB/5161 kB 90%]                                                                       636 kB/s 0s[0m[33m95% [5 libc6-dbg 5052 kB/5161 kB 98%]                                                                       636 kB/s 0s[0m[33m100% [Working]                                                                                              636 kB/s 0s[0m                                                                                                                       Fetched 8738 kB in 15s (601 kB/s)
+
+7[0;29r8[1ASelecting previously unselected package libdw1:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 60937 files and directories currently installed.)
+Preparing to unpack .../libdw1_0.170-0.4ubuntu0.1_amd64.deb ...
+7[30;0f[42m[30mProgress: [  0%][49m[39m [..................................................................................................] 87[30;0f[42m[30mProgress: [  4%][49m[39m [###...............................................................................................] 8Unpacking libdw1:amd64 (0.170-0.4ubuntu0.1) ...
+7[30;0f[42m[30mProgress: [  8%][49m[39m [#######...........................................................................................] 87[30;0f[42m[30mProgress: [ 12%][49m[39m [###########.......................................................................................] 8Selecting previously unselected package libbabeltrace1:amd64.
+Preparing to unpack .../libbabeltrace1_1.5.5-1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 15%][49m[39m [###############...................................................................................] 8Unpacking libbabeltrace1:amd64 (1.5.5-1) ...
+7[30;0f[42m[30mProgress: [ 19%][49m[39m [##################................................................................................] 87[30;0f[42m[30mProgress: [ 23%][49m[39m [######################............................................................................] 8Selecting previously unselected package gdb.
+Preparing to unpack .../gdb_8.1-0ubuntu3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 27%][49m[39m [##########################........................................................................] 8Unpacking gdb (8.1-0ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 31%][49m[39m [##############################....................................................................] 87[30;0f[42m[30mProgress: [ 35%][49m[39m [#################################.................................................................] 8Selecting previously unselected package gdbserver.
+Preparing to unpack .../gdbserver_8.1-0ubuntu3_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 38%][49m[39m [#####################################.............................................................] 8Unpacking gdbserver (8.1-0ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 42%][49m[39m [#########################################.........................................................] 87[30;0f[42m[30mProgress: [ 46%][49m[39m [#############################################.....................................................] 8Selecting previously unselected package libc6-dbg:amd64.
+Preparing to unpack .../libc6-dbg_2.27-3ubuntu1_amd64.deb ...
+7[30;0f[42m[30mProgress: [ 50%][49m[39m [#################################################.................................................] 8Unpacking libc6-dbg:amd64 (2.27-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 54%][49m[39m [####################################################..............................................] 87[30;0f[42m[30mProgress: [ 58%][49m[39m [########################################################..........................................] 8Setting up libc6-dbg:amd64 (2.27-3ubuntu1) ...
+7[30;0f[42m[30mProgress: [ 62%][49m[39m [############################################################......................................] 87[30;0f[42m[30mProgress: [ 65%][49m[39m [################################################################..................................] 8Setting up libdw1:amd64 (0.170-0.4ubuntu0.1) ...
+7[30;0f[42m[30mProgress: [ 69%][49m[39m [###################################################################...............................] 87[30;0f[42m[30mProgress: [ 73%][49m[39m [#######################################################################...........................] 8Setting up gdbserver (8.1-0ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 77%][49m[39m [###########################################################################.......................] 87[30;0f[42m[30mProgress: [ 81%][49m[39m [###############################################################################...................] 8Setting up libbabeltrace1:amd64 (1.5.5-1) ...
+7[30;0f[42m[30mProgress: [ 85%][49m[39m [##################################################################################................] 87[30;0f[42m[30mProgress: [ 88%][49m[39m [######################################################################################............] 8Setting up gdb (8.1-0ubuntu3) ...
+7[30;0f[42m[30mProgress: [ 92%][49m[39m [##########################################################################################........] 87[30;0f[42m[30mProgress: [ 96%][49m[39m [##############################################################################################....] 8Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for libc-bin (2.27-3ubuntu1) ...
+
+7[0;30r8[1A[J]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ gedit bits-to-ints.c
+
+** (gedit:369): [1;33mWARNING[0m **: [34m10:46:15.984[0m: Set document metadata failed: Setting attribute metadata::gedit-spell-language not supported
+
+** (gedit:369): [1;33mWARNING[0m **: [34m10:46:15.984[0m: Set document metadata failed: Setting attribute metadata::gedit-encoding not supported
+
+** (gedit:369): [1;33mWARNING[0m **: [34m10:46:16.805[0m: Set document metadata failed: Setting attribute metadata::gedit-position not supported
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ gedit bits-to-ints.csudo apt install gdb[4Pgdb bits-to-intsedit bits-to-ints.cls[Kcd prj1-sol=solls[Kcd workls[Kcd prj1=sol-solls[Kgedit bits-to-ints.c[4Pdb bits-to-intssudo apt install gdb[4Pgdb bits-to-intsedit bits-to-ints.cls[Kcd prj1-sol=solls[Kcd workls[Kcd i220als[Kgedit bits-to-ints.cls[Kcd prj1-solls[Kcd workkrls[Kcd i220als[Kcd workls[Kcd workls[Kcd i220als[Kcd wokrrkls[Kcd prj1-solls[Kgedit bits-to-ints.cls[Kcd i220als[Kcd workls[Kcd prj1=sol-solls[Kgedit bits-to-ints.c[4Pdb bits-to-intssudo apt install gdbgedit bits-to-ints.c[Kgedit bits-to-ints.csudo apt install gdb[4Pgdb bits-to-intsedit bits-to-ints.c[4Pdb bits-to-intssudo apt install gdbgedit bits-to-ints.c[Kgdb bits-to-ints
+GNU gdb (Ubuntu 8.1-0ubuntu3) 8.1.0.20180409-git
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from bits-to-ints...done.
+(gdb) start 8 test1.txt
+Temporary breakpoint 1 at 0xaec: file main.c, line 24.
+Starting program: /home/ycdjun/git-repos/i220a/work/prj1-sol/bits-to-ints 8 test1.txt
+
+Temporary breakpoint 1, main (argc=3, argv=0x7ffffffee398) at main.c:24
+24	{
+(gdb) b bits-to[K[K[K_to_ints 8 test1.txt
+Function "bits_to_ints 8 test1.txt" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b bits-[K_to_ints
+Breakpoint 2 at 0x8000c78: file bits-to-ints.c, line 49.
+(gdb) l
+19	  } while (!isDone);
+20	}
+21	
+22	int
+23	main(int argc, const char *argv[])
+24	{
+25	  if (argc < 2) {
+26	    fatal("usage: %s N_BITS [FILE...]", argv[0]);
+27	  }
+28	  char *p;
+(gdb) n
+25	  if (argc < 2) {
+(gdb) n
+29	  int nBits = strtol(argv[1], &p, 10);
+(gdb) n
+30	  if (*p != '\0') {
+(gdb) n
+33	  else if (nBits < 8 || nBits > sizeof(BitsValue)*CHAR_BIT ||
+(gdb) n
+34	           nBits%CHAR_BIT != 0) {
+(gdb) n
+33	  else if (nBits < 8 || nBits > sizeof(BitsValue)*CHAR_BIT ||
+(gdb) n
+38	  if (argc == 2) {
+(gdb) n
+42	    for (int i = 2; i < argc; i++) {
+(gdb) n
+43	      const char *inName = argv[i];
+(gdb) n
+44	      FILE *inFile = fopen(inName, "r");
+(gdb) n
+45	      if (inFile == NULL) {
+(gdb) nnnn
+Undefined command: "nnnn".  Try "help".
+(gdb) n
+48	      do_file_bits(inFile, inName, nBits, stdout);
+(gdb) nn[K\[K[Kq
+A debugging session is active.
+
+	Inferior 1 [process 378] will be killed.
+
+Quit anyway? (y or n) y
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ gedit [K[K[K[K[K[Kmake[K[K[K[Kmake
+cc -g -Wall -std=c11   -c -o bits-to-ints.o bits-to-ints.c
+cc main.o bits-to-ints.o errors.o  -o bits-to-ints
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ ./ [Kbits-to-ints.c 8 test1.txt
+bash: ./bits-to-ints.c: Permission denied
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ ./bits-to-ints.c 8 test1.txt[1P[1P
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+08
+18
+ffffffffffffffa0
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m$ ./bits-to-ints 16 test1.txt
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+0018
+0018
+0018
+0018
+0018
+0018
+0018
+ffffffffffffffb8
+]0;ycdjun@DESKTOP-23I9KR1: ~/i220a/work/prj1-sol[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/i220a/work/prj1-sol[00m

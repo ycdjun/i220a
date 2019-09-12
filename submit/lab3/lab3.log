@@ -443,6 +443,7 @@ make: *** [<builtin>: hello] Error 1
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs helloc.[K[K.c
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
 cc -g -Wall -std=c99    hello.c   -o hello
+<<<<<<< HEAD
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ hel[K[K[K./hello bart simpson[K[K[K[K[K[K[K[K[K[K[K[K'bar [Kt simpson'
 Hello Bart Simpson°U
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs hello.c
@@ -657,3 +658,6 @@ To github.com:ycdjun/i220a.git
 yjun1@g7-31:/import/linux/home1/yjun1/i220a$ exit
 
 Script done on 2019-09-05 12:40:04-04:00 [COMMAND_EXIT_CODE="0"]
+=======
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ hel[K[K[K.
+>>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80

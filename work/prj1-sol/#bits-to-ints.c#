@@ -21,7 +21,11 @@
  *  unsigned integer value.
  *
  *  The bytes within the bit-stream are assumed to be in big-endian
+<<<<<<< HEAD
  *  order (with the most significant byte first), and the bits within
+=======
+ *  order OPqwith the most significant byte first), and the bits within
+>>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80
  *  each byte are ordered little-endian with the least-significant bit
  *  first.
  *
