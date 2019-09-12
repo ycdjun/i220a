@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 //@TODO: auxiliary definitions
 
@@ -43,6 +44,7 @@
  *  function should return with *isEof set to true.
  */
 
+int counter = 0;
 int getbits(FILE *inFile, bool *isEof){
 	char c = ' ';
 	while(isspace(c)){
@@ -52,15 +54,17 @@ int getbits(FILE *inFile, bool *isEof){
 			return -1;
 		}
 		if(c == '1'){
+			counter++;
 			return 1;
 		}
 		else if(c == '0'){
+			counter++;
 			return 0;
 		}
 		else{
 			if(!isspace(c) && c != '1' && c != '0'){
 				*isEof = true;
-				fatal("Invalid character '%c' , c");
+				fatal("Invalid character '%c' ", c);
 				
 			}
 		}
@@ -94,6 +98,13 @@ bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
 {
   //nBits value should make sense
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
-  BitsValue value = getWord(inFile, nBits, isEof);
+	BitsValue value = 0;
+	if(counter % 8 != 0){
+		*isEof = true;
+		fatal("Unexpected EOF within byte");
+	}
+	else{
+		value = getWord(inFile, nBits, isEof);
+	}
   return value;
 }
