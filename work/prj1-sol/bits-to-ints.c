@@ -56,7 +56,7 @@ int getbits(FILE *inFile, bool *isEof){
 		else{
 			if(!isspace(c) && c != '1' && c != '0'){
 				*isEof = true;
-				fatal("Invalid character '%c' , c");
+				fatal("Invalid character %c" , c);
 				
 			}
 		}
