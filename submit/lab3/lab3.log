@@ -443,4 +443,221 @@ make: *** [<builtin>: hello] Error 1
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs helloc.[K[K.c
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
 cc -g -Wall -std=c99    hello.c   -o hello
+<<<<<<< HEAD
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ hel[K[K[K./hello bart simpson[K[K[K[K[K[K[K[K[K[K[K[K'bar [Kt simpson'
+Hello Bart Simpson°U
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ gdb hello
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from hello...done.
+(gdb) backtrace
+No stack.
+(gdb) start 'bat[Krt simpson' 'lisa simpson'
+Temporary breakpoint 1 at 0x12be: file hello.c, line 35.
+Starting program: /import/linux/home1/yjun1/git-repos/i220a/work/lab3/files/ex2/hello 'bart simpson' 'lisa simpson'
+
+Temporary breakpoint 1, main (argc=3, argv=0x7fffffffe768) at hello.c:35
+35	  if (argc == 1) {
+(gdb) backtrace
+#0  main (argc=3, argv=0x7fffffffe768) at hello.c:35
+(gdb) n
+40	    for (int i = 1; i < argc; i++) {
+(gdb) up[K[Kupper[K[K[K[K[Kl
+35	  if (argc == 1) {
+36	    fprintf(stderr, "usage: %s NAME...\n", argv[0]);
+37	    exit(1);
+38	  }
+39	  else {
+40	    for (int i = 1; i < argc; i++) {
+41	      const char *name = argv[i];
+42	      char friendlyName[strlen(name)];
+43	      upcase_words(name, friendlyName);
+44	      say_hello(friendlyName);
+(gdb) l 20
+15	  for (int i = 0; i < n; i++) {
+16	    if (!inWord && isalpha(in[i])) {
+17	      out[i] = toupper(in[i]);
+18	    }
+19	    else {
+20	      out[i] = in[i];
+21	    }
+22	    inWord = isalpha(in[i]);
+23	  }
+24	}
+(gdb) l 10
+5	
+6	/** Upcase the initial letter of each word from in, copying the
+7	 *  results into out.  The caller is responsible to ensure that out
+8	 *  has enough space for the strlen(in) characters of in.
+9	 */
+10	void
+11	upcase_words(const char in[], char out[])
+12	{
+13	  int inWord = 0;
+14	  int n = strlen(in);
+(gdb) upcase_words
+Undefined command: "upcase_words".  Try "help".
+(gdb) b s[Kupcase_words
+Breakpoint 2 at 0x555555555195: file hello.c, line 13.
+(gdb) c
+Continuing.
+
+Breakpoint 2, upcase_words (in=0x7fffffffea94 "bart simpson", out=0x7fffffffe610 "\001") at hello.c:13
+13	  int inWord = 0;
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 14321] will be killed.
+
+Quit anyway? (y or n) y
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ h[K./e[Khello 'bart simpson' 'lisa simpson'
+Hello Bart Simpson
+Hello Lisa Simpson
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./hello 'bart simpson' 'lisa simpson'[Ksss'
+Hello Bart Simpson
+Hello Lisa Simpsonsss
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs hello.c
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs MAKEFILE
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs Makefile
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs MakefileAKEFILE[1Phello.c./hello 'bart simpson' 'lisa simpsonsss'
+Hello Bart Simpson
+Hello Lisa Simpsonsss
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./hello 'bart simpson' 'lisa simpsonsss'[26Pemacs Makefile./hello 'bart simpson' 'lisa simpsonsss'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake
+cc -g -Wall -std=c99   -c -o hello.o hello.c
+gcc hello-o -o hello
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Khello-o: No such file or directory
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make: *** [Makefile:4: hello] Error 1
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ./ [K[K[Kemacs Makefile
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc   hello.o   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ makec[K clean
+rm -f hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ls
+hello.c  hello.c~  hello.o  Makefile  Makefile~  README
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ lsmake clean[Kemacs Makefile
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ emacs Makefile
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make clean
+rm -f hello *.o
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ make
+cc -g -Wall -std=c99    hello.c   -o hello
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ ls
+hello  hello.c	hello.c~  Makefile  Makefile~  README
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ git -a [K[K[Kadd -A
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ i[Kgti[K[Kit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   ../../../../submit/lab2/ex1/#Makefile#[m
+	[32mnew file:   ../../../../submit/lab2/ex4/temp/key_value.tar.gz[m
+	[32mnew file:   ../.gitignore[m
+	[32mnew file:   ../Makefile[m
+	[32mnew file:   ../ex1/.gitignore[m
+	[32mnew file:   ../ex1/Makefile[m
+	[32mnew file:   ../ex1/README[m
+	[32mnew file:   ../ex1/hello.c[m
+	[32mnew file:   ../ex1/hello.c~[m
+	[32mnew file:   Makefile[m
+	[32mnew file:   Makefile~[m
+	[32mnew file:   README[m
+	[32mnew file:   hello.c[m
+	[32mnew file:   hello.c~[m
+	[32mnew file:   ../../lab3.log[m
+	[32mnew file:   ../../../prj1-sol/#bits-to-ints.c#[m
+	[32mnew file:   ../../../prj1-sol/.gitignore[m
+	[32mnew file:   ../../../prj1-sol/Makefile[m
+	[32mnew file:   ../../../prj1-sol/bits-to-ints.c[m
+	[32mnew file:   ../../../prj1-sol/bits-to-ints.h[m
+	[32mnew file:   ../../../prj1-sol/errors.c[m
+	[32mnew file:   ../../../prj1-sol/errors.h[m
+	[32mnew file:   ../../../prj1-sol/main.c[m
+	[32mnew file:   ../../../prj1-sol/test1.txt[m
+
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ mv work/lab3 submit
+mv: cannot stat 'work/lab3': No such file or directory
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ mv work[K[K[K[Ki220a/work/lab3 submit
+mv: cannot stat 'i220a/work/lab3': No such file or directory
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ cd ..
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files$ cd ..
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3$ cd ..
+yjun1@g7-31:/import/linux/home1/yjun1/i220a/work$ cd ..
+yjun1@g7-31:/import/linux/home1/yjun1/i220a$ mv [K[K[Kgit mv work/lab3 submit
+yjun1@g7-31:/import/linux/home1/yjun1/i220a$ git commit [K[K[K[K[K[K[Kadd -A
+yjun1@g7-31:/import/linux/home1/yjun1/i220a$ git commit -m "Coml[Kpleted lab3"
+[master 4710eea] Completed lab3
+ Committer: Yongchan Jun <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 24 files changed, 892 insertions(+)
+ create mode 100644 submit/lab2/ex1/#Makefile#
+ create mode 100644 submit/lab2/ex4/temp/key_value.tar.gz
+ create mode 100644 submit/lab3/files/.gitignore
+ create mode 100644 submit/lab3/files/Makefile
+ create mode 100644 submit/lab3/files/ex1/.gitignore
+ create mode 100644 submit/lab3/files/ex1/Makefile
+ create mode 100644 submit/lab3/files/ex1/README
+ create mode 100644 submit/lab3/files/ex1/hello.c
+ create mode 100644 submit/lab3/files/ex1/hello.c~
+ create mode 100644 submit/lab3/files/ex2/Makefile
+ create mode 100644 submit/lab3/files/ex2/Makefile~
+ create mode 100644 submit/lab3/files/ex2/README
+ create mode 100644 submit/lab3/files/ex2/hello.c
+ create mode 100644 submit/lab3/files/ex2/hello.c~
+ create mode 100644 submit/lab3/lab3.log
+ create mode 100644 work/prj1-sol/#bits-to-ints.c#
+ create mode 100644 work/prj1-sol/.gitignore
+ create mode 100644 work/prj1-sol/Makefile
+ create mode 100644 work/prj1-sol/bits-to-ints.c
+ create mode 100644 work/prj1-sol/bits-to-ints.h
+ create mode 100644 work/prj1-sol/errors.c
+ create mode 100644 work/prj1-sol/errors.h
+ create mode 100644 work/prj1-sol/main.c
+ create mode 100644 work/prj1-sol/test1.txt
+yjun1@g7-31:/import/linux/home1/yjun1/i220a$ git push
+Warning: Permanently added the RSA host key for IP address '192.30.253.113' to the list of known hosts.
+Enumerating objects: 39, done.
+Counting objects:   2% (1/39)   Counting objects:   5% (2/39)   Counting objects:   7% (3/39)   Counting objects:  10% (4/39)   Counting objects:  12% (5/39)   Counting objects:  15% (6/39)   Counting objects:  17% (7/39)   Counting objects:  20% (8/39)   Counting objects:  23% (9/39)   Counting objects:  25% (10/39)   Counting objects:  28% (11/39)   Counting objects:  30% (12/39)   Counting objects:  33% (13/39)   Counting objects:  35% (14/39)   Counting objects:  38% (15/39)   Counting objects:  41% (16/39)   Counting objects:  43% (17/39)   Counting objects:  46% (18/39)   Counting objects:  48% (19/39)   Counting objects:  51% (20/39)   Counting objects:  53% (21/39)   Counting objects:  56% (22/39)   Counting objects:  58% (23/39)   Counting objects:  61% (24/39)   Counting objects:  64% (25/39)   Counting objects:  66% (26/39)   Counting objects:  69% (27/39)   Counting objects:  71% (28/39)   Counting objects:  74% (29/39)   Counting objects:  76% (30/39)   Counting objects:  79% (31/39)   Counting objects:  82% (32/39)   Counting objects:  84% (33/39)   Counting objects:  87% (34/39)   Counting objects:  89% (35/39)   Counting objects:  92% (36/39)   Counting objects:  94% (37/39)   Counting objects:  97% (38/39)   Counting objects: 100% (39/39)   Counting objects: 100% (39/39), done.
+Delta compression using up to 8 threads
+Compressing objects:   3% (1/29)   Compressing objects:   6% (2/29)   Compressing objects:  10% (3/29)   Compressing objects:  13% (4/29)   Compressing objects:  17% (5/29)   Compressing objects:  20% (6/29)   Compressing objects:  24% (7/29)   Compressing objects:  27% (8/29)   Compressing objects:  31% (9/29)   Compressing objects:  34% (10/29)   Compressing objects:  37% (11/29)   Compressing objects:  41% (12/29)   Compressing objects:  44% (13/29)   Compressing objects:  48% (14/29)   Compressing objects:  51% (15/29)   Compressing objects:  55% (16/29)   Compressing objects:  58% (17/29)   Compressing objects:  62% (18/29)   Compressing objects:  65% (19/29)   Compressing objects:  68% (20/29)   Compressing objects:  72% (21/29)   Compressing objects:  75% (22/29)   Compressing objects:  79% (23/29)   Compressing objects:  82% (24/29)   Compressing objects:  86% (25/29)   Compressing objects:  89% (26/29)   Compressing objects:  93% (27/29)   Compressing objects:  96% (28/29)   Compressing objects: 100% (29/29)   Compressing objects: 100% (29/29), done.
+Writing objects:   3% (1/33)   Writing objects:   6% (2/33)   Writing objects:   9% (3/33)   Writing objects:  12% (4/33)   Writing objects:  15% (5/33)   Writing objects:  18% (6/33)   Writing objects:  21% (7/33)   Writing objects:  24% (8/33)   Writing objects:  27% (9/33)   Writing objects:  30% (10/33)   Writing objects:  33% (11/33)   Writing objects:  36% (12/33)   Writing objects:  39% (13/33)   Writing objects:  45% (15/33)   Writing objects:  54% (18/33)   Writing objects:  57% (19/33)   Writing objects:  60% (20/33)   Writing objects:  66% (22/33)   Writing objects:  69% (23/33)   Writing objects:  72% (24/33)   Writing objects:  75% (25/33)   Writing objects:  81% (27/33)   Writing objects:  84% (28/33)   Writing objects:  87% (29/33)   Writing objects:  90% (30/33)   Writing objects:  93% (31/33)   Writing objects:  96% (32/33)   Writing objects: 100% (33/33)   Writing objects: 100% (33/33), 9.80 KiB | 912.00 KiB/s, done.
+Total 33 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/10)[Kremote: Resolving deltas:  10% (1/10)[Kremote: Resolving deltas:  40% (4/10)[Kremote: Resolving deltas:  50% (5/10)[Kremote: Resolving deltas:  60% (6/10)[Kremote: Resolving deltas:  70% (7/10)[Kremote: Resolving deltas:  80% (8/10)[Kremote: Resolving deltas:  90% (9/10)[Kremote: Resolving deltas: 100% (10/10)[Kremote: Resolving deltas: 100% (10/10), completed with 4 local objects.[K
+To github.com:ycdjun/i220a.git
+   d78fba6..4710eea  master -> master
+yjun1@g7-31:/import/linux/home1/yjun1/i220a$ exit
+
+Script done on 2019-09-05 12:40:04-04:00 [COMMAND_EXIT_CODE="0"]
+=======
 yjun1@g7-31:/import/linux/home1/yjun1/i220a/work/lab3/files/ex2$ hel[K[K[K.
+>>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80
