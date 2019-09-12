@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 //@TODO: auxiliary definitions
 
@@ -44,21 +45,23 @@
  */
 
 int getbits(FILE *inFile, bool *isEof){
-	char c = ' ';
+	int c = ' ';
 	while(isspace(c)){
 		c = fgetc(inFile);
+		if(c == EOF){
+			*isEof = true;
+			return -1;
+		}
+		if(!isspace(c) && c != '1' && c != '0'){
+			printf("Invalid character %c \n" , c);
+			exit(0);
+			return -1;
+		}
 		if(c == '1'){
 			return 1;
 		}
 		else if(c == '0'){
 			return 0;
-		}
-		else{
-			if(!isspace(c) && c != '1' && c != '0'){
-				*isEof = true;
-				fatal("Invalid character %c" , c);
-				
-			}
 		}
 	}
 	*isEof = true;
@@ -79,7 +82,7 @@ long long getByte(FILE *inFile,bool *isEof){
 BitsValue getWord(FILE *inFile, int nBits, bool *isEof){
 	BitsValue temp = 0;
 	for(int i = 0; i< nBits/8;i++){
-		temp |= getByte(inFile,isEof) << ((nBits-8) - (8 * i));
+		temp |= getByte(inFile,isEof) << ((nBits - 8) - (8 * i));
 	}
 	return temp;
 }
