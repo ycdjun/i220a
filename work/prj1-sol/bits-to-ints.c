@@ -6,7 +6,6 @@
 #include <limits.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 //@TODO: auxiliary definitions
 
@@ -43,27 +42,23 @@
  *  in inFile, then a suitable error message should be printed and the
  *  function should return with *isEof set to true.
  */
-<<<<<<< HEAD
-=======
 
 int getbits(FILE *inFile, bool *isEof){
-	int c = ' ';
+	char c = ' ';
 	while(isspace(c)){
 		c = fgetc(inFile);
-		if(c == EOF){
-			*isEof = true;
-			return -1;
-		}
-		if(!isspace(c) && c != '1' && c != '0'){
-			printf("Invalid character %c \n" , c);
-			exit(0);
-			return -1;
-		}
 		if(c == '1'){
 			return 1;
 		}
 		else if(c == '0'){
 			return 0;
+		}
+		else{
+			if(!isspace(c) && c != '1' && c != '0'){
+				*isEof = true;
+				fatal("Invalid character '%c' , c");
+				
+			}
 		}
 	}
 	*isEof = true;
@@ -84,23 +79,17 @@ long long getByte(FILE *inFile,bool *isEof){
 BitsValue getWord(FILE *inFile, int nBits, bool *isEof){
 	BitsValue temp = 0;
 	for(int i = 0; i< nBits/8;i++){
-		temp |= getByte(inFile,isEof) << ((nBits - 8) - (8 * i));
+		temp |= getByte(inFile,isEof) << ((nBits-8) - (8 * i));
 	}
 	return temp;
 }
 	
 
->>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80
 BitsValue
 bits_to_ints(FILE *inFile, const char *inName, int nBits, bool *isEof)
 {
   //nBits value should make sense
   assert(0 < nBits && nBits <= CHAR_BIT*sizeof(BitsValue));
-<<<<<<< HEAD
-  BitsValue value = 0;
-  //@TODO
-=======
   BitsValue value = getWord(inFile, nBits, isEof);
->>>>>>> 273e87e5b98a4d61a34c15d4d5cdf48a107d5a80
   return value;
 }
