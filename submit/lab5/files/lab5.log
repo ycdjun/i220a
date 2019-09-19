@@ -1,0 +1,271 @@
+Script started on 2019-09-19 13:22:28-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd fil[K[K[K[K[K[Kcd ex1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ ls
+Makefile  pointers.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ cd [K[K[Kemacs  pointers.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ make
+cc -g -Wall -std=c11 -m32    pointers.c   -o pointers
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ ./poi t[Knters
+char pointer cp = 0xffe1ec2b, pointing at char a
+char pointer cp = 0xffe1ec2c, pointing at char b
+char pointer cp = 0xffe1ec2d, pointing at char c
+char pointer cp = 0xffe1ec2e, pointing at char d
+char pointer cp = 0xffe1ec2f, pointing at char e
+int pointer ip = 0xffe1ec14, pointing at int 1
+int pointer ip = 0xffe1ec18, pointing at int 2
+int pointer ip = 0xffe1ec1c, pointing at int 3
+int pointer ip = 0xffe1ec20, pointing at int 4
+int pointer ip = 0xffe1ec24, pointing at int 5
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ cd.[K .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ touch lab 5_output
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ emacs lab t_output.txt
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ ex[K[Kcd w[Kex1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ ./poi nters
+char pointer cp = 0xffc2c88b, pointing at char a
+char pointer cp = 0xffc2c88c, pointing at char b
+char pointer cp = 0xffc2c88d, pointing at char c
+char pointer cp = 0xffc2c88e, pointing at char d
+char pointer cp = 0xffc2c88f, pointing at char e
+int pointer ip = 0xffc2c874, pointing at int 1
+int pointer ip = 0xffc2c878, pointing at int 2
+int pointer ip = 0xffc2c87c, pointing at int 3
+int pointer ip = 0xffc2c880, pointing at int 4
+int pointer ip = 0xffc2c884, pointing at int 5
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ ./pointers[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ex1[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs labt_output.txt&
+[1] 8876
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ emacs labt_output.txt&[1P_output.txt&[C[C[C[C5_output.txt&[C[C[C[C[C
+[2] 8929
+[1]   Done                    emacs labt_output.txt
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ emacs lab5_output.txt&
+[3] 9010
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ emacs lab5_output.txt&[C[K &
+[4] 9082
+[3]   Done                    emacs lab5_output.txt
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ emacs lab5_output.txt &[1P&
+[5] 9281
+[4]   Done                    emacs lab5_output.txt
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ emacs lab5_output.txt&[K
+[5]+  Done                    emacs lab5_output.txt
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex1$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd 3[Kex2
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ emacs  in=[K-p[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs  in-points.c[K[K[Ker[K[Kers.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ make
+cc -g -Wall -std=c11 -m32    in-pointers.c   -o in-pointers
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ ./in- popi[K[Kinters
+is[] is at 0xffa5434c
+enter pointer to is[1]: 1
+Segmentation fault
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ ./in-pointers[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pmake
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs in-pointers.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ emacs in-pointers.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./in-p[6Pointers
+is[] is at 0xff8ff5fc
+enter pointer to is[1]: 0001
+Segmentation fault
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ ./in-pointers[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs in-pointers.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./in-p[6Pointers
+is[] is at 0xff9ad57c
+enter pointer to is[1]: f00000000 
+Segmentation fault
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ ./in-pointers
+is[] is at 0xffee14fc
+enter pointer to is[1]: ffee14fc
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[1]: 0xffee14fc
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[1]: ^[[A^[[A        0 0xffee14fd
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[1]: 0xffee14f  5 4f  502
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[1]: ^[[A    0xffee1503
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[1]: ^[[A    0xffee1500
+ok
+is[] is at 0xffee14fc
+enter pointer to is[3]: ox  0xfe fee1504
+not ok
+is[] is at 0xffee14fc
+enter pointer to is[3]: ^[[A    0xffee1508
+ok
+is[] is at 0xffee14fc
+enter pointer to is[2]: 0xffee1504
+ok
+is[] is at 0xffee14fc
+enter pointer to is[4]: 0xffee150c
+ok
+is[] is at 0xffee14fc
+enter pointer to is[0]: 0xffee15 4fc
+ok
+is[] is at 0xffee14fc
+enter pointer to is[3]: ^C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ ./p[Kin- pointers
+is[] is at 0xffabd3dc
+enter pointer to is[1]: o 0xffabd3e0
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[3]: 0xffabde3  3e8
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[2]: 0xffabd3e4
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[4]: 0xffabd3ec
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[0]: 0xffabd3dc
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[3]: ^C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex2$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd ex3
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex3$ ls
+bad-types.c  Makefile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex3$ bi[K[Kemacs  bad-types.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex3$ make
+cc -g -Wall -std=c11 -m32    bad-types.c   -o bad-types
+[01m[Kbad-types.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kbad-types.c:6:14:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kchar *[m[K’ from incompatible pointer type ‘[01m[Kint *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   char *cp = [01;35m[Kis[m[K;
+              [01;35m[K^~[m[K
+[01m[Kbad-types.c:7:13:[m[K [01;35m[Kwarning: [m[Kinitialization of ‘[01m[Kint *[m[K’ from incompatible pointer type ‘[01m[Kchar *[m[K’ [[01;35m[K-Wincompatible-pointer-types[m[K]
+   int *ip = [01;35m[Kcs[m[K;
+             [01;35m[K^~[m[K
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex3$ ./bad -types
+char pointer cp = 0xffe5cc14, pointing at char '' (0x1)
+char pointer cp = 0xffe5cc15, pointing at char ' ' (0x0)
+char pointer cp = 0xffe5cc16, pointing at char ' ' (0x0)
+char pointer cp = 0xffe5cc17, pointing at char ' ' (0x0)
+char pointer cp = 0xffe5cc18, pointing at char '' (0x2)
+int pointer ip = 0xffe5cc2b, pointing at int 1684234849 (0x64636261)
+int pointer ip = 0xffe5cc2f, pointing at int 357 (0x165)
+int pointer ip = 0xffe5cc33, pointing at int 1280 (0x500)
+int pointer ip = 0xffe5cc37, pointing at int -439601408 (0xe5cc3700)
+int pointer ip = 0xffe5cc3b, pointing at int -439608833 (0xe5cc19ff)
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex3$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd ex4
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex4$ c[Kemacs  cast-types.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex4$ make[K[K[K[Kmake
+cc -g -Wall -std=c11 -m32    cast-types.c   -o cast-types
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex4$ ./cas t-types.c
+bash: ./cast-types.c: Permission denied
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex4$ ./cast-types.c[K[K
+char pointer cp = 0xffa6fec4, pointing at int 1 (0x1)
+char pointer cp = 0xffa6fec8, pointing at int 2 (0x2)
+char pointer cp = 0xffa6fecc, pointing at int 3 (0x3)
+char pointer cp = 0xffa6fed0, pointing at int 4 (0x4)
+char pointer cp = 0xffa6fed4, pointing at int 5 (0x5)
+int pointer ip = 0xffa6fedb, pointing at char 'a' (0x64636261)
+int pointer ip = 0xffa6fedc, pointing at char 'b' (0x65646362)
+int pointer ip = 0xffa6fedd, pointing at char 'c' (0x2656463)
+int pointer ip = 0xffa6fede, pointing at char 'd' (0x36564)
+int pointer ip = 0xffa6fedf, pointing at char 'e' (0x465)
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex4$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ ex5
+bash: ex5: command not found
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd ex5
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex5$ emacs  void-pointers.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex5$ make
+cc -g -Wall -std=c11 -m32    void-pointers.c   -o void-pointers
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex5$ ./voi d-pointers
+void pointer p = 0xffc103ef, pointing at char a
+void pointer p = 0xffc103f0, pointing at char b
+void pointer p = 0xffc103f1, pointing at char c
+void pointer p = 0xffc103f2, pointing at char d
+void pointer p = 0xffc103f3, pointing at char e
+void pointer p = 0xffc103d8, pointing at int 1
+void pointer p = 0xffc103dc, pointing at int 2
+void pointer p = 0xffc103e0, pointing at int 3
+void pointer p = 0xffc103e4, pointing at int 4
+void pointer p = 0xffc103e8, pointing at int 5
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex5$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$ cd ex5[K6
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ emacs  in-voids.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ make
+cc -g -Wall -std=c11 -m32    in-voids.c   -o in-voids
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ ./om[K[Ko[Kom[K[Kin- voids.c
+bash: ./in-voids.c: Permission denied
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ ./in-voids.c[K[K
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to is[2]: 0xff96cf 4fb
+not ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to is[2]: oxff    0xff96cf 4fc
+ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to cs[3]: 0xff96c4f7
+not ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to cs[3]: ^[[A    0xff96c4f8
+not ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to cs[3]: 0xff96c50f
+not ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to cs[3]: ^[[A    0xff96c510
+not ok
+cs[] is at 0xff96c50b; is[] is at 0xff96c4f4
+enter pointer to cs[3]: ^[[A    0 0x  ^C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ ./in-voids
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to is[2]: 0xffd6e2cc
+ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: 0xffd6e2dr f
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: ^[[A^[[A        0xffd6e2c         0ff  xffd6e2de  f0 1
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: 0xffd6e2dc
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: ^[[A    0xffd632db    e2dd
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: 0xffd6e2e0
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: ^[[A    0xffd5 63 e2e4
+not ok
+cs[] is at 0xffd6e2db; is[] is at 0xffd6e2c4
+enter pointer to cs[3]: ^C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ ./in-voids
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to is[2]: 0xffcb38dc
+ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to cs[3]: 0xffcb38ee
+ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to is[4]: 0xffcb38d e0
+not ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to is[4]: 0xffcb38d e4
+ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to cs[1]: 0xffcb38ec
+ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to cs[4]: 0xffcb38ef
+ok
+cs[] is at 0xffcb38eb; is[] is at 0xffcb38d4
+enter pointer to is[1]: ^C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files/ex6$ cd .. [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K.
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5/files$  [Kcd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab5$ cd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs$ cd..
+bash: cd..: command not found
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs$ c d.[K[K[Kd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220$ cd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos$ cd i220a
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a$ cd submti[K[Kit
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/submit$ cdp[K[Kp - r[K[Kr[K[K[K[K[Kcd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a$  cd ..[K[K[K[K[K[Kcd ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos$  cd [K[K[K[Kcd ..
+yjun1@g7-37:/import/linux/home1/yjun1$ exit
+
+Script done on 2019-09-19 13:59:29-04:00 [COMMAND_EXIT_CODE="0"]

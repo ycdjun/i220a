@@ -1,0 +1,41 @@
+char pointer cp = 0xffe1ec2b, pointing at char a
+char pointer cp = 0xffe1ec2c, pointing at char b
+char pointer cp = 0xffe1ec2d, pointing at char c
+char pointer cp = 0xffe1ec2e, pointing at char d
+char pointer cp = 0xffe1ec2f, pointing at char e
+int pointer ip = 0xffe1ec14, pointing at int 1
+int pointer ip = 0xffe1ec18, pointing at int 2
+int pointer ip = 0xffe1ec1c, pointing at int 3
+int pointer ip = 0xffe1ec20, pointing at int 4
+int pointer ip = 0xffe1ec24, pointing at int 5
+
+char pointer cp = 0xffc2c88b, pointing at char a
+char pointer cp = 0xffc2c88c, pointing at char b
+char pointer cp = 0xffc2c88d, pointing at char c
+char pointer cp = 0xffc2c88e, pointing at char d
+char pointer cp = 0xffc2c88f, pointing at char e
+int pointer ip = 0xffc2c874, pointing at int 1
+int pointer ip = 0xffc2c878, pointing at int 2
+int pointer ip = 0xffc2c87c, pointing at int 3
+int pointer ip = 0xffc2c880, pointing at int 4
+int pointer ip = 0xffc2c884, pointing at int 5
+
+is[] is at 0xffabd3dc
+enter pointer to is[1]: 0xffabd3e0
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[3]: 0xffabd3e8
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[2]: 0xffabd3e4
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[4]: 0xffabd3ec
+ok
+is[] is at 0xffabd3dc
+enter pointer to is[0]: 0xffabd3dc
+ok
+is[] is at 0xffabd3dc
+
+
+
