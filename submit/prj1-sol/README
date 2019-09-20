@@ -1,0 +1,11 @@
+Created 3 functions:
+One of getting bits
+One for forming bytes from the bit function and ordering them in big endian as they came in
+One for forming words from the byte
+
+Was able to get the invalid character error working
+
+Was not able to get the other two working properly
+
+Unexpected EOF within Byte is partially working as it will not output the full value but it will not output the error statement when the case is true
+
