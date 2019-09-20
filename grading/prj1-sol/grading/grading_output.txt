@@ -1,0 +1,281 @@
+2019 Fall CS 220 - Project 1 Grading Report
+Student Name: Jun	Yongchan
+Grader Name: Li Yongheng
+
+----------(40%) 0. compile program-----------
+$ make
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc -g -Wall -std=c11   -c -o bits-to-ints.o bits-to-ints.c
+cc -g -Wall -std=c11   -c -o errors.o errors.c
+cc main.o bits-to-ints.o errors.o  -o bits-to-ints
+>>> output: compilation succeeded.
++++ result: -0
++++ comment: 
+----------(2%) 1. good_input_1 8 bits-----------
+$ ./bits-to-ints 8 grading/input_good_1.txt
+>>> expect: 
+81
+ab
+55
+e6
+90
+e9
+00
+ff
+>>> output: 
+81
+ab
+55
+e6
+90
+e9
+00
+ff
++++ result: -0
++++ comment: 
+----------(2%) 2. good_input_1 16 bits-----------
+$ ./bits-to-ints 16 grading/input_good_1.txt
+>>> expect: 
+81ab
+55e6
+90e9
+00ff
+>>> output: 
+81ab
+55e6
+90e9
+00ff
++++ result: -0
++++ comment: 
+----------(2%) 3. good_input_1 32 bits-----------
+$ ./bits-to-ints 32 grading/input_good_1.txt
+>>> expect: 
+81ab55e6
+90e900ff
+>>> output: 
+81ab55e6
+90e900ff
++++ result: -0
++++ comment: 
+----------(2%) 4. good_input_1 64 bits-----------
+$ ./bits-to-ints 64 grading/input_good_1.txt
+>>> expect: 
+81ab55e690e900ff
+>>> output: 
+81ab55e690e900ff
++++ result: -0
++++ comment: 
+----------(2%) 5. good_input_2 8 bits-----------
+$ ./bits-to-ints 8 grading/input_good_2.txt
+>>> expect: 
+00
+00
+00
+00
+ff
+ff
+ff
+ff
+>>> output: 
+00
+00
+00
+00
+ff
+ff
+ff
+ff
++++ result: -0
++++ comment: 
+----------(2%) 6. good_input_2 16 bits-----------
+$ ./bits-to-ints 16 grading/input_good_2.txt
+>>> expect: 
+0000
+0000
+ffff
+ffff
+>>> output: 
+0000
+0000
+ffff
+ffff
++++ result: -0
++++ comment: 
+----------(2%) 7. good_input_2 32 bits-----------
+$ ./bits-to-ints 32 grading/input_good_2.txt
+>>> expect: 
+00000000
+ffffffff
+>>> output: 
+00000000
+ffffffff
++++ result: -0
++++ comment: 
+----------(2%) 8. good_input_2 64 bits-----------
+$ ./bits-to-ints 64 grading/input_good_2.txt
+>>> expect: 
+00000000ffffffff
+>>> output: 
+00000000ffffffff
++++ result: -0
++++ comment: 
+----------(2%) 9. good_input_3 8 bits-----------
+$ ./bits-to-ints 8 grading/input_good_3.txt
+>>> expect: 
+01
+23
+45
+67
+89
+ab
+cd
+ef
+>>> output: 
+01
+23
+45
+67
+89
+ab
+cd
+ef
++++ result: -0
++++ comment: 
+----------(2%) 10. good_input_3 16 bits-----------
+$ ./bits-to-ints 16 grading/input_good_3.txt
+>>> expect: 
+0123
+4567
+89ab
+cdef
+>>> output: 
+0123
+4567
+89ab
+cdef
++++ result: -0
++++ comment: 
+----------(2%) 11. good_input_3 32 bits-----------
+$ ./bits-to-ints 32 grading/input_good_3.txt
+>>> expect: 
+01234567
+89abcdef
+>>> output: 
+01234567
+89abcdef
++++ result: -0
++++ comment: 
+----------(2%) 12. good_input_3 64 bits-----------
+$ ./bits-to-ints 64 grading/input_good_3.txt
+>>> expect: 
+0123456789abcdef
+>>> output: 
+0123456789abcdef
++++ result: -0
++++ comment: 
+----------(2%) 13. good_input_4 8 bits-----------
+$ ./bits-to-ints 8 grading/input_good_4.txt
+>>> expect: 
+00
+00
+00
+00
+00
+00
+00
+00
+>>> output: 
+00
+00
+00
+00
+00
+00
+00
+00
++++ result: -0
++++ comment: 
+----------(2%) 14. good_input_4 16 bits-----------
+$ ./bits-to-ints 16 grading/input_good_4.txt
+>>> expect: 
+0000
+0000
+0000
+0000
+>>> output: 
+0000
+0000
+0000
+0000
++++ result: -0
++++ comment: 
+----------(2%) 15. good_input_4 32 bits-----------
+$ ./bits-to-ints 32 grading/input_good_4.txt
+>>> expect: 
+00000000
+00000000
+>>> output: 
+00000000
+00000000
++++ result: -0
++++ comment: 
+----------(2%) 16. good_input_4 64 bits-----------
+$ ./bits-to-ints 64 grading/input_good_4.txt
+>>> expect: 
+0000000000000000
+>>> output: 
+0000000000000000
++++ result: -0
++++ comment: 
+----------(1%) 17. bad_input_1 16 bits-----------
+$ ./bits-to-ints 16 grading/input_bad_1.txt
+>>> expect: 
+unexpected character 'a' in file grading/input_bad_1.txt
+>>> output: 
+Invalid character 'a' 
++++ result: -0.25
++++ comment: 
+----------(1%) 18. bad_input_2 16 bits-----------
+$ ./bits-to-ints 16 grading/input_bad_2.txt
+>>> expect: 
+unexpected EOF within byte in file grading/input_bad_2.txt
+>>> output: 
++++ result: -0
++++ comment: not complete error message
+----------(1%) 19. bad_input_3 8 bits-----------
+$ ./bits-to-ints 8 grading/input_bad_3.txt
+>>> expect: 
+00
+unexpected EOF within byte in file grading/input_bad_3.txt
+>>> output: 
+00
++++ result: -1
++++ comment: miss error message
+----------(1%) 20. bad_input_4 8 bits-----------
+$ ./bits-to-ints 8 grading/input_bad_4.txt
+>>> expect: 
+7f
+unexpected character 'a' in file grading/input_bad_4.txt
+>>> output: 
+Invalid character 'a' 
+7f
++++ result: -0.5
++++ comment: not complete error message; wrong output sequence 
+
+--------------------Summary--------------------
+Grading Time: Thu 19 Sep 2019 04:30:17 PM EDT
+Project Due Date: Wed Sep 12 23:59:59 2019 -0400
+GitHub Submission Info: 
+commit f5238f1bee50ee209efe513dc7121fad4e909d82
+Author: Yongchan Jun <ycdjun@gmail.com>
+Date:   Thu Sep 12 19:40:01 2019 -0400
+
+    Proj1 Submission
+
+Late Date Used: 0
+Late Date Left: 7
+Late Submission Penalty: -0
+
+Coding Style: -0
+
+Total Points: 98.25
