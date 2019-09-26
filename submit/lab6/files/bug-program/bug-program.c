@@ -40,9 +40,11 @@ static void
 free_key_values(struct KeyValue *keyValues)
 {
   //go thru chain of keyValues
-  for (struct KeyValue *p = keyValues; p != NULL; p = p->succ) {
-    //free(p->key) free the char struct
-    free(p); //free KeyValue struct
+  for (struct KeyValue *p = keyValues; p != NULL;) {
+    struct KeyValue *temp = p;
+    p = p->succ;
+    free((void *) temp->key);
+    free(temp); //free KeyValue struct
   }
 }
 

@@ -638,4 +638,170 @@ the: 3
 and: 2
 brillig: 1
 twas: 0
-yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ ./bug-programmake[Kemacs bug-program.c
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ ./bug-programmake[Kemacs bug-program.c[6P./bug-programemacs bug-program.c
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ MALLOC_CHECK_=1 ./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs [K[K[K[K[K[Kls
+bug-program  bug-program.c  bug-program.c~  bug-program.valgrind  Makefile
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs bug-program.val grind
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs bug-program.valgrind &
+[2] 14849
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs bug-program.valgrind &[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CMALLOC_CHECK_=1 ./bug-program[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pemacs bug-program.c
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C & [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
+[3] 14879
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ cd ..
+[3]+  Done                    emacs bug-program.c  (wd: ~/git-repos/i220a/work/lab6/files/bug-program)
+(wd now: ~/git-repos/i220a/work/lab6/files)
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ cd ..
+[1]-  Done                    emacs lab6_output.txt  (wd: ~/git-repos/i220a/work/lab6/files)
+(wd now: ~/git-repos/i220a/work/lab6)
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ git add -A
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ git commit -m "workin[K[K in progress lab7[K6"
+[master db8f629] work in progress lab6
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 19 files changed, 1710 insertions(+)
+ create mode 100755 work/lab6/Makefile
+ create mode 100644 work/lab6/files/brk/.gitignore
+ create mode 100644 work/lab6/files/brk/Makefile
+ create mode 100644 work/lab6/files/brk/README
+ create mode 100644 work/lab6/files/brk/brk.c
+ create mode 100644 work/lab6/files/bug-program/.gitignore
+ create mode 100644 work/lab6/files/bug-program/Makefile
+ create mode 100644 work/lab6/files/bug-program/bug-program.c
+ create mode 100644 work/lab6/files/bug-program/bug-program.c~
+ create mode 100644 work/lab6/files/bug-program/bug-program.valgrind
+ create mode 100644 work/lab6/files/lab6.log
+ create mode 100644 work/lab6/files/lab6_output.txt
+ create mode 100644 work/lab6/files/lab6_output.txt~
+ create mode 100644 work/lab6/files/process-memory/.gitignore
+ create mode 100644 work/lab6/files/process-memory/Makefile
+ create mode 100644 work/lab6/files/process-memory/process-memory.c
+ create mode 100644 work/lab6/lab6.html
+ create mode 100644 work/lab6/lab6.pdf
+ create mode 100644 work/lab6/lab6.umt
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ git push
+To github.com:ycdjun/i220a.git
+ [31m! [rejected]       [m master -> master (fetch first)
+[31merror: failed to push some refs to 'git@github.com:ycdjun/i220a.git'
+[m[33mhint: Updates were rejected because the remote contains work that you do[m
+[33mhint: not have locally. This is usually caused by another repository pushing[m
+[33mhint: to the same ref. You may want to first integrate the remote changes[m
+[33mhint: (e.g., 'git pull ...') before pushing again.[m
+[33mhint: See the 'Note about fast-forwards' in 'git push --help' for details.[m
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ git pull 
+remote: Enumerating objects: 9, done.[K
+remote: Counting objects:  11% (1/9)[Kremote: Counting objects:  22% (2/9)[Kremote: Counting objects:  33% (3/9)[Kremote: Counting objects:  44% (4/9)[Kremote: Counting objects:  55% (5/9)[Kremote: Counting objects:  66% (6/9)[Kremote: Counting objects:  77% (7/9)[Kremote: Counting objects:  88% (8/9)[Kremote: Counting objects: 100% (9/9)[Kremote: Counting objects: 100% (9/9), done.[K
+remote: Compressing objects:  20% (1/5)[Kremote: Compressing objects:  40% (2/5)[Kremote: Compressing objects:  60% (3/5)[Kremote: Compressing objects:  80% (4/5)[Kremote: Compressing objects: 100% (5/5)[Kremote: Compressing objects: 100% (5/5), done.[K
+remote: Total 5 (delta 4), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  20% (1/5)   Unpacking objects:  40% (2/5)   Unpacking objects:  60% (3/5)   Unpacking objects:  80% (4/5)   Unpacking objects: 100% (5/5)   Unpacking objects: 100% (5/5), done.
+From github.com:ycdjun/i220a
+   eac3cbd..27d5e77  master     -> origin/master
+Removing submit/lab5/files/lab5_log1.txt
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "~/git-repos/i220a/.git/.MERGE_MSG.swp"
+[10Cowned by: yjun1   dated: Fri Sep 20 13:47:02 2019
+[9Cfile name: ~yjun1/git-repos/i220a/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: yjun1   host name: remote01
+[8Cprocess ID: 12157
+While opening file "/import/linux/home1/yjun1/git-repos/i220a/.git/MERGE_MSG"
+[13Cdated: Thu Sep 26 12:53:03 2019
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/.MERGE_MSG.swp"
+    to avoid this message.
+[?1000l
+[32mSwap file "~/git-repos/i220a/.git/.MERGE_MSG.swp" already exists![m
+[32m-- More --[?25h[m[24;1H[K[24;1H[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [?1000h[m[24;1H[K[?25l[24;1H"~/git-repos/i220a/.git/MERGE_MSG"<it-repos/i220a/.git/MERGE_MSG" [readonly] 7L, 276C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of github.com:ycdjun/i220a[m[2;1H[K[3;1H[34m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#[m[5;11H[K[6;1H[34m# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m[7;14H[K[8;1H[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll]2;MERGE_MSG = (~/git-repos/i220a/.git) - VIM]1;MERGE_MSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of github.com:ycdjun/i220a[m
+
+[96m# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.[m
+[94m~                                                                               [9;1H~                                                                               [10;1H~                                                                               [11;1H~                                                                               [12;1H~                                                                               [13;1H~                                                                               [14;1H~                                                                               [15;1H~                                                                               [16;1H~                                                                               [17;1H~                                                                               [18;1H~                                                                               [19;1H~                                                                               [20;1H~                                                                               [21;1H~                                                                               [22;1H~                                                                               [23;1H~                                                                               [m[24;63H1,1[11CAll<it-repos/i220a/.git/MERGE_MSG" [readonly] 7L, 276C[1;1H[?25h[?25l[24;53Hq[1;1H[?25h[?25l[24;54H^M[1;1H[24;53H   [1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53H^D[1;1H[24;53H  [7;1H[24;63H7[7;1H[?25h[?25l[24;66H3[7;13H[?25h[?25l[24;53H:[7;13H[24;1H[K[24;1H:[?2004h[?25hq[?25l[?25h[?25l[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t[KMerge made by the 'recursive' strategy.
+ submit/lab5/files/lab5_log1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 submit/lab5/files/lab5_log1.txt
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ git push
+Enumerating objects: 30, done.
+Counting objects:   3% (1/30)   Counting objects:   6% (2/30)   Counting objects:  10% (3/30)   Counting objects:  13% (4/30)   Counting objects:  16% (5/30)   Counting objects:  20% (6/30)   Counting objects:  23% (7/30)   Counting objects:  26% (8/30)   Counting objects:  30% (9/30)   Counting objects:  33% (10/30)   Counting objects:  36% (11/30)   Counting objects:  40% (12/30)   Counting objects:  43% (13/30)   Counting objects:  46% (14/30)   Counting objects:  50% (15/30)   Counting objects:  53% (16/30)   Counting objects:  56% (17/30)   Counting objects:  60% (18/30)   Counting objects:  63% (19/30)   Counting objects:  66% (20/30)   Counting objects:  70% (21/30)   Counting objects:  73% (22/30)   Counting objects:  76% (23/30)   Counting objects:  80% (24/30)   Counting objects:  83% (25/30)   Counting objects:  86% (26/30)   Counting objects:  90% (27/30)   Counting objects:  93% (28/30)   Counting objects:  96% (29/30)   Counting objects: 100% (30/30)   Counting objects: 100% (30/30), done.
+Delta compression using up to 4 threads
+Compressing objects:   4% (1/24)   Compressing objects:   8% (2/24)   Compressing objects:  12% (3/24)   Compressing objects:  16% (4/24)   Compressing objects:  20% (5/24)   Compressing objects:  25% (6/24)   Compressing objects:  29% (7/24)   Compressing objects:  33% (8/24)   Compressing objects:  37% (9/24)   Compressing objects:  41% (10/24)   Compressing objects:  45% (11/24)   Compressing objects:  50% (12/24)   Compressing objects:  54% (13/24)   Compressing objects:  58% (14/24)   Compressing objects:  62% (15/24)   Compressing objects:  66% (16/24)   Compressing objects:  70% (17/24)   Compressing objects:  75% (18/24)   Compressing objects:  79% (19/24)   Compressing objects:  83% (20/24)   Compressing objects:  87% (21/24)   Compressing objects:  91% (22/24)   Compressing objects:  95% (23/24)   Compressing objects: 100% (24/24)   Compressing objects: 100% (24/24), done.
+Writing objects:   3% (1/28)   Writing objects:   7% (2/28)   Writing objects:  10% (3/28)   Writing objects:  14% (4/28)   Writing objects:  17% (5/28)   Writing objects:  21% (6/28)   Writing objects:  25% (7/28)   Writing objects:  28% (8/28)   Writing objects:  32% (9/28)   Writing objects:  35% (10/28)   Writing objects:  39% (11/28)   Writing objects:  42% (12/28)   Writing objects:  46% (13/28)   Writing objects:  50% (14/28)   Writing objects:  53% (15/28)   Writing objects:  57% (16/28)   Writing objects:  60% (17/28)   Writing objects:  64% (18/28)   Writing objects:  67% (19/28)   Writing objects:  71% (20/28)   Writing objects:  75% (21/28)   Writing objects:  78% (22/28)   Writing objects:  82% (23/28)   Writing objects:  85% (24/28)   Writing objects:  89% (25/28)   Writing objects:  92% (26/28)   Writing objects:  96% (27/28)   Writing objects: 100% (28/28)   Writing objects: 100% (28/28), 85.21 KiB | 6.09 MiB/s, done.
+Total 28 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 1 local object.[K
+To github.com:ycdjun/i220a.git
+   27d5e77..6fe60b0  master -> master
+yjun1@g7-22:~/git-repos/i220a/work/lab6$ exit
+
+Script done on 2019-09-26 12:58:50-04:00 [COMMAND_EXIT_CODE="0"]
