@@ -1,0 +1,641 @@
+Script started on 2019-09-26 11:43:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ touch lab6_output/..[K[K[K.txt
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ ea[Kmacs lab6_output.txt
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ emacs lab6_output.txt&
+[1] 7338
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ ls
+brk  bug-program  lab6.log  lab6_output.txt  process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ cd process-memior[K[K[Kory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ make
+cc -g -Wall -std=c11 -O1    process-memory.c   -o process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./process [K-memory 1 0 &
+[2] 7486
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 10 MB allocated at 0x7f8f09565010
+retru[K[Kurn
+bash: return: can only `return' from a function or sourced script
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ man ps
+[?1049h[22;0;0t[?1h=PS(1)                            User Commands                           PS(1)[m
+[m
+[1mNAME[0m[m
+       ps - report a snapshot of the current processes.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mps[0m [[4moptions[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mps[0m displays information about a selection of the active processes.  If[m
+       you want a repetitive update of the selection and the displayed[m
+       information, use [4mtop[24m(1) instead.[m
+[m
+       This version of [1mps[0m accepts several kinds of options:[m
+[m
+       1   UNIX options, which may be grouped and must be preceded by a dash.[m
+       2   BSD options, which may be grouped and must not be used with a dash.[m
+       3   GNU long options, which are preceded by two dashes.[m
+[m
+       Options of different types may be freely mixed, but conflicts can[m
+       appear.  There are some synonymous options, which are functionally[m
+       identical, due to the many standards and [1mps[0m implementations that this[m
+       [1mps[0m is compatible with.[m
+[7m Manual page ps(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t[2]+  Done                    ./process-memory 10
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Fp PID
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Fp PID[K[K[K
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ man ps
+[?1049h[22;0;0t[?1h=PS(1)                            User Commands                           PS(1)[m
+[m
+[1mNAME[0m[m
+       ps - report a snapshot of the current processes.[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mps[0m [[4moptions[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mps[0m displays information about a selection of the active processes.  If[m
+       you want a repetitive update of the selection and the displayed[m
+       information, use [4mtop[24m(1) instead.[m
+[m
+       This version of [1mps[0m accepts several kinds of options:[m
+[m
+       1   UNIX options, which may be grouped and must be preceded by a dash.[m
+       2   BSD options, which may be grouped and must not be used with a dash.[m
+       3   GNU long options, which are preceded by two dashes.[m
+[m
+       Options of different types may be freely mixed, but conflicts can[m
+       appear.  There are some synonymous options, which are functionally[m
+       identical, due to the many standards and [1mps[0m implementations that this[m
+       [1mps[0m is compatible with.[m
+[7m Manual page ps(1) line 1 (press h for help or q to quit)[27m[K[K:[K22[K[m
+       Note that "[1mps[0m [1m-aux[0m" is distinct from "[1mps[0m [1maux[0m".  The POSIX and UNIX[m
+[7m Manual page ps(1) line 3 (press h for help or q to quit)[27m[K[K:[K33[K       standards require that "[1mps[0m [1m-aux[0m" print all processes owned by a user[m
+       named "x", as well as printing all processes that would be selected by[m
+       the [1m-a[0m option.  If the user named "x" does not exist, this [1mps[0m may[m
+[7m Manual page ps(1) line 6 (press h for help or q to quit)[27m[K[K:[K44[K       interpret the command as "[1mps[0m [1maux[0m" instead and print a warning.  This[m
+       behavior is intended to aid in transitioning old scripts and habits.[m
+       It is fragile, subject to change, and thus should not be relied upon.[m
+[m
+[7m Manual page ps(1) line 10 (press h for help or q to quit)[27m[K[K:[K55[K       By default, [1mps[0m selects all processes with the same effective user ID[m
+       (euid=EUID) as the current user and associated with the same terminal[m
+       as the invoker.  It displays the process ID (pid=PID), the terminal[m
+       associated with the process (tname=TTY), the cumulated CPU time in[m
+       [DD-]hh:mm:ss format (time=TIME), and the executable name (ucmd=CMD).[m
+[7m Manual page ps(1) line 15 (press h for help or q to quit)[27m[K[K:[K66[K       Output is unsorted by default.[m
+[m
+       The use of BSD-style options will add process state (stat=STAT) to the[m
+       default display and show the command args (args=COMMAND) instead of the[m
+       executable name.  You can override this with the [1mPS_FORMAT[0m environment[m
+       variable. The use of BSD-style options will also change the process[m
+[7m Manual page ps(1) line 21 (press h for help or q to quit)[27m[K[K:[K77[K       selection to include processes on other terminals (TTYs) that are owned[m
+       by you; alternately, this may be described as setting the selection to[m
+       be the set of all processes filtered to exclude processes owned by[m
+       other users or not on a terminal.  These effects are not considered[m
+       when options are described as being "identical" below, so [1m-M[0m will be[m
+       considered identical to [1mZ[0m and so on.[m
+[m
+[7m Manual page ps(1) line 28 (press h for help or q to quit)[27m[K[K:[K88[K       Except as described below, process selection options are additive.  The[m
+       default selection is discarded, and then the selected processes are[m
+       added to the set of processes to be displayed.  A process will thus be[m
+       shown if it meets any of the given selection criteria.[m
+[m
+[1mEXAMPLES[0m[m
+       To see every process on the system using standard syntax:[m
+          [1mps[0m [1m-e[0m[m
+[7m Manual page ps(1) line 36 (press h for help or q to quit)[27m[K[K:[K99[K          [1mps[0m [1m-ef[0m[m
+          [1mps[0m [1m-eF[0m[m
+          [1mps[0m [1m-ely[0m[m
+[m
+       To see every process on the system using BSD syntax:[m
+          [1mps[0m [1max[0m[m
+          [1mps[0m [1maxu[0m[m
+[m
+       To print a process tree:[m
+[7m Manual page ps(1) line 45 (press h for help or q to quit)[27m[K[K:[K11[K00[K          [1mps[0m [1m-ejH[0m[m
+          [1mps[0m [1maxjf[0m[m
+[m
+       To get info about threads:[m
+          [1mps[0m [1m-eLf[0m[m
+          [1mps[0m [1maxms[0m[m
+[m
+       To get security info:[m
+          [1mps[0m [1m-eo[0m [1meuser,ruser,suser,fuser,f,comm,label[0m[m
+          [1mps[0m [1maxZ[0m[m
+[7m Manual page ps(1) line 55 (press h for help or q to quit)[27m[K[K:[K11[K11[K          [1mps[0m [1m-eM[0m[m
+[m
+       To see every process running as root (real & effective ID) in user[m
+       format:[m
+          [1mps[0m [1m-U[0m [1mroot[0m [1m-u[0m [1mroot[0m [1mu[0m[m
+[m
+       To see every process with a user-defined format:[m
+          [1mps[0m [1m-eo[0m [1mpid,tid,class,rtprio,ni,pri,psr,pcpu,stat,wchan:14,comm[0m[m
+          [1mps[0m [1maxo[0m [1mstat,euid,ruid,tty,tpgid,sess,pgrp,ppid,pid,pcpu,comm[0m[m
+          [1mps[0m [1m-Ao[0m [1mpid,tt,user,fname,tmout,f,wchan[0m[m
+[m
+[7m Manual page ps(1) line 66 (press h for help or q to quit)[27m[K[K:[K11[K22[K       Print only the process IDs of syslogd:[m
+          [1mps[0m [1m-C[0m [1msyslogd[0m [1m-o[0m [1mpid=[0m[m
+[m
+       Print only the name of PID 42:[m
+          [1mps[0m [1m-q[0m [1m42[0m [1m-o[0m [1mcomm=[0m[m
+[m
+[1mSIMPLE[0m [1mPROCESS[0m [1mSELECTION[0m[m
+       [1ma[0m      Lift the BSD-style "only yourself" restriction, which is imposed[m
+              upon the set of all processes when some BSD-style (without "-")[m
+              options are used or when the [1mps[0m personality setting is BSD-like.[m
+              The set of processes selected in this manner is in addition to[m
+              the set of processes selected by other means.  An alternate[m
+[7m Manual page ps(1) line 78 (press h for help or q to quit)[27m[K[K:[K11[K33[K              description is that this option causes [1mps[0m to list all processes[m
+              with a terminal (tty), or to list all processes when used[m
+              together with the [1mx[0m option.[m
+[m
+       [1m-A[0m     Select all processes.  Identical to [1m-e[0m.[m
+[m
+       [1m-a[0m     Select all processes except both session leaders (see [4mgetsid[24m(2))[m
+              and processes not associated with a terminal.[m
+[m
+       [1m-d[0m     Select all processes except session leaders.[m
+[m
+       [1m--deselect[0m[m
+              Select all processes except those that fulfill the specified[m
+[7m Manual page ps(1) line 91 (press h for help or q to quit)[27m[K[K:[K11[K44[K              conditions (negates the selection).  Identical to [1m-N[0m.[m
+[m
+       [1m-e[0m     Select all processes.  Identical to [1m-A[0m.[m
+[m
+       [1mg[0m      Really all, even session leaders.  This flag is obsolete and may[m
+              be discontinued in a future release.  It is normally implied by[m
+              the [1ma[0m flag, and is only useful when operating in the sunos4[m
+              personality.[m
+[m
+       [1m-N[0m     Select all processes except those that fulfill the specified[m
+              conditions (negates the selection).  Identical to [1m--deselect[0m.[m
+[m
+       [1mT[0m      Select all processes associated with this terminal.  Identical[m
+              to the [1mt[0m option without any argument.[m
+[7m Manual page ps(1) line 105 (press h for help or q to quit)[27m[K[K:[K11[K55[K[m
+       [1mr[0m      Restrict the selection to only running processes.[m
+[m
+       [1mx[0m      Lift the BSD-style "must have a tty" restriction, which is[m
+              imposed upon the set of all processes when some BSD-style[m
+              (without "-") options are used or when the [1mps[0m personality[m
+              setting is BSD-like.  The set of processes selected in this[m
+              manner is in addition to the set of processes selected by other[m
+              means.  An alternate description is that this option causes [1mps[0m[m
+              to list all processes owned by you (same EUID as [1mps[0m), or to list[m
+              all processes when used together with the [1ma[0m option.[m
+[m
+[1mPROCESS[0m [1mSELECTION[0m [1mBY[0m [1mLIST[0m[m
+       These options accept a single argument in the form of a blank-separated[m
+       or comma-separated list.  They can be used multiple times.  For[m
+[7m Manual page ps(1) line 120 (press h for help or q to quit)[27m[K[K:[K11[K66[K       example: [1mps[0m [1m-p[0m [1m"1[0m [1m2"[0m [1m-p[0m [1m3,4[0m[m
+[m
+       -[4m123[24m   Identical to [1m--pid[0m [4m123[24m.[m
+[m
+       [4m123[24m    Identical to [1m--pid[0m [4m123[24m.[m
+[m
+       [1m-C[0m [4mcmdlist[24m[m
+              Select by command name.  This selects the processes whose[m
+              executable name is given in [4mcmdlist[24m.[m
+[m
+       [1m-G[0m [4mgrplist[24m[m
+              Select by real group ID (RGID) or name.  This selects the[m
+              processes whose real group name or ID is in the [4mgrplist[24m list.[m
+              The real group ID identifies the group of the user who created[m
+              the process, see [4mgetgid[24m(2).[m
+[m
+[7m Manual page ps(1) line 136 (press h for help or q to quit)[27m[K[K:[K11[K77[K       [1m-g[0m [4mgrplist[24m[m
+              Select by session OR by effective group name.  Selection by[m
+              session is specified by many standards, but selection by[m
+              effective group is the logical behavior that several other[m
+              operating systems use.  This [1mps[0m will select by session when the[m
+              list is completely numeric (as sessions are).  Group ID numbers[m
+              will work only when some group names are also specified.  See[m
+              the [1m-s[0m and [1m--group[0m options.[m
+[m
+       [1m--Group[0m [4mgrplist[24m[m
+              Select by real group ID (RGID) or name.  Identical to [1m-G[0m.[m
+[m
+       [1m--group[0m [4mgrplist[24m[m
+              Select by effective group ID (EGID) or name.  This selects the[m
+              processes whose effective group name or ID is in [4mgrplist[24m.  The[m
+              effective group ID describes the group whose file access[m
+              permissions are used by the process (see [4mgetegid[24m(2)).  The [1m-g[0m[m
+[7m Manual page ps(1) line 153 (press h for help or q to quit)[27m[K[K:[K11[K88[K              option is often an alternative to [1m--group[0m.[m
+[m
+       [1mp[0m [4mpidlist[24m[m
+              Select by process ID.  Identical to [1m-p[0m and [1m--pid[0m.[m
+[m
+       [1m-p[0m [4mpidlist[24m[m
+              Select by PID.  This selects the processes whose process ID[m
+              numbers appear in [4mpidlist[24m.  Identical to [1mp[0m and [1m--pid[0m.[m
+[m
+       [1m--pid[0m [4mpidlist[24m[m
+              Select by process ID.  Identical to [1m-p[0m and [1mp[0m.[m
+[m
+       [1m--ppid[0m [4mpidlist[24m[m
+              Select by parent process ID.  This selects the processes with a[m
+              parent process ID in [4mpidlist[24m.  That is, it selects processes[m
+              that are children of those listed in [4mpidlist[24m.[m
+[m
+       [1mq[0m [4mpidlist[24m[m
+[7m Manual page ps(1) line 171 (press h for help or q to quit)[27m[K[K:[K11[K99[K              Select by process ID (quick mode).  Identical to [1m-q[0m and[m
+              [1m--quick-pid[0m.[m
+[m
+       [1m-q[0m [4mpidlist[24m[m
+              Select by PID (quick mode).  This selects the processes whose[m
+              process ID numbers appear in [4mpidlist[24m.  With this option [1mps[0m reads[m
+              the necessary info only for the pids listed in the [4mpidlist[24m and[m
+              doesn't apply additional filtering rules. The order of pids is[m
+              unsorted and preserved. No additional selection options, sorting[m
+              and forest type listings are allowed in this mode.  Identical to[m
+              [1mq[0m and [1m--quick-pid[0m.[m
+[m
+       [1m--quick-pid[0m [4mpidlist[24m[m
+              Select by process ID (quick mode).  Identical to [1m-q[0m and [1mq[0m.[m
+[m
+       [1m-s[0m [4msesslist[24m[m
+              Select by session ID.  This selects the processes with a session[m
+              ID specified in [4msesslist[24m.[m
+[m
+[7m Manual page ps(1) line 190 (press h for help or q to quit)[27m[K[K:[K22[K00[K       [1m--sid[0m [4msesslist[24m[m
+              Select by session ID.  Identical to [1m-s[0m.[m
+[m
+       [1mt[0m [4mttylist[24m[m
+              Select by tty.  Nearly identical to [1m-t[0m and [1m--tty[0m, but can also[m
+              be used with an empty [4mttylist[24m to indicate the terminal[m
+              associated with [1mps[0m.  Using the [1mT[0m option is considered cleaner[m
+              than using [1mt[0m with an empty [4mttylist[24m.[m
+[m
+       [1m-t[0m [4mttylist[24m[m
+              Select by tty.  This selects the processes associated with the[m
+              terminals given in [4mttylist[24m.  Terminals (ttys, or screens for[m
+              text output) can be specified in several forms: /dev/ttyS1,[m
+              ttyS1, S1.  A plain "-" may be used to select processes not[m
+              attached to any terminal.[m
+[m
+       [1m--tty[0m [4mttylist[24m[m
+              Select by terminal.  Identical to [1m-t[0m and [1mt[0m.[m
+[m
+       [1mU[0m [4muserlist[24m[m
+[7m Manual page ps(1) line 210 (press h for help or q to quit)[27m[K[K:[K33[K22[K              Select by effective user ID (EUID) or name.  This selects the[m
+              processes whose effective user name or ID is in [4muserlist[24m.  The[m
+              effective user ID describes the user whose file access[m
+              permissions are used by the process (see [4mgeteuid[24m(2)).  Identical[m
+              to [1m-u[0m and [1m--user[0m.[m
+[m
+       [1m-U[0m [4muserlist[24m[m
+              Select by real user ID (RUID) or name.  It selects the processes[m
+              whose real user name or ID is in the [4muserlist[24m list.  The real[m
+              user ID identifies the user who created the process, see[m
+              [4mgetuid[24m(2).[m
+[m
+       [1m-u[0m [4muserlist[24m[m
+              Select by effective user ID (EUID) or name.  This selects the[m
+              processes whose effective user name or ID is in [4muserlist[24m.[m
+[m
+              The effective user ID describes the user whose file access[m
+              permissions are used by the process (see [4mgeteuid[24m(2)).  Identical[m
+              to [1mU[0m and [1m--user[0m.[m
+[m
+       [1m--User[0m [4muserlist[24m[m
+              Select by real user ID (RUID) or name.  Identical to [1m-U[0m.[m
+[m
+       [1m--user[0m [4muserlist[24m[m
+              Select by effective user ID (EUID) or name.  Identical to [1m-u[0m and[m
+              [1mU[0m.[m
+[m
+[1mOUTPUT[0m [1mFORMAT[0m [1mCONTROL[0m[m
+       These options are used to choose the information displayed by [1mps[0m.  The[m
+       output may differ by personality.[m
+[m
+       [1m-c[0m     Show different scheduler information for the [1m-l[0m option.[m
+[7m Manual page ps(1) line 242 (press h for help or q to quit)[27m[K[K:[K33[K44[K[m
+       [1m--context[0m[m
+              Display security context format (for SELinux).[m
+[m
+       [1m-f[0m     Do full-format listing. This option can be combined with many[m
+              other UNIX-style options to add additional columns.  It also[m
+              causes the command arguments to be printed.  When used with [1m-L[0m,[m
+              the NLWP (number of threads) and LWP (thread ID) columns will be[m
+              added.  See the [1mc[0m option, the format keyword [1margs[0m, and the[m
+              format keyword [1mcomm[0m.[m
+[m
+       [1m-F[0m     Extra full format.  See the [1m-f[0m option, which [1m-F[0m implies.[m
+[m
+       [1m--format[0m [4mformat[24m[m
+              user-defined format.  Identical to [1m-o[0m and [1mo[0m.[m
+[m
+       [1mj[0m      BSD job control format.[m
+[m
+       [1m-j[0m     Jobs format.[m
+[m
+       [1ml[0m      Display BSD long format.[m
+[m
+       [1m-l[0m     Long format.  The [1m-y[0m option is often useful with this.[m
+[m
+       [1m-M[0m     Add a column of security data.  Identical to [1mZ[0m (for SELinux).[m
+[m
+       [1mO[0m [4mformat[24m[m
+              is preloaded [1mo[0m (overloaded).  The BSD [1mO[0m option can act like [1m-O[0m[m
+              (user-defined output format with some common fields predefined)[m
+              or can be used to specify sort order.  Heuristics are used to[m
+              determine the behavior of this option.  To ensure that the[m
+              desired behavior is obtained (sorting or formatting), specify[m
+              the option in some other way (e.g.  with [1m-O[0m or [1m--sort[0m).  When[m
+              used as a formatting option, it is identical to [1m-O[0m, with the BSD[m
+[7m Manual page ps(1) line 276 (press h for help or q to quit)[27m[K[K:[K33[K55[K              personality.[m
+[m
+       [1m-O[0m [4mformat[24m[m
+              Like [1m-o[0m, but preloaded with some default columns.  Identical to[m
+              [1m-o[0m [1mpid,[0m[4mformat[24m[1m,state,tname,time,command[0m or [1m-o[0m [1mpid,[0m[4mformat[24m[1m,tname,[0m[m
+              [1mtime,cmd[0m, see [1m-o[0m below.[m
+[m
+       [1mo[0m [4mformat[24m[m
+              Specify user-defined format.  Identical to [1m-o[0m and [1m--format[0m.[m
+[m
+       [1m-o[0m [4mformat[24m[m
+              User-defined format.  [4mformat[24m is a single argument in the form of[m
+              a blank-separated or comma-separated list, which offers a way to[m
+              specify individual output columns.  The recognized keywords are[m
+              described in the [1mSTANDARD[0m [1mFORMAT[0m [1mSPECIFIERS[0m section below.[m
+              Headers may be renamed ([1mps[0m [1m-o[0m [1mpid,ruser=RealUser[0m [1m-o[0m[m
+              [1mcomm=Command[0m) as desired.  If all column headers are empty ([1mps[0m[m
+              [1m-o[0m [1mpid=[0m [1m-o[0m [1mcomm=[0m) then the header line will not be output.[m
+              Column width will increase as needed for wide headers; this may[m
+              be used to widen up columns such as WCHAN ([1mps[0m [1m-o[0m [1mpid,wchan=WIDE-[0m[m
+              [1mWCHAN-COLUMN[0m [1m-o[0m [1mcomm[0m).  Explicit width control ([1mps[0m [1mopid,[0m[m
+              [1mwchan:42,cmd[0m) is offered too.  The behavior of [1mps[0m [1m-o[0m [1mpid=X,[0m[m
+              [1mcomm=Y[0m varies with personality; output may be one column named[m
+              "X,comm=Y" or two columns named "X" and "Y".  Use multiple [1m-o[0m[m
+              options when in doubt.  Use the [1mPS_FORMAT[0m environment variable[m
+              to specify a default as desired; DefSysV and DefBSD are macros[m
+              that may be used to choose the default UNIX or BSD columns.[m
+[m
+       [1ms[0m      Display signal format.[m
+[m
+       [1mu[0m      Display user-oriented format.[m
+[m
+       [1mv[0m      Display virtual memory format.[m
+[m
+       [1mX[0m      Register format.[m
+[7m Manual page ps(1) line 311 (press h for help or q to quit)[27m[K[K:[K33[K66[K[m
+       [1m-y[0m     Do not show flags; show rss in place of addr.  This option can[m
+              only be used with [1m-l[0m.[m
+[m
+       [1mZ[0m      Add a column of security data.  Identical to [1m-M[0m (for SELinux).[m
+[m
+[1mOUTPUT[0m [1mMODIFIERS[0m[m
+       [1mc[0m      Show the true command name.  This is derived from the name of[m
+              the executable file, rather than from the argv value.  Command[m
+              arguments and any modifications to them are thus not shown.[m
+              This option effectively turns the [1margs[0m format keyword into the[m
+              [1mcomm[0m format keyword; it is useful with the [1m-f[0m format option and[m
+              with the various BSD-style format options, which all normally[m
+              display the command arguments.  See the [1m-f[0m option, the format[m
+              keyword [1margs[0m, and the format keyword [1mcomm[0m.[m
+[m
+       [1m--cols[0m [4mn[24m[m
+              Set screen width.[m
+[m
+       [1m--columns[0m [4mn[24m[m
+              Set screen width.[m
+[m
+       [1m--cumulative[0m[m
+              Include some dead child process data (as a sum with the parent).[m
+[m
+       [1me[0m      Show the environment after the command.[m
+[m
+       [1mf[0m      ASCII art process hierarchy (forest).[m
+[m
+       [1m--forest[0m[m
+              ASCII art process tree.[m
+[m
+       [1mh[0m      No header.  (or, one header per screen in the BSD personality).[m
+              The [1mh[0m option is problematic.  Standard BSD [1mps[0m uses this option[m
+              to print a header on each page of output, but older Linux [1mps[0m[m
+              uses this option to totally disable the header.  This version of[m
+[7m Manual page ps(1) line 347 (press h for help or q to quit)[27m[K[K:[K33[K77[K              [1mps[0m follows the Linux usage of not printing the header unless the[m
+              BSD personality has been selected, in which case it prints a[m
+              header on each page of output.  Regardless of the current[m
+              personality, you can use the long options [1m--headers[0m and[m
+              [1m--no-headers[0m to enable printing headers each page or disable[m
+              headers entirely, respectively.[m
+[m
+       [1m-H[0m     Show process hierarchy (forest).[m
+[m
+       [1m--headers[0m[m
+              Repeat header lines, one per page of output.[m
+[m
+       [1mk[0m [4mspec[24m Specify sorting order.  Sorting syntax is[m
+              [[1m+[0m|[1m-[0m][4mkey[24m[,[[1m+[0m|[1m-[0m][4mkey[24m[,...]].  Choose a multi-letter key from the[m
+              [1mSTANDARD[0m [1mFORMAT[0m [1mSPECIFIERS[0m section.  The "+" is optional since[m
+              default direction is increasing numerical or lexicographic[m
+              order.  Identical to [1m--sort[0m.[m
+[m
+                      Examples:[m
+                      [1mps[0m [1mjaxkuid,-ppid,+pid[0m[m
+                      [1mps[0m [1maxk[0m [1mcomm[0m [1mo[0m [1mcomm,args[0m[m
+                      [1mps[0m [1mkstart_time[0m [1m-ef[0m[m
+[m
+       [1m--lines[0m [4mn[24m[m
+              Set screen height.[m
+[m
+       [1mn[0m      Numeric output for WCHAN and USER (including all types of UID[m
+              and GID).[m
+[m
+       [1m--no-headers[0m[m
+              Print no header line at all.  [1m--no-heading[0m is an alias for this[m
+              option.[m
+[m
+       [1mO[0m [4morder[24m[m
+              Sorting order (overloaded).  The BSD [1mO[0m option can act like [1m-O[0m[m
+              (user-defined output format with some common fields predefined)[m
+              or can be used to specify sort order.  Heuristics are used to[m
+[7m Manual page ps(1) line 384 (press h for help or q to quit)[27m[K[K:[K88[K              determine the behavior of this option.  To ensure that the[m
+              desired behavior is obtained (sorting or formatting), specify[m
+              the option in some other way (e.g.  with [1m-O[0m or [1m--sort[0m).[m
+[m
+              For sorting, obsolete BSD [1mO[0m option syntax is[m
+              [1mO[0m[[1m+[0m|[1m-[0m][4mk1[24m[,[[1m+[0m|[1m-[0m][4mk2[24m[,...]].  It orders the processes listing[m
+              according to the multilevel sort specified by the sequence of[m
+              one-letter short keys [4mk1[24m,[4mk2[24m, ...  described in the [1mOBSOLETE[0m [1mSORT[0m[m
+[7m Manual page ps(1) line 392 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tyjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -FP[Kp[K
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     7254  7253  0  1909  4316   3 11:43 pts/1    00:00:00 bash -i
+yjun1     7338  7254  0 103260 65496  2 11:44 pts/1    00:00:01 emacs lab6_outpu
+yjun1     8069  7254  0  2690  1272   3 11:48 pts/1    00:00:00 ps -F
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps _f[K[K-F -p
+error: list of process IDs must follow -p
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./process_mo[Kemory 1 00 &
+[2] 8177
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ bash: ./process_memory: No such file or directory
+./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pps -F -p
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creturn
+bash: return: can only `return' from a function or sourced script
+[2]+  Exit 127                ./process_memory 100
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ return./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmemory 100[1P &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmemory 100[1P &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[2] 8326
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 100 MB allocated at 0x7fe430345010
+return
+bash: return: can only `return' from a function or sourced script
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -F
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     7254  7253  0  1909  4316   2 11:43 pts/1    00:00:00 bash -i
+yjun1     7338  7254  0 103328 65760  1 11:44 pts/1    00:00:01 emacs lab6_outpu
+yjun1     8326  7254  0 26170   752   0 11:50 pts/1    00:00:00 ./process-memory
+yjun1     8382  7254  0  2690  1276   0 11:51 pts/1    00:00:00 ps -F
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Freturn./process-memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Preturn
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process-memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Preturn
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pps -F -p
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pps -F -p
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kman psps -Fp PID[4Pman psreturn./process-memory 10 &
+[3] 8691
+[2]   Done                    ./process-memory 100
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 10 MB allocated at 0x7fe27a994010
+./process-memory 10 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -F[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creturn
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Freturn./process-memory 10 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps -F[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Creturn./process-memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Preturn
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process_memory 100 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[10Pps -F -p
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kman psps -Fp PID[4Pman psreturn./process-memory 10 &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./process-memory 10 &
+[4] 8763
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 10 MB allocated at 0x7f7a7d07c010
+return
+bash: return: can only `return' from a function or sourced script
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -FP[Kp 8763
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     8763  7254  0  3130   744   1 11:53 pts/1    00:00:00 ./process-memory
+[3]-  Done                    ./process-memory 10
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./process-memory 1 00 &
+[5] 8978
+[4]   Done                    ./process-memory 10
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 100 MB allocated at 0x7fe786791010
+return
+bash: return: can only `return' from a function or sourced script
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -FP[Kp 8978
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     8978  7254  0 26170   748   2 11:55 pts/1    00:00:00 ./process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ cd ..
+[5]+  Done                    ./process-memory 100  (wd: ~/git-repos/i220a/work/lab6/files/process-memory)
+(wd now: ~/git-repos/i220a/work/lab6/files)
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ cd bug-program
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ cd ..
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ cd process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ls
+Makefile  process-memory  process-memory.c
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ cd [K[K[Kmake
+make: Nothing to be done for 'all'.
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./[rpce[K[K[K[K[Kprocess-memory 1 0 &
+[2] 9949
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 10 MB allocated at 0x7f9546fa7010
+d[Kps -FP[Kp 9949
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     9949  7254  0  3130   748   1 12:01 pts/1    00:00:00 ./process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Fp 9949./process-memory 10 &0 &
+[3] 10032
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 100 MB allocated at 0x7f9e657ea010
+ps -Fp 10032
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1    10032  7254  0 26170   684   1 12:02 pts/1    00:00:00 ./process-memory
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ cd ..
+[2]-  Done                    ./process-memory 10  (wd: ~/git-repos/i220a/work/lab6/files/process-memory)
+(wd now: ~/git-repos/i220a/work/lab6/files)
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files$ cd but-[[K[K[Kg-program
+[3]+  Done                    ./process-memory 100  (wd: ~/git-repos/i220a/work/lab6/files/process-memory)
+(wd now: ~/git-repos/i220a/work/lab6/files/bug-program)
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ ls
+bug-program.c  Makefile
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs bug-rp[K[Kprogram.c
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ make
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ ./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs big[K[Kug-program.c
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ emacs bug-program.c[6P./bug-programmake[K
+cc -g -Wall -std=c11 -O1    bug-program.c   -o bug-program
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ makeemacs bug-program.c[6P./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ ./bug-programmake[Kemacs bug-program.c

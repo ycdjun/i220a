@@ -1,0 +1,96 @@
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./process-memory 10 &
+[4] 8763
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ 10 MB allocated at 0x7f7a7d07c010
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Fp 8763
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     8763  7254  0  3130   744   1 11:53 pts/1    00:00:00 ./process-memory
+[3]-  Done                    ./process-memory 10
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ./process-memory 100 &
+[5] 8978
+[4]   Done                    ./process-memory 10
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ ps -Fp 8978
+UID        PID  PPID  C    SZ   RSS PSR STIME TTY          TIME CMD
+yjun1     8978  7254  0 26170   748   2 11:55 pts/1    00:00:00
+./process-memory
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/process-memory$ cd ..
+[5]+  Done                    ./process-memory 100  (wd: ~/git-repos/i220a/work/lab6/files/process-memory)
+(wd now: ~/git-repos/i220a/work/lab6/files)
+
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ MALLOC_CHECK_=1 ./bug-program
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+
+yjun1@g7-22:~/git-repos/i220a/work/lab6/files/bug-program$ valgrind -v --leak-check=yes ./bug-program 2>bug-program.valgrind
+outgrabe: 22
+raths: 21
+mome: 20
+the: 19
+and: 18
+borogoves: 17
+the: 16
+were: 15
+mimsy: 14
+all: 13
+wabe: 12
+the: 11
+in: 10
+gimble: 9
+and: 8
+gyre: 7
+did: 6
+toves: 5
+slithy: 4
+the: 3
+and: 2
+brillig: 1
+twas: 0
+
