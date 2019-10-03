@@ -1,4 +1,4 @@
-f() changing x also happens to change the value of y because x is defined in a global scope on the top of f.c as a weak definition. When the main.c and f.c are linked, this causes a problem with the inconsistent types and also results in the change of y.
+f() changing x also happens to change the value of y because x is defined in a global scope on the top of f.c as a double. A double is larger than an int. Operations on the double which points to an int overflows into the next memory, which is where y is located. Hence, the reason why y changes with x. 
 
 Memory Addresses:
 
