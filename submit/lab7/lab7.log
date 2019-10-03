@@ -1,0 +1,187 @@
+Script started on 2019-10-03 12:43:50-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7$ cd files
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files$ cd lab[K[Kli[K[Kibvec [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kc
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ ls [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+addvec.c  libvec.so  multvec.o	      testvec-dynamic.nm  testvec-static.nm
+addvec.o  Makefile   testvec.c	      testvec.o		  vectors.h
+libvec.a  multvec.c  testvec-dynamic  testvec-static
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ gd b [K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgd b LB[KD_LIBRARY_PATH=. ./testvec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+LD_LIBRARY_PATH=.: No such file or directory.
+"/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec/./testvec-dynamic" is not a core dump: file format not recognized
+(gdb) p &main
+No symbol table is loaded.  Use the "file" command.
+(gdb) q
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ gdb LD_LIBRARY_PATH=. ./testvec-dynamic[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgd b test[K[K[K[K./testvec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./testvec-dynamic...done.
+(gdb) [ &ma[K[K[K[K[Kp &main
+$1 = (int (*)(int, const char **)) 0x11ee <main>
+(gdb) p &addvec
+$2 = (<text variable, no debug info> *) 0x1060 <addvec@plt>
+(gdb) p &multvec
+$3 = (<text variable, no debug info> *) 0x1050 <multvec@plt>
+(gdb) q
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ gd b [K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgdb ./testvec-dynamic
+GNU gdb (Debian 8.2.1-2) 8.2.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./testvec-dynamic...done.
+(gdb) set env LDLI[K[K_LIBRARY_PATH .
+(gdb) b main
+Breakpoint 1 at 0x1207: file testvec.c, line 15.
+(gdb) r 1 2 3
+Starting program: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec/testvec-dynamic 1 2 3
+
+Breakpoint 1, main (argc=4, argv=0x7fffffffe728) at testvec.c:15
+15	{
+(gdb) p[Kp &main
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) p & [Kaddvec
+$2 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p *multvec
+$3 = {void (int *, int *, int *, int)} 0x7ffff7fca164 <multvec>
+(gdb) q
+A debugging session is active.
+
+	Inferior 1 [process 20078] will be killed.
+
+Quit anyway? (y or n) y
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ cd  ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files$ cd libgeo m
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ l s
+circ.c	geom.h	rect.c	testgeom.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ t ouch Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ l s
+circ.c	geom.h	Makefile  rect.c  testgeom.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ e macs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ emacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc d ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files$ cd libvec [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kc
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ l[Kc[Kem acs Makefile&
+[1] 20577
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ cd  ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files$ cd lib[K[K[Kgeo[K[K[Klibgeo m
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ e macs Maik[K[Kkefile&
+[2] 20683
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ emacs Makefile&
+[3] 20730
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ m ake
+cc -g -Wall -fPIC -std=c11   -c -o circ.o circ.c
+cc -g -Wall -fPIC -std=c11   -c -o rect.o rect.c
+cc -shared circ.o rect.o -o libgeom.so
+ar rcs libgeom.a circ.o rect.o
+cc -g -Wall -fPIC -std=c11   -c -o testgeom.o testgeom.c
+cc	-static testgeom.o -L. -lvec -o testgeom-static
+/usr/bin/ld: cannot find -lvec
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: testgeom-static] Error 1
+[1]   Done                    emacs Makefile  (wd: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec)
+(wd now: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom)
+[2]-  Done                    emacs Makefile
+[3]+  Done                    emacs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ e macs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ emacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -static testgeom.o -L. -o testgeom-static
+/usr/bin/ld: testgeom.o: in function `main':
+/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom/testgeom.c:30: undefined reference to `circ_area'
+/usr/bin/ld: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom/testgeom.c:30: undefined reference to `circ_perimeter'
+/usr/bin/ld: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom/testgeom.c:40: undefined reference to `rect_area'
+/usr/bin/ld: /import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom/testgeom.c:40: undefined reference to `rect_perimeter'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:16: testgeom-static] Error 1
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ emacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl s
+circ.c	geom.h	   libgeom.so  Makefile~  rect.o      testgeom.o
+circ.o	libgeom.a  Makefile    rect.c	  testgeom.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ ls[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ emacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs Makefile[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -static testgeom.o -L. -lgeom -o testgeom-static
+cc testgeom.o -L. -lgeom -o testgeom-dynamic
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ . /[K/t3es[K[K[Kestgeom.c
+bash: ./testgeom.c: Permission denied
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ . /testgeom-static
+4 0 0   8 4
+3
+3
+4
+q yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ . /testgeom-sat[K[Ktatic r 4 0 8 4
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ ./testgeom-static r 4 0 8 4[K[K[K[K[K[K.0 0.0 8.0 4.0
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libgeom$ c d ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7$ git add -A
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7$ git commit -m[K[K[K[K[K[K[K[K[K[K[K[K[Kgi[K[Kgit add -A
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7$ git commit -m " Submiited Lab 7"
+[master fd46e1d] Submiited Lab 7
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 37 files changed, 5251779 insertions(+), 1619 deletions(-)
+ create mode 100644 labs/lab4/files/ex1/lab4.log
+ create mode 100644 labs/lab4/files/ex5/lab4.py
+ create mode 100644 labs/lab4/files/ex8/ulp-lg.data
+ create mode 100644 labs/lab4/files/ex8/ulp.data
+ create mode 100644 labs/lab4/files/lab4.log
+ create mode 100644 labs/lab4/files/outputs.txt
+ create mode 100644 labs/lab5/files/ex1/lab5_output.txt
+ create mode 100644 labs/lab5/files/lab5.log
+ create mode 100644 labs/lab5/files/lab5_output.txt
+ create mode 100644 labs/lab7/files/libgeom/Makefile
+ create mode 100755 labs/lab7/files/libgeom/testgeom-dynamic
+ create mode 100755 labs/lab7/files/libgeom/testgeom-static
+ create mode 100644 labs/lab7/files/log10/libm.nm
+ create mode 100644 labs/lab7/files/static-dynamic/log10-dynamic.nm
+ create mode 100644 labs/lab7/files/static-dynamic/log10-static.nm

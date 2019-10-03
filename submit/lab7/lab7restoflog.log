@@ -1,0 +1,118 @@
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ make
+cc   log10.o   -o log10
+/usr/bin/ld: log10.o: in function `main':
+/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10/log10.c:9: undefined reference to `log10'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: log10] Error 1
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ man log10
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ ls
+log10.c  log10.o  Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ emacs Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ make
+cc   log10.o  -lm -o log10
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ echo 10 1000 2 | ./log10
+log10(10) = 1
+log10(1000) = 3
+log10(2) = 0.30103
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/log10$ ls -l /usr/lib/x86_64-linux-gnu/libm.*
+-rw-r--r-- 1 root root 132 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.a
+-rw-r--r-- 1 root root 186 May  1 13:24 /usr/lib/x86_64-linux-gnu/libm.so
+
+
+
+w_log10.o:
+                 U errno
+                 U _GLOBAL_OFFSET_TABLE_
+                 U __ieee754_log10
+0000000000000000 T __log10
+0000000000000000 W log10
+0000000000000000 W log10f32x
+0000000000000000 W log10f64
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc -g -Wall -std=c11   -c -o def2.o def2.c
+cc -g -Wall -std=c11   -c -o main.o main.c
+cc def1.o def2.o main.o  -o multiple-symbols
+/usr/bin/ld: def2.o:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/multiple-symbols/def2.c:1: multiple definition of `sym'; def1.o:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/multiple-symbols/def1.c:1: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:4: multiple-symbols] Error 1
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/multiple-symbols$ make
+cc -g -Wall -std=c11   -c -o def1.o def1.c
+cc def1.o def2.o main.o  -o multiple-symbols
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/multiple-defs$ ./multiple-defs
+x = 0x0, y = 0x80000000
+
+f() changing x also happens to change the value of y because x is defined in a global scope on the top of f.c as a weak definition. When the main.c and f.c are linked, this causes a problem with the inconsistent types and also results in the change of y.
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/static-dynamic$ make
+cc -g -Wall  -std=c11   -c -o log10.o log10.c
+cc -static log10.o -lm -o log10-static
+cc log10.o -lm -o log10-dynamic
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/static-dynamic$ ls -l
+total 940
+-rw-r--r-- 1 yjun1 yjun1    185 Oct  3 11:36 log10.c
+-rwxr-xr-x 1 yjun1 yjun1  19272 Oct  3 12:16 log10-dynamic
+-rw-r--r-- 1 yjun1 yjun1   6072 Oct  3 12:16 log10.o
+-rwxr-xr-x 1 yjun1 yjun1 924904 Oct  3 12:16 log10-static
+-rw-r--r-- 1 yjun1 yjun1    250 Oct  3 11:36 Makefile
+
+W log10
+U log10@@GLIBC_2.2.5
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ ls -l
+total 828
+-rw-r--r-- 1 yjun1 yjun1    111 Oct  3 11:36 addvec.c
+-rw-r--r-- 1 yjun1 yjun1   2912 Oct  3 12:25 addvec.o
+-rw-r--r-- 1 yjun1 yjun1   6048 Oct  3 12:25 libvec.a
+-rwxr-xr-x 1 yjun1 yjun1  17376 Oct  3 12:25 libvec.so
+-rw-r--r-- 1 yjun1 yjun1    401 Oct  3 11:36 Makefile
+-rw-r--r-- 1 yjun1 yjun1    112 Oct  3 11:36 multvec.c
+-rw-r--r-- 1 yjun1 yjun1   2920 Oct  3 12:25 multvec.o
+-rw-r--r-- 1 yjun1 yjun1    644 Oct  3 11:36 testvec.c
+-rwxr-xr-x 1 yjun1 yjun1  19992 Oct  3 12:25 testvec-dynamic
+-rw-r--r-- 1 yjun1 yjun1   8040 Oct  3 12:25 testvec.o
+-rwxr-xr-x 1 yjun1 yjun1 759952 Oct  3 12:25 testvec-static
+-rw-r--r-- 1 yjun1 yjun1    163 Oct  3 11:36 vectors.h
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ ./testvec-static 1 2 3
+sum = 2 4 6 
+product = 1 4 9
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ LD_LIBRARY_PATH=. ./testvec-dynamic 1 2 3
+sum = 2 4 6 
+product = 1 4 9 
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ ldd testvec-dynamic
+	linux-vdso.so.1 (0x00007ffc98955000)
+	libvec.so => not found
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f11916ff000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007f11918fe000)
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab7/files/libvec$ LD_LIBRARY_PATH=. ldd testvec-dynamic
+	linux-vdso.so.1 (0x00007ffe1e2ff000)
+	libvec.so => ./libvec.so (0x00007fd1eda16000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fd1ed81e000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fd1eda22000)
+
+
+0000000000401bf6 T main
+0000000000401f1f T addvec
+0000000000401f8e T multvec
+
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x401bf6 <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x401f1f <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, int)) 0x401f8e <multvec>
+
+00000000000011ee T main
+U addvec
+U multvec
+
+

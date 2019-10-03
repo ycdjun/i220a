@@ -1,0 +1,35 @@
+f() changing x also happens to change the value of y because x is defined in a global scope on the top of f.c as a weak definition. When the main.c and f.c are linked, this causes a problem with the inconsistent types and also results in the change of y.
+
+Memory Addresses:
+
+Static:
+0000000000401bf6 T main
+0000000000401f1f T addvec
+0000000000401f8e T multvec
+
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x401bf6 <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x401f1f <addvec>
+(gdb) p &multvec
+$3 = (void (*)(int *, int *, int *, int)) 0x401f8e <multvec>
+
+Dynamic:
+
+00000000000011ee T main
+U addvec
+U multvec
+
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x11ee <main>
+(gdb) p &addvec
+$2 = (<text variable, no debug info> *) 0x1060 <addvec@plt>
+(gdb) p &multvec
+$3 = (<text variable, no debug info> *) 0x1050 <multvec@plt>
+
+(gdb) p &main
+$1 = (int (*)(int, const char **)) 0x5555555551ee <main>
+(gdb) p &addvec
+$2 = (void (*)(int *, int *, int *, int)) 0x7ffff7fca0f5 <addvec>
+(gdb) p *multvec
+$3 = {void (int *, int *, int *, int)} 0x7ffff7fca164 <multvec>
