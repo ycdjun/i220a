@@ -13,7 +13,7 @@ libgeom.a:	$(OBJS)
 		ar rcs $@ $(OBJS)
 
 testgeom-static: testgeom.o
-		$(CC) -static testgeom.o -L. -lgeom -o $@
+		$(CC)  -static testgeom.o -L. -lgeom -o $@
 
 testgeom-dynamic: testgeom.o
 		$(CC) testgeom.o -L. -lgeom -o $@
@@ -21,4 +21,4 @@ testgeom-dynamic: testgeom.o
 .PHONY:		clean
 clean:
 
-	rm -f *.o *.so *.a testgeom-*
+		rm -f *.o *.so *.a testgeom-*

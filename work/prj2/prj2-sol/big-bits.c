@@ -12,6 +12,8 @@
  */
 struct BigBits {
   //@TODO
+	char *bits;
+	size_t size;
 };
 
 
@@ -29,8 +31,15 @@ const BigBits *
 newBigBits(const char *hex)
 {
   assert(CHAR_BIT == 8);
-  //@TODO
-  return NULL;
+  BigBits *newBigBits = (*BigBits)malloc(sizeof(BigBits));
+  for(int i = 0; hex[i] != "\0";i++){
+	size++;
+  }
+  newBigBits->bits = (*char)malloc(sizeof(char)*newBigBits->size);
+  for(int i = 0; i < size; i++){
+	newBigBits->bits[i] = charToHexet(hex[i]);
+  }
+  return newBigBits;
 }
 
 /** Frees all resources used by currently valid bigBits.  bigBits
@@ -39,7 +48,9 @@ newBigBits(const char *hex)
 void
 freeBigBits(BigBits *bigBits)
 {
-  //@TODO
+  free(bigBits->bits);
+  free(bigBits->size);
+  free(bigBits);
 }
 
 
