@@ -31,15 +31,18 @@ const BigBits *
 newBigBits(const char *hex)
 {
   assert(CHAR_BIT == 8);
-  BigBits *newBigBits = (*BigBits)malloc(sizeof(BigBits));
-  for(int i = 0; hex[i] != "\0";i++){
-	size++;
+  BigBits *nBigBits = (BigBits *)malloc(sizeof(BigBits));
+  int i = 0;
+  nBigBits->size = 0;
+  while(hex[i] != '\0'){
+	nBigBits->size++;
+	i++;
   }
-  newBigBits->bits = (*char)malloc(sizeof(char)*newBigBits->size);
-  for(int i = 0; i < size; i++){
-	newBigBits->bits[i] = charToHexet(hex[i]);
+  nBigBits->bits = (char *)malloc(sizeof(char)*nBigBits->size);
+  for(int i = 0; i < nBigBits->size; i++){
+	nBigBits->bits[i] = charToHexet(hex[i]);
   }
-  return newBigBits;
+  return nBigBits;
 }
 
 /** Frees all resources used by currently valid bigBits.  bigBits
@@ -49,7 +52,6 @@ void
 freeBigBits(BigBits *bigBits)
 {
   free(bigBits->bits);
-  free(bigBits->size);
   free(bigBits);
 }
 
@@ -62,8 +64,11 @@ freeBigBits(BigBits *bigBits)
 const char *
 stringBigBits(const BigBits *bigBits)
 {
-  //@TODO
-  return NULL;
+  char *sBigBits = (char *)malloc(sizeof(char)*bigBits->size);
+  for(int i = 0; i < bigBits->size; i++){
+	sBigBits[i] = hexetToChar(bigBits->bits[i]);
+  }
+  return sBigBits;
 }
 
 
@@ -73,8 +78,18 @@ stringBigBits(const BigBits *bigBits)
 const BigBits *
 andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
-  //@TODO
-  return NULL;
+  BigBits *aBigBits = (BigBits *)malloc(sizeof(BigBits));
+  if(bigBits1->size > bigBits2->size){
+	for(int i = 0; i < bigBits2->size;i++){
+		aBigBits->bits[i] = bigBits1->bits[i] & bigBits2->bits[i];
+	}
+  }
+  else{
+	for(int i = 0; i < bigBits1->size;i++){
+		aBigBits->bits[i] = bigBits1->bits[i] & bigBits2->bits[i];
+	}
+  }
+  return aBigBits;
 }
 
 /** Return a new BigBits which is the bitwise-| of bigBits1 and bigBits2.
@@ -83,8 +98,19 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 const BigBits *
 orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
-  //@TODO
-  return NULL;
+  
+  BigBits *oBigBits = (BigBits *)malloc(sizeof(BigBits));
+  if(bigBits1->size > bigBits2->size){
+	for(int i = 0; i < bigBits2->size;i++){
+		oBigBits->bits[i] = bigBits1->bits[i] | bigBits2->bits[i];
+	}
+  }
+  else{
+	for(int i = 0; i < bigBits1->size;i++){
+		oBigBits->bits[i] = bigBits1->bits[i] | bigBits2->bits[i];
+	}
+  }
+  return oBigBits;
 }
 
 /** Return a new BigBits which is the bitwise-^ of bigBits1 and bigBits2.
@@ -93,6 +119,16 @@ orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 const BigBits *
 xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
-  //@TODO
-  return NULL;
+  BigBits *xBigBits = (BigBits *)malloc(sizeof(BigBits));
+  if(bigBits1->size > bigBits2->size){
+	for(int i = 0; i < bigBits2->size;i++){
+		xBigBits->bits[i] = bigBits1->bits[i] ^ bigBits2->bits[i];
+	}
+  }
+  else{
+	for(int i = 0; i < bigBits1->size;i++){
+		xBigBits->bits[i] = bigBits1->bits[i] ^ bigBits2->bits[i];
+	}
+  }
+  return xBigBits;
 }
