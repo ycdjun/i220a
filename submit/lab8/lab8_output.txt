@@ -1,0 +1,186 @@
+EX1
+
+Input: git remote -v 
+Output:
+origin	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+------------------------------------------------------------------------------------
+Input: git status
+Output:
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../
+
+nothing added to commit but untracked files present (use "git add" to track)
+------------------------------------------------------------------------------------
+Input:git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+------------------------------------------------------------------------------------
+Input: git branch -l 
+Output:
+* master
+------------------------------------------------------------------------------------
+Input: git status -s
+Output: 
+------------------------------------------------------------------------------------
+Ex2
+
+Input:git status -s
+Output:
+?? Makefile
+?? hello
+?? hello.c
+------------------------------------------------------------------------------------
+Input: git status -s 
+Output:
+?? .gitignore
+?? Makefile
+?? hello.c
+------------------------------------------------------------------------------------
+Input: git status -s
+Output:
+A  .gitignore
+A  Makefile
+A  hello.c
+------------------------------------------------------------------------------------
+Input: git log
+Output:
+commit b9773e7fe0ade428c51603249fd6fc230c92f347 (HEAD -> master, origin/master)
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Date:   Thu Oct 10 15:38:00 2019 -0400
+
+    working with warnings
+
+commit 5de7d529fd28f6459bc9bbd142d60b201d4287dd
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Date:   Thu Oct 10 15:33:14 2019 -0400
+
+    added README
+------------------------------------------------------------------------------------
+Input: git status -s 
+Output: 
+ M hello.c
+------------------------------------------------------------------------------------
+Input: git log hello.c
+Output:
+commit 1e1c200c1a6b9c603c7309183a778c4ea67e067a (HEAD -> master, origin/master)
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Date:   Thu Oct 10 15:40:35 2019 -0400
+
+    working:clean compile
+
+commit b9773e7fe0ade428c51603249fd6fc230c92f347
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Date:   Thu Oct 10 15:38:00 2019 -0400
+
+    working with warnings
+------------------------------------------------------------------------------------
+Input: git log -1 hello.c
+Output: 
+working:clean compile
+------------------------------------------------------------------------------------
+Input:git diff
+Output:
+diff --git a/work/lab8/hello.c b/work/lab8/hello.c
+index 85c5f16..23406f8 100644
+--- a/work/lab8/hello.c
++++ b/work/lab8/hello.c
+@@ -4,7 +4,7 @@ int
+ main(int argc, const char *argv[])
+ {
+   if (argc != 2) {
+-    printf("usage: %s NAME\n", argv[0]);
++    fprintf(stderr,"usage: %s NAME\n", argv[0]);
+     exit(1);
+   }
+   printf("hello %s\n", argv[1]);
+------------------------------------------------------------------------------------
+Input:git shortlog
+Output:
+ycdjun@gmail.com (4):
+      added README
+      working with warnings
+      working:clean compile
+      send usage message to stderr
+------------------------------------------------------------------------------------
+
+EX3
+
+Input: git checkout -b hello-multi
+Output:Switched to a new branch 'hello-multi'
+------------------------------------------------------------------------------------
+Input: git branch -l
+Output: 
+* hello-multi
+  master
+------------------------------------------------------------------------------------
+Input: git push -u origin hello-multi
+Output:
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 524 bytes | 262.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+------------------------------------------------------------------------------------
+EX4
+
+Input: git checkout master
+Output:
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'
+------------------------------------------------------------------------------------
+EX5
+Input: git checkout hello-multi
+Output:
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+------------------------------------------------------------------------------------
+Input: git merge master
+Output:
+Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+------------------------------------------------------------------------------------
+
+EX6
+Input: git merge hello-multi
+Output:
+Fast-forward
+ work/lab8/hello.c | 11 ++++++++---
+ 1 file changed, 8 insertions(+), 3 deletions(-)
+------------------------------------------------------------------------------------
+Input: git branch -l
+Output:
+  hello-multi
+* master
+------------------------------------------------------------------------------------
+Input: git shortlog hello.c
+Output:
+ycdjun@gmail.com (6):
+      working with warnings
+      working:clean compile
+      send usage message to stderr
+      allow meeting multiple names
+      added return at the end of main
+      merged master
+
+
+
+
+
+

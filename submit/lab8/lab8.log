@@ -1,0 +1,850 @@
+Script started on 2019-10-10 14:54:36-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ cd ~/git-repos
+yjun1@g7-33:~/git-repos$ mkdir lab8.git
+yjun1@g7-33:~/git-repos$ cd lab8.goit[K[K[Kit
+yjun1@g7-33:~/git-repos/lab8.git$ git inti[K[Kit --bare
+Initialized empty Git repository in /import/linux/home1/yjun1/git-repos/lab8.git/
+yjun1@g7-33:~/git-repos/lab8.git$ mkdir -p ~/tmp
+yjun1@g7-33:~/git-repos/lab8.git$ cd ~/tmp
+yjun1@g7-33:~/tmp$ git clone ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-r[1Pepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-re[1Ppos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-rep[1Pos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-repo[1Ps/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/git-repos[1P/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/yjun1/git-r[1Pepos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/yjun1/git-re[1Ppos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/yjun1/git-rep[1Pos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/yjun1/git-repo[1Ps/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/home/yjun1/git-repos[1P/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'lab8'...
+yjun1@remote.cs.binghamton.edu's password: 
+warning: You appear to have cloned an empty repository.
+yjun1@g7-33:~/tmp$ cd lab8
+yjun1@g7-33:~/tmp/lab8$ git remove -v 
+git: 'remove' is not a git command. See 'git --help'.
+
+The most similar command is
+	remote
+yjun1@g7-33:~/tmp/lab8$ git reo[Kmote -v
+origin	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (fetch)
+origin	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (push)
+yjun1@g7-33:~/tmp/lab8$ ls -a
+.  ..  .git
+yjun1@g7-33:~/tmp/lab8$ cd lab8[K[K[K[K[K[K[Kmkdir -p work/lab8
+yjun1@g7-33:~/tmp/lab8$ cd work/lab8
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ~/git-repos/cs220/labs/lab8/files/README.d[Kmd [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+cp: missing destination file operand after '/home/yjun1/git-repos/cs220/labs/lab8/files/README.md'
+Try 'cp --help' for more information.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ~/git-repos/cs220/labs/lab8/files/README.md [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+ .
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git statua[K[Kus
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m../[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git add README.md
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	[32mnew file:   README.md[m
+
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -m "added README"
+[master (root-commit) 815c091] added README
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 4 insertions(+)
+ create mode 100644 work/lab8/README.md
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git brnah[K[K[Kac[Knhc[K[Kch -l
+[?1h=* [32mmaster[m[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 5, done.
+Counting objects:  20% (1/5)   Counting objects:  40% (2/5)   Counting objects:  60% (3/5)   Counting objects:  80% (4/5)   Counting objects: 100% (5/5)   Counting objects: 100% (5/5), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 341 bytes | 170.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+ * [new branch]      master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status -s
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ~/cs[K[Kgit-repos/i220a/labs/lab8/f[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcs220/labs/lab8/files/Makefile   .
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ~/git-repos/cs220/labs/lab8/files/Makefile  .[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[Khelloo[K-one .c hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+[01m[Khello.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kprintf[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;35m[K^~~~~~[m[K
+[01m[Khello.c:5:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+[01m[Khello.c:5:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdio.h>[m[K
+ int
+[01m[Khello.c:5:5:[m[K
+     [01;36m[Kprintf[m[K("usage: %s NAME\n", argv[0]);
+     [01;36m[K^~~~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kexit[m[K’ [[01;35m[K-Wimplicit-function-declaration[m[K]
+     [01;35m[Kexit[m[K(1);
+     [01;35m[K^~~~[m[K
+[01m[Khello.c:6:5:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kexit[m[K’
+[01m[Khello.c:6:5:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdlib.h>[m[K’ or provide a declaration of ‘[01m[Kexit[m[K’
+[01m[Khello.c:1:1:[m[K
++[32m[K#include <stdlib.h>[m[K
+ int
+[01m[Khello.c:6:5:[m[K
+     [01;36m[Kexit[m[K(1);
+     [01;36m[K^~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;35m[Kwarning: [m[Kincompatible implicit declaration of built-in function ‘[01m[Kprintf[m[K’
+   [01;35m[Kprintf[m[K("hello %s\n", argv[1]);
+   [01;35m[K^~~~~~[m[K
+[01m[Khello.c:8:3:[m[K [01;36m[Knote: [m[Kinclude ‘[01m[K<stdio.h>[m[K’ or provide a declaration of ‘[01m[Kprintf[m[K’
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello john
+hello john
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status -s
+[31m??[m Makefile
+[31m??[m hello
+[31m??[m hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ~/git-repos/cs220/labs/lab8/files/.gitignore .
+yjun1@g7-33:~/tmp/lab8/work/lab8$ gits[K status -s
+[31m??[m .gitignore
+[31m??[m Makefile
+[31m??[m hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git add [K[K[K[K[K[K[K[Kgit sta[K[K[K[K[K[K[Kgit add .
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git satu[K[K[Ktatus -s
+[32mA[m  .gitignore
+[32mA[m  Makefile
+[32mA[m  hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -m "working with warnings"
+[master e39ce40] working with warnings
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 22 insertions(+)
+ create mode 100644 work/lab8/.gitignore
+ create mode 100644 work/lab8/Makefile
+ create mode 100644 work/lab8/hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status -s
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 10, done.
+Counting objects:  10% (1/10)   Counting objects:  20% (2/10)   Counting objects:  30% (3/10)   Counting objects:  40% (4/10)   Counting objects:  50% (5/10)   Counting objects:  60% (6/10)   Counting objects:  70% (7/10)   Counting objects:  80% (8/10)   Counting objects:  90% (9/10)   Counting objects: 100% (10/10)   Counting objects: 100% (10/10), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 670 bytes | 335.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   815c091..e39ce40  master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git log
+[?1h=[33mcommit e39ce40466db18913ca4c68c33f7da3fe5daf422[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:00:42 2019 -0400[m
+[m
+    working with warnings[m
+[m
+[33mcommit 815c091e3919f8c92ad3396b42f1aaf82d8507fa[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 14:58:17 2019 -0400[m
+[m
+    added README[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ emacs hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./sue[K[K[Khello sue
+hello sue
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git status -s
+ [31mM[m hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "working: clean cmo[K[Kompile"
+[master 4bd958d] working: clean compile
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 2 insertions(+)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 402 bytes | 402.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   e39ce40..4bd958d  master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git log hle[K[Kello.c
+[?1h=[33mcommit 4bd958db470df88e0292fc1b7c2bf17f4e2195c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:02:04 2019 -0400[m
+[m
+    working: clean compile[m
+[m
+[33mcommit e39ce40466db18913ca4c68c33f7da3fe5daf422[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:00:42 2019 -0400[m
+[m
+    working with warnings[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ emacs hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello ?[K>/deve[K/null
+usage: ./hello NAME
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git diff
+[?1h=[1mdiff --git a/work/lab8/hello.c b/work/lab8/hello.c[m[m
+[1mindex 85c5f16..23406f8 100644[m[m
+[1m--- a/work/lab8/hello.c[m[m
+[1m+++ b/work/lab8/hello.c[m[m
+[36m@@ -4,7 +4,7 @@[m [mint[m[m
+ main(int argc, const char *argv[])[m[m
+ {[m[m
+   if (argc != 2) {[m[m
+[31m-    printf("usage: %s NAME\n", argv[0]);[m[m
+[32m+[m[32m    fprintf(stderr,"usage: %s NAME\n", argv[0]);[m[m
+     exit(1);[m[m
+   }[m[m
+   printf("hello %s\n", argv[1]);[m[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "send usage message to stderr "
+[master d6ff7b8] send usage message to stderr
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 395 bytes | 395.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   4bd958d..d6ff7b8  master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git shortlog
+[?1h=ycdjun@gmail.com (4):[m
+      added README[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ git checkout -b hello-u[Kmulti
+Switched to a new branch 'hello-multi'
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git ran[K[K[Kbranch -l
+[?1h=* [32mhello-multi[m[m
+  master[m[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ cp ![K~/c[Kgit-repos/cs220/labs/lab8/files/hello-mut li[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl ti.c hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME...
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello john sue
+hello john
+hello sue
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "akk[K[Kllow greetings[K[K [Kg multiple name s"
+[hello-multi ddb76e8] allow greeting multiple names
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 6 insertions(+), 3 deletions(-)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ g[Kg[Kgit push -u origin hello-multi
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 525 bytes | 262.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+ * [new branch]      hello-multi -> hello-multi
+Branch 'hello-multi' set up to track remote branch 'hello-multi' from 'origin'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello john sue
+usage: ./hello NAME
+yjun1@g7-33:~/tmp/lab8/work/lab8$ emacs hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ tail -3 hello.c
+  printf("hello %s\n", argv[1]);
+  return 0;
+}
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+make: Nothing to be done for 'all'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello
+usage: ./hello NAME
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./ [Khello sue
+hello sue
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "added return at the end of m ain()"
+[master b652228] added return at the end of main()
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 9, done.
+Counting objects:  11% (1/9)   Counting objects:  22% (2/9)   Counting objects:  33% (3/9)   Counting objects:  44% (4/9)   Counting objects:  55% (5/9)   Counting objects:  66% (6/9)   Counting objects:  77% (7/9)   Counting objects:  88% (8/9)   Counting objects: 100% (9/9)   Counting objects: 100% (9/9), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 395 bytes | 395.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   d6ff7b8..b652228  master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git checkout hello-multi
+Switched to branch 'hello-multi'
+Your branch is up to date with 'origin/hello-multi'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git merge master
+Auto-merging work/lab8/hello.c
+CONFLICT (content): Merge conflict in work/lab8/hello.c
+Automatic merge failed; fix conflicts and then commit the result.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ emcas [K[K[K[Kacs hello.c
+yjun1@g7-33:~/tmp/lab8/work/lab8$ tail -5 hello.c
+  }
+
+  return 0;
+
+}
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello john sue
+hello john
+hello sue
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "merged master"
+[hello-multi 80a6528] merged master
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)   Counting objects:  15% (2/13)   Counting objects:  23% (3/13)   Counting objects:  30% (4/13)   Counting objects:  38% (5/13)   Counting objects:  46% (6/13)   Counting objects:  53% (7/13)   Counting objects:  61% (8/13)   Counting objects:  69% (9/13)   Counting objects:  76% (10/13)   Counting objects:  84% (11/13)   Counting objects:  92% (12/13)   Counting objects: 100% (13/13)   Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  20% (1/5)   Writing objects:  40% (2/5)   Writing objects:  60% (3/5)   Writing objects:  80% (4/5)   Writing objects: 100% (5/5)   Writing objects: 100% (5/5), 414 bytes | 414.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   ddb76e8..80a6528  hello-multi -> hello-multi
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git merge hello-multi
+Updating b652228..80a6528
+Fast-forward
+ work/lab8/hello.c | 12 [32m+++++++++[m[31m---[m
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+yjun1@g7-33:~/tmp/lab8/work/lab8$ make
+cc -g -Wall -std=c11    hello.c   -o hello
+yjun1@g7-33:~/tmp/lab8/work/lab8$ ./hello jon sue[K[K[K[K[Khn sue
+hello john
+hello sue
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git branch -l
+[?1h=  hello-multi[m[m
+* [32mmaster[m[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ git shortlog hello.c
+[?1h=ycdjun@gmail.com (6):[m
+      working with warnings[m
+      working: clean compile[m
+      send usage message to stderr[m
+      allow greeting multiple names[m
+      added return at the end of main()[m
+      merged master[m
+[m
+[K[?1l>yjun1@g7-33:~/tmp/lab8/work/lab8$ git commit -a -m "merged helo[Klo-multi"
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+yjun1@g7-33:~/tmp/lab8/work/lab8$ git push
+yjun1@remote.cs.binghamton.edu's password: 
+Total 0 (delta 0), reused 0 (delta 0)
+To ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git
+   b652228..80a6528  master -> master
+yjun1@g7-33:~/tmp/lab8/work/lab8$ cd ~/i220a[K[K[K[K[Kgit-repos/i220a
+yjun1@g7-33:~/git-repos/i220a$ git remot add [K[K[K[K[Ke add lab8 \ ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu/git-repos/lab8.gitu/git-repos/lab8.git[1P/git-repos/lab8.gitn/git-repos/lab8.git1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.bingham[1Pton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamt[1Pon.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamto[1Pn.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton[1P.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.[1Pedu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+fatal: remote lab8 already exists.
+yjun1@g7-33:~/git-repos/i220a$ cd lab8
+bash: cd: lab8: No such file or directory
+yjun1@g7-33:~/git-repos/i220a$ git remov[Kte -v
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (fetch)
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (push)
+origin	git@github.com:ycdjun/i220a.git (fetch)
+origin	git@github.com:ycdjun/i220a.git (push)
+yjun1@g7-33:~/git-repos/i220a$ cd work
+yjun1@g7-33:~/git-repos/i220a/work$ cd lab8
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git log hello.c
+fatal: ambiguous argument 'hello.c': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git pull --allow-unrelated [K-histories la b8 master
+yjun1@remote.cs.binghamton.edu's password: 
+warning: no common commits
+remote: Enumerating objects: 37, done.[K
+remote: Counting objects:   2% (1/37)   [Kremote: Counting objects:   5% (2/37)   [Kremote: Counting objects:   8% (3/37)   [Kremote: Counting objects:  10% (4/37)   [Kremote: Counting objects:  13% (5/37)   [Kremote: Counting objects:  16% (6/37)   [Kremote: Counting objects:  18% (7/37)   [Kremote: Counting objects:  21% (8/37)   [Kremote: Counting objects:  24% (9/37)   [Kremote: Counting objects:  27% (10/37)   [Kremote: Counting objects:  29% (11/37)   [Kremote: Counting objects:  32% (12/37)   [Kremote: Counting objects:  35% (13/37)   [Kremote: Counting objects:  37% (14/37)   [Kremote: Counting objects:  40% (15/37)   [Kremote: Counting objects:  43% (16/37)   [Kremote: Counting objects:  45% (17/37)   [Kremote: Counting objects:  48% (18/37)   [Kremote: Counting objects:  51% (19/37)   [Kremote: Counting objects:  54% (20/37)   [Kremote: Counting objects:  56% (21/37)   [Kremote: Counting objects:  59% (22/37)   [Kremote: Counting objects:  62% (23/37)   [Kremote: Counting objects:  64% (24/37)   [Kremote: Counting objects:  67% (25/37)   [Kremote: Counting objects:  70% (26/37)   [Kremote: Counting objects:  72% (27/37)   [Kremote: Counting objects:  75% (28/37)   [Kremote: Counting objects:  78% (29/37)   [Kremote: Counting objects:  81% (30/37)   [Kremote: Counting objects:  83% (31/37)   [Kremote: Counting objects:  86% (32/37)   [Kremote: Counting objects:  89% (33/37)   [Kremote: Counting objects:  91% (34/37)   [Kremote: Counting objects:  94% (35/37)   [Kremote: Counting objects:  97% (36/37)   [Kremote: Counting objects: 100% (37/37)   [Kremote: Counting objects: 100% (37/37), done.[K
+remote: Compressing objects:   5% (1/20)   [Kremote: Compressing objects:  10% (2/20)   [Kremote: Compressing objects:  15% (3/20)   [Kremote: Compressing objects:  20% (4/20)   [Kremote: Compressing objects:  25% (5/20)   [Kremote: Compressing objects:  30% (6/20)   [Kremote: Compressing objects:  35% (7/20)   [Kremote: Compressing objects:  40% (8/20)   [Kremote: Compressing objects:  45% (9/20)   [Kremote: Compressing objects:  50% (10/20)   [Kremote: Compressing objects:  55% (11/20)   [Kremote: Compressing objects:  60% (12/20)   [Kremote: Compressing objects:  65% (13/20)   [Kremote: Compressing objects:  70% (14/20)   [Kremote: Compressing objects:  75% (15/20)   [Kremote: Compressing objects:  80% (16/20)   [Kremote: Compressing objects:  85% (17/20)   [Kremote: Compressing objects:  90% (18/20)   [Kremote: Compressing objects:  95% (19/20)   [Kremote: Compressing objects: 100% (20/20)   [Kremote: Compressing objects: 100% (20/20), done.[K
+remote: Total 37 (delta 11), reused 0 (delta 0)[K
+Unpacking objects:   2% (1/37)   Unpacking objects:   5% (2/37)   Unpacking objects:   8% (3/37)   Unpacking objects:  10% (4/37)   Unpacking objects:  13% (5/37)   Unpacking objects:  16% (6/37)   Unpacking objects:  18% (7/37)   Unpacking objects:  21% (8/37)   Unpacking objects:  24% (9/37)   Unpacking objects:  27% (10/37)   Unpacking objects:  29% (11/37)   Unpacking objects:  32% (12/37)   Unpacking objects:  35% (13/37)   Unpacking objects:  37% (14/37)   Unpacking objects:  40% (15/37)   Unpacking objects:  43% (16/37)   Unpacking objects:  45% (17/37)   Unpacking objects:  48% (18/37)   Unpacking objects:  51% (19/37)   Unpacking objects:  54% (20/37)   Unpacking objects:  56% (21/37)   Unpacking objects:  59% (22/37)   Unpacking objects:  62% (23/37)   Unpacking objects:  64% (24/37)   Unpacking objects:  67% (25/37)   Unpacking objects:  70% (26/37)   Unpacking objects:  72% (27/37)   Unpacking objects:  75% (28/37)   Unpacking objects:  78% (29/37)   Unpacking objects:  81% (30/37)   Unpacking objects:  83% (31/37)   Unpacking objects:  86% (32/37)   Unpacking objects:  89% (33/37)   Unpacking objects:  91% (34/37)   Unpacking objects:  94% (35/37)   Unpacking objects:  97% (36/37)   Unpacking objects: 100% (37/37)   Unpacking objects: 100% (37/37), done.
+From ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8
+ * branch            master     -> FETCH_HEAD
+ + 8998809...80a6528 master     -> lab8/master  (forced update)
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "~/git-repos/i220a/.git/.MERGE_MSG.swp"
+[10Cowned by: yjun1   dated: Fri Sep 20 13:47:02 2019
+[9Cfile name: ~yjun1/git-repos/i220a/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: yjun1   host name: remote01
+[8Cprocess ID: 12157
+While opening file "/import/linux/home1/yjun1/git-repos/i220a/.git/MERGE_MSG"
+[13Cdated: Thu Oct 10 15:13:56 2019
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/.MERGE_MSG.swp"
+    to avoid this message.
+[?1000l
+[32mSwap file "~/git-repos/i220a/.git/.MERGE_MSG.swp" already exists![m
+[32m-- More --[?25h[m[24;1H[K[24;1H[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [?1000h[m[24;1H[K[24;1H[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?1049l[23;0;0terror: There was a problem with the editor 'editor'.
+Not committing merge; use 'git commit' to complete the merge.
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ 
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git commit -[K
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"~/git-repos/i220a/.git/COMMIT_EDITMSG" 25L, 655C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/yjun1/git-repos/labb[2;1H8 into HEAD
+[34m#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#       .git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# [m[35mCommitter:[m[34m ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+#
+# HEAD detached at 3a02228
+# All conflicts fixed but you are still merging.
+#
+# [m[35mChanges to be committed:[m
+[34m#       [m[32mnew file[m[34m: [m[31m  .gitignore[m
+[34m#       [m[32mnew file[m[34m: [m[31m  Makefile[m
+[34m#       [m[32mnew file[m[34m: [m[31m  README.md[m
+[34m#       [m[32mnew file[m[34m: [m[31m  hello.c[m
+[34m#[m[24;63H1,1[11CTop]2;COMMIT_EDITMSG (~/git-repos/i220a/.git) - VIM]1;COMMIT_EDITMSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/yjun1/git-repos/labb[2;1H8 into HEAD
+[96m#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#       .git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# [m[38;5;81mCommitter:[m[96m ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+#
+# HEAD detached at 3a02228
+# All conflicts fixed but you are still merging.
+#
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  .gitignore[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  Makefile[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  README.md[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  hello.c[m
+[96m#[m[24;63H1,1[11CTop"~/git-repos/i220a/.git/COMMIT_EDITMSG" 25L, 655C[1;1H[?25h[?25l[24;53HZ[1;1H[?25h[?25l[24;54HZ[1;1H[24;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t[K[detached HEAD 62dd0eb] Merge branch 'master' of ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8 into HEAD
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git sttu[K[Katus
+[31mHEAD detached from [m3a02228
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab8.log[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git branch
+[?1h=* [32m(HEAD detached from 3a02228)[m[m
+  master[m[m
+[K[?1l>yjun1@g7-33:~/git-repos/i220a/work/lab8$ git checjo==[K[K[K[Kkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  62dd0eb Merge branch 'master' of ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8 into HEAD
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 62dd0eb
+
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m./[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ cd ..
+yjun1@g7-33:~/git-repos/i220a/work$ cd ..
+yjun1@g7-33:~/git-repos/i220a$ ls
+grading  README.md  submit  work
+yjun1@g7-33:~/git-repos/i220a$ cd .[K[K[K[Kls
+grading  README.md  submit  work
+yjun1@g7-33:~/git-repos/i220a$ cd work/
+lab8/ prj2/ 
+yjun1@g7-33:~/git-repos/i220a$ cd work/lab8/lab8.log [K[K[K[K[K[K[K[K[K
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git remote add lab8 \
+>   ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gity/git-repos/lab8.gitj/git-repos/lab8.gitu/git-repos/lab8.gitn/git-repos/lab8.git1/git-repos/lab8.git[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[Cy@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[Cj@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+fatal: remote lab8 already exists.
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git remote -v
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (fetch)
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (push)
+origin	git@github.com:ycdjun/i220a.git (fetch)
+origin	git@github.com:ycdjun/i220a.git (push)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git pull
+remote: Enumerating objects: 14, done.[K
+remote: Counting objects:   7% (1/14)[Kremote: Counting objects:  14% (2/14)[Kremote: Counting objects:  21% (3/14)[Kremote: Counting objects:  28% (4/14)[Kremote: Counting objects:  35% (5/14)[Kremote: Counting objects:  42% (6/14)[Kremote: Counting objects:  50% (7/14)[Kremote: Counting objects:  57% (8/14)[Kremote: Counting objects:  64% (9/14)[Kremote: Counting objects:  71% (10/14)[Kremote: Counting objects:  78% (11/14)[Kremote: Counting objects:  85% (12/14)[Kremote: Counting objects:  92% (13/14)[Kremote: Counting objects: 100% (14/14)[Kremote: Counting objects: 100% (14/14), done.[K
+remote: Compressing objects:  10% (1/10)[Kremote: Compressing objects:  20% (2/10)[Kremote: Compressing objects:  30% (3/10)[Kremote: Compressing objects:  40% (4/10)[Kremote: Compressing objects:  50% (5/10)[Kremote: Compressing objects:  60% (6/10)[Kremote: Compressing objects:  70% (7/10)[Kremote: Compressing objects:  80% (8/10)[Kremote: Compressing objects:  90% (9/10)[Kremote: Compressing objects: 100% (10/10)[Kremote: Compressing objects: 100% (10/10), done.[K
+remote: Total 10 (delta 6), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects:  10% (1/10)   Unpacking objects:  20% (2/10)   Unpacking objects:  30% (3/10)   Unpacking objects:  40% (4/10)   Unpacking objects:  50% (5/10)   Unpacking objects:  60% (6/10)   Unpacking objects:  70% (7/10)   Unpacking objects:  80% (8/10)   Unpacking objects:  90% (9/10)   Unpacking objects: 100% (10/10)   Unpacking objects: 100% (10/10), done.
+From github.com:ycdjun/i220a
+   3a02228..17c9789  master     -> origin/master
+Updating 3a02228..17c9789
+Fast-forward
+ submit/prj2-sol/README | 8 [32m++++[m[31m----[m
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git branch
+[?1h=* [32mmaster[m[m
+[K[?1l>yjun1@g7-33:~/git-repos/i220a/work/lab8$ git pull --allow-unrelated-histories lab8 master
+yjun1@remote.cs.binghamton.edu's password: 
+From ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8
+ * branch            master     -> FETCH_HEAD
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "~/git-repos/i220a/.git/.MERGE_MSG.swp"
+[10Cowned by: yjun1   dated: Fri Sep 20 13:47:02 2019
+[9Cfile name: ~yjun1/git-repos/i220a/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: yjun1   host name: remote01
+[8Cprocess ID: 12157
+While opening file "/import/linux/home1/yjun1/git-repos/i220a/.git/MERGE_MSG"
+[13Cdated: Thu Oct 10 15:17:15 2019
+      NEWER than swap file!
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r /import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/MERGE_MSG"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file "/import/linux/home1/yjun1/gi
+[23;80Ht[24;1H-repos/i220a/.git/.MERGE_MSG.swp"
+    to avoid this message.
+[?1000l
+[32mSwap file "~/git-repos/i220a/.git/.MERGE_MSG.swp" already exists![m
+[32m-- More --[?25h[m[24;1H[K[24;1H[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [?1000h[m[24;1H[K[24;1H[?1000l[?2004l[23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+[?2004l[?1l>[?1049l[23;0;0terror: There was a problem with the editor 'editor'.
+Not committing merge; use 'git commit' to complete the merge.
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ cd ..
+yjun1@g7-33:~/git-repos/i220a/work$ cd ..
+yjun1@g7-33:~/git-repos/i220a$ ls
+grading  README.md  submit  work
+yjun1@g7-33:~/git-repos/i220a$ cd i[K.git
+yjun1@g7-33:~/git-repos/i220a/.git$ ls
+branches	description  hooks  logs	MERGE_MSG  packed-refs
+COMMIT_EDITMSG	FETCH_HEAD   index  MERGE_HEAD	objects    refs
+config		HEAD	     info   MERGE_MODE	ORIG_HEAD
+yjun1@g7-33:~/git-repos/i220a/.git$ rm .MERGE_MSG.swp
+yjun1@g7-33:~/git-repos/i220a/.git$ lsc[K
+branches	description  hooks  logs	MERGE_MSG  packed-refs
+COMMIT_EDITMSG	FETCH_HEAD   index  MERGE_HEAD	objects    refs
+config		HEAD	     info   MERGE_MODE	ORIG_HEAD
+yjun1@g7-33:~/git-repos/i220a/.git$ cd ..
+yjun1@g7-33:~/git-repos/i220a$ ls
+grading  README.md  submit  work
+yjun1@g7-33:~/git-repos/i220a$ cd work/
+lab8/ prj2/ 
+yjun1@g7-33:~/git-repos/i220a$ cd work/;
+Display all 4475 possibilities? (y or n)
+yjun1@g7-33:~/git-repos/i220a$ cd work/;l
+Display all 271 possibilities? (y or n)
+yjun1@g7-33:~/git-repos/i220a$ cd work/;l[K[K[K/lab8/
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+hello.c  lab8.log  Makefile  README.md
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ clear
+[H[2J[3Jyjun1@g7-33:~/git-repos/i220a/work/lab8$ git[K[K[Kig[K[Kgit status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mnew file:   .gitignore[m
+	[32mnew file:   Makefile[m
+	[32mnew file:   README.md[m
+	[32mnew file:   hello.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab8.log[m
+
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git remote -v
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (fetch)
+lab8	ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git (push)
+origin	git@github.com:ycdjun/i220a.git (fetch)
+origin	git@github.com:ycdjun/i220a.git (push)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git pull --allow-unrelated-histories lab8 master
+error: You have not concluded your merge (MERGE_HEAD exists).
+[33mhint: Please, commit your changes before merging.[m
+fatal: Exiting because of unfinished merge.
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ 
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mnew file:   .gitignore[m
+	[32mnew file:   Makefile[m
+	[32mnew file:   README.md[m
+	[32mnew file:   hello.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab8.log[m
+
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git commit
+hint: Waiting for your editor to close the file... [?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"~/git-repos/i220a/.git/COMMIT_EDITMSG" 27L, 689C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[38;5;130mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/yjun1/git-repos/labb[2;1H8
+[34m#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#       .git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# [m[35mCommitter:[m[34m ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+#
+# On branch [m[35mmaster[m
+[34m# Your branch is up to date with '[m[35morigin/master[m[34m'.
+#
+# All conflicts fixed but you are still merging.
+#
+# [m[35mChanges to be committed:[m
+[34m#       [m[32mnew file[m[34m: [m[31m  .gitignore[m
+[34m#       [m[32mnew file[m[34m: [m[31m  Makefile[m
+[34m#       [m[32mnew file[m[34m: [m[31m  README.md[m[24;63H1,1[11CTop]2;COMMIT_EDITMSG (~/git-repos/i220a/.git) - VIM]1;COMMIT_EDITMSG[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[93mMerge branch 'master' of ssh://remote.cs.binghamto[mn.edu/home/yjun1/git-repos/labb[2;1H8
+[96m#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#       .git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# [m[38;5;81mCommitter:[m[96m ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+#
+# On branch [m[38;5;224mmaster[m
+[96m# Your branch is up to date with '[m[38;5;224morigin/master[m[96m'.
+#
+# All conflicts fixed but you are still merging.
+#
+# [m[38;5;81mChanges to be committed:[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  .gitignore[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  Makefile[m
+[96m#       [m[38;5;121mnew file[m[96m: [m[95m  README.md[m[24;63H1,1[11CTop"~/git-repos/i220a/.git/COMMIT_EDITMSG" 27L, 689C[1;1H[?25h[?25l[24;53H^[[1;1H[24;53H  [1;1H[24;53H^[[1;1H[24;53H  [1;1H[?25h[?25l[24;53HZ[1;1H[?25h[?25l[24;54HZ[1;1H[24;1H[?1006l[?1002l[?2004l]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t[24;1H[K[24;1H[?2004l[?1l>[?25h[?1049l[23;0;0t[K[master e57d7be] Merge branch 'master' of ssh://remote.cs.binghamton.edu/home/yjun1/git-repos/lab8
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+hello.c  lab8.log  Makefile  README.md
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git sat[K[K[Kgit status
+git: 'git' is not a git command. See 'git --help'.
+
+The most similar command is
+	init
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git git status[1Pstatus[1Pstatus[1Pstatus[1Pstatus
+On branch master
+Your branch is ahead of 'origin/master' by 8 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab8.log[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ ls
+hello.c  lab8.log  Makefile  README.md
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ git log hello.c
+[?1h=[33mcommit 80a6528bc4594b91164c9a0b0b3d166a570fd5bd[m[33m ([m[1;31mlab8/master[m[33m)[m[m
+Merge: ddb76e8 b652228[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:07:03 2019 -0400[m
+[m
+    merged master[m
+[m
+[33mcommit b652228330950b1978f08910cf3cbd522aa9bed4[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:05:41 2019 -0400[m
+[m
+    added return at the end of main()[m
+[m
+[33mcommit ddb76e8496b5e70a6b93c7043aab24342bc22542[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:04:25 2019 -0400[m
+[m
+    allow greeting multiple names[m
+[m
+[33mcommit d6ff7b881ffb210ba75485e1b53cc265aeb4af51[m[m
+Author: ycdjun@gmail.com <yjun1@cs.binghamton.edu>[m
+Date:   Thu Oct 10 15:03:17 2019 -0400[m
+[m
+:[K[K[?1l>yjun1@g7-33:~/git-repos/i220a/work/lab8$ mv [K[K[Kcd [K[K[Kemacs lab8.log
+yjun1@g7-33:~/git-repos/i220a/work/lab8$ mv [K[K[Kcd ..
+yjun1@g7-33:~/git-repos/i220a/work$ cd ..
+yjun1@g7-33:~/git-repos/i220a$ c[Km[Kcd ~
+yjun1@g7-33:~$ cd [K[K[Kmv git-repos/lab[K[K[Ki220a/work/lab8/ git-repos/i220a/submit/
+yjun1@g7-33:~$ cd ..
+yjun1@g7-33:/home$ cd [K[K[Kcd ~/git-repos/i220a
+yjun1@g7-33:~/git-repos/i220a$ ls
+grading  README.md  submit  work
+yjun1@g7-33:~/git-repos/i220a$ cd submit
+yjun1@g7-33:~/git-repos/i220a/submit$ ls
+lab1  lab2  lab3  lab4	lab5  lab6  lab7  lab8	prj1-sol  prj2-sol
+yjun1@g7-33:~/git-repos/i220a/submit$ cd lab8
+yjun1@g7-33:~/git-repos/i220a/submit/lab8$ ls
+hello.c  lab8.log  Makefile  README.md
+yjun1@g7-33:~/git-repos/i220a/submit/lab8$ exit
+
+Script done on 2019-10-10 15:26:08-04:00 [COMMAND_EXIT_CODE="0"]
