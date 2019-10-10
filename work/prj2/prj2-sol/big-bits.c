@@ -65,8 +65,14 @@ const char *
 stringBigBits(const BigBits *bigBits)
 {
   char *sBigBits = (char *)calloc(1 + bigBits->size, sizeof(char));
-  for(size_t i = 0; i < bigBits->size; i++){
-	sBigBits[i] = bigBits->bits[i];
+  int numZeros = 0;
+  if(bigBits->bits[0] == '0'){
+	while(bigBits->bits[numZeros] == '0'){
+		numZeros++;
+	}
+  }
+  for(size_t i = numZeros; i < bigBits->size; i++){
+	sBigBits[i - numZeros] = bigBits->bits[i];
   }
   return sBigBits;
 }
