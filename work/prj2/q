@@ -90,7 +90,7 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 			smaller = 0;
 		}
 		else{
-			smaller = bigBits2->bits[i-offset];
+			smaller = charToHexet(bigBits2->bits[i-offset]);
 		}
 		temp = bigger & smaller;
 		aBigBits->bits[i] = hexetToChar(temp);
@@ -107,7 +107,7 @@ andBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 			smaller = 0;
 		}
 		else{
-			smaller = bigBits1->bits[i-offset];
+			smaller = charToHexet(bigBits1->bits[i-offset]);
 		}
 		temp = bigger & smaller;
 		aBigBits->bits[i] = hexetToChar(temp);
@@ -125,15 +125,37 @@ orBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
   
   BigBits *oBigBits = (BigBits *)malloc(sizeof(BigBits));
   if(bigBits1->size >= bigBits2->size){
-	for(size_t i = 0; i < bigBits2->size;i++){
-		oBigBits->bits = (char *)malloc(sizeof(char)*bigBits2->size);
-		oBigBits->bits[i] = bigBits1->bits[i] | bigBits2->bits[i];
+	oBigBits->size = bigBits1->size;
+	size_t offset = bigBits1->size - bigBits2->size;
+	oBigBits->bits = (char *)calloc(bigBits1->size, sizeof(char));
+	for(size_t i = 0; i < oBigBits->size;i++){
+		int bigger,smaller, temp;
+		bigger = charToHexet(bigBits1->bits[i]);
+		if(i < offset){
+			smaller = 0;
+		}
+		else{
+			smaller = charToHexet(bigBits2->bits[i-offset]);
+		}
+		temp = bigger | smaller;
+		oBigBits->bits[i] = hexetToChar(temp);
 	}
   }
   else{
-	for(size_t i = 0; i < bigBits1->size;i++){
-		oBigBits->bits = (char *)malloc(sizeof(char)*bigBits1->size);
-		oBigBits->bits[i] = bigBits1->bits[i] | bigBits2->bits[i];
+	oBigBits->size = bigBits2->size;
+	size_t offset = bigBits2->size - bigBits1->size;
+	oBigBits->bits = (char *)calloc(bigBits2->size, sizeof(char));
+	for(size_t i = 0; i < oBigBits->size;i++){
+		int bigger,smaller, temp;
+		bigger = charToHexet(bigBits2->bits[i]);
+		if(i < offset){
+			smaller = 0;
+		}
+		else{
+			smaller = charToHexet(bigBits1->bits[i-offset]);
+		}
+		temp = bigger | smaller;
+		oBigBits->bits[i] = hexetToChar(temp);
 	}
   }
   return oBigBits;
@@ -147,15 +169,37 @@ xorBigBits(const BigBits *bigBits1, const BigBits *bigBits2)
 {
   BigBits *xBigBits = (BigBits *)malloc(sizeof(BigBits));
   if(bigBits1->size >= bigBits2->size){
-	for(size_t i = 0; i < bigBits2->size;i++){
-		xBigBits->bits = (char *)malloc(sizeof(char)*bigBits2->size);
-		xBigBits->bits[i] = bigBits1->bits[i] ^ bigBits2->bits[i];
+	xBigBits->size = bigBits1->size;
+	size_t offset = bigBits1->size - bigBits2->size;
+	xBigBits->bits = (char *)calloc(bigBits1->size, sizeof(char));
+	for(size_t i = 0; i < xBigBits->size;i++){
+		int bigger,smaller, temp;
+		bigger = charToHexet(bigBits1->bits[i]);
+		if(i < offset){
+			smaller = 0;
+		}
+		else{
+			smaller = charToHexet(bigBits2->bits[i-offset]);
+		}
+		temp = bigger ^ smaller;
+		xBigBits->bits[i] = hexetToChar(temp);
 	}
   }
   else{
-	for(size_t i = 0; i < bigBits1->size;i++){
-		xBigBits->bits = (char *)malloc(sizeof(char)*bigBits1->size);
-		xBigBits->bits[i] = bigBits1->bits[i] ^ bigBits2->bits[i];
+	xBigBits->size = bigBits2->size;
+	size_t offset = bigBits2->size - bigBits1->size;
+	xBigBits->bits = (char *)calloc(bigBits2->size, sizeof(char));
+	for(size_t i = 0; i < xBigBits->size;i++){
+		int bigger,smaller, temp;
+		bigger = charToHexet(bigBits2->bits[i]);
+		if(i < offset){
+			smaller = 0;
+		}
+		else{
+			smaller = charToHexet(bigBits1->bits[i-offset]);
+		}
+		temp = bigger ^ smaller;
+		xBigBits->bits[i] = hexetToChar(temp);
 	}
   }
   return xBigBits;

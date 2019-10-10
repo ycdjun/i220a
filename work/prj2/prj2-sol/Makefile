@@ -14,7 +14,7 @@ all: 		$(TARGETS)
 big-bits: 	$(BIG_BITS_OFILES)
 		$(CC) $(BIG_BITS_OFILES) $(LDFLAGS) -o $@
 
-.phony:		clean
+.PHONY:		clean
 
 clean:
 		rm -f *~ *.o $(TARGETS) 
