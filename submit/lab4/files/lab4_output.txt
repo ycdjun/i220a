@@ -115,5 +115,53 @@ v = 0x2000000000000000 (2.30584e+18), ulp = 274877906944
 v = 0x4000000000000000 (4.61169e+18), ulp = 549755813888
 v = 0x8000000000000000 (9.22337e+18), ulp = 1099511627776
 
+yjun1@g7-36:/import/linux/home1/yjun1/git-repos/cs220/labs/lab4/files/ex9$ ./loop
+f
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+loop exited with x = 2000
+^C
+
+
+
+
+
+
+
 
 
