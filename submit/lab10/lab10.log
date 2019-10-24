@@ -1,0 +1,148 @@
+Script started on 2019-10-24 11:42:43-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10$ d[Kcd files/
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ c[Kls
+cpuid1	cpuid2	parity	rip  rotate  rsp
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd rotate/
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rotate$ m ake
+cc -S -Wall -Og -std=c11 rotate.c
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rotate$ l s
+Makefile  rotate.c  rotate.s
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rotate$ e macs rotate.s
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rotate$ c d cp[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc d ..
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd cpuid [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kd
+bash: cd: cpuid: No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ ls
+cpuid1	cpuid2	parity	rip  rotate  rsp
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd s[Kcup[K[Kpuid 11[K
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid1$ l s
+cpuid.s  main.c  Makefile
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid1$ e macs [K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce macs cpuid.s &
+[1] 18237
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid1$ m ake
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+[1]+  Done                    emacs cpuid.s
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid1$ . /cpuid 
+cpuid: eax = 0xd; ebx = 0x756e6547; edx = 0x49656e69; ecx = 0x6c65746e
+vendor: GenuineIntel
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid1$ c d ...[K
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd cpuid 2
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ e macs main.[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce macs cpi[Kuid.s
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ emacs cpuid.s[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd[4P cpuid2[C[C[4P..[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid 
+bash: ./cpuid: No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ ./cpuid [K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake
+cc -g -Wall -std=c11    -c -o main.o main.c
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cpuid.s: Assembler messages:
+cpuid.s:6: Error: number of operands mismatch for `mov'
+make: *** [Makefile:11: cpuid.o] Error 1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cpuid [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs cpuid.s
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ m ake
+cc -c -g -Wall -std=c11  cpuid.s -o cpuid.o
+cc main.o cpuid.o -o cpuid
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/cpuid2$ . /[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc d //
+yjun1@g7-37://$ cd /[K[K[K[Kcd [K[K[Kls
+backup	    initrd.img		    mnt			 srv
+bin	    initrd.img.old	    nslcd.conf.linux	 sys
+boot	    lib			    opt			 tmp
+dev	    lib32		    opt.local		 usr
+etc	    lib64		    opt.old		 var
+home	    libnss-ldap.conf.linux  pam_ldap.conf.linux  vmlinuz
+home1	    libx32		    proc		 vmlinuz.old
+home.local  lost+found		    root
+home.save   media		    run
+import	    microchip		    sbin
+yjun1@g7-37://$ cd [K[K[Kcd import
+yjun1@g7-37://import$ cd linux/home1/yjun1/git-repos//cs220/[K[K[K[K[K[K[Kcs220/laa[Kbs/lab10/files/
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ par[K[K[Kcd parity/
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  ls
+main.c	Makefile  parity.s
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  cd [K[K[Kemacs parity.s
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  make
+cc -g -Wall -std=c11 -Og   -c -o main.o main.c
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  ./parity 1 2 3 4 5 6
+parity(1) = 1
+parity(2) = 2
+parity(3) = 3
+parity(4) = 4
+parity(5) = 5
+parity(6) = 6
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  ./parity 1 2 3 4 5 6make[Kemacs parity.s
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  emacs parity.s./parity 1 2 3 4 5 6
+parity(1) = 1
+parity(2) = 2
+parity(3) = 3
+parity(4) = 4
+parity(5) = 5
+parity(6) = 6
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  make
+cc -c -g -Wall -std=c11 -Og parity.s -o parity.o
+cc main.o parity.o -o parity
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  make./parity 1 2 3 4 5 6
+parity(1) = 0
+parity(2) = 0
+parity(3) = 1
+parity(4) = 0
+parity(5) = 1
+parity(6) = 1
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/parity$  cd ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd rip/ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K/
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ eam cs[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kema cs rip.c
+make    yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ mak e
+cc -Wall -Og -std=c11 -S rip.c
+cc -Wall -Og -std=c11    rip.c   -o rip
+objdump -d rip > rip.dump
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ ./r ip
+&get_rip() = 0x557f1837b135; rip = 0x557f1837b13c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ eam cs rip.di[Kump
+bash: eamcs: command not found
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ ls
+Makefile  rip  rip.c  rip.dump	rip.s
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ eam c[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kma cs rip.dump
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ eam [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kemacs rip.dump[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pls
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ceamcs rip.dump[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./rip[K
+&get_rip() = 0x55c5d35ac135; rip = 0x55c5d35ac13c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rip$ cd  ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd rsp
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ ls
+Makefile  rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ c[Kema cs rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ ./[K[Kmak e
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:8:29:[m[K [01;31m[Kerror: [m[Kexpected string literal before ‘[01m[Kr[m[K’
+   __asm__("leaq(%%rip), %0":[01;31m[Kr[m[K(rip));
+                             [01;31m[K^[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ emacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:8:34:[m[K [01;31m[Kerror: [m[K‘[01m[Krip[m[K’ undeclared (first use in this function); did you mean ‘[01m[Krsp[m[K’?
+   __asm__("leaq(%%rip), %0":":r"([01;31m[Krip[m[K));
+                                  [01;31m[K^~~[m[K
+                                  [32m[Krsp[m[K
+[01m[Krsp.c:8:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Krsp.c:8:3:[m[K [01;31m[Kerror: [m[Koutput operand constraint lacks ‘[01m[K=[m[K’
+   [01;31m[K__asm__[m[K("leaq(%%rip), %0":":r"(rip));
+   [01;31m[K^~~~~~~[m[K
+[01m[Krsp.c:8:3:[m[K [01;31m[Kerror: [m[Koutput operand constraint lacks ‘[01m[K=[m[K’
+[01m[Krsp.c:8:3:[m[K [01;31m[Kerror: [m[Kinvalid lvalue in asm output 0
+make: *** [Makefile:15: rsp.s] Error 1
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ emacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -Wall -Og -std=c11 -S rsp.c
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[

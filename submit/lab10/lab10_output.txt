@@ -1,0 +1,2 @@
+Since C compilers are capable of recongizing certain idioms for rotation, the functions rotl() and rotr() was compiled by the compiler into x86 instructions roll and rorl. 
+
