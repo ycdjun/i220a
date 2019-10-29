@@ -145,4 +145,91 @@ yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ mak
 yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ emacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
 cc -Wall -Og -std=c11 -S rsp.c
 [01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
-[
+[01m[Krsp.c:8:9:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K__asm__[m[K’
+   rsp = [01;31m[K__asm__[m[K("leaq(%%rsp), %0":":r"(rsp));
+         [01;31m[K^~~~~~~[m[K
+make: *** [Makefile:15: rsp.s] Error 1
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ emacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+[01m[Krsp.c:[m[K In function ‘[01m[Kget_rsp[m[K’:
+[01m[Krsp.c:8:9:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K__asm__[m[K’
+   rsp = [01;31m[K__asm__[m[K("leaq(%%rsp), %0":":r"(rsp));
+         [01;31m[K^~~~~~~[m[K
+make: *** [<builtin>: rsp] Error 1
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ emacs rsp.c[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+cc -Wall -Og -std=c11 -S rsp.c
+cc -Wall -Og -std=c11    rsp.c   -o rsp
+objdump -d rsp > rsp.dump
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs rsp.c[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K./r sp
+&stkVar = 0x7fffef2ba6cc; rsp = 0x7fffef2ba6b8
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files/rsp$ cd  ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10/files$ cd ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10$ c [Kd..
+bash: cd..: command not found
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs/lab10$ cd. [K[Kc[K ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220/labs$ cd ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/cs220$ cd ..
+yjun1@g7-37://import/linux/home1/yjun1/git-repos$ mv cs220/labs/lab10/[K/ c[Ki220a/submit/
+yjun1@g7-37://import/linux/home1/yjun1/git-repos$ ls
+cs220  i220a  lab8.git
+yjun1@g7-37://import/linux/home1/yjun1/git-repos$ cd i220a
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a$ ls
+grading  README.md  submit  work
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a$ cd submit
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ ls
+lab1  lab10  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9  prj1-sol  prj2-sol
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ cd ..[K[K[K[K[Kls
+lab1  lab10  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9  prj1-sol  prj2-sol
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ g[Kgit pull
+Already up to date.
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ git add -A
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ git commit -m{" [K[K [K[K "Su bmitted lab[K[K[KLab [K10"
+[master 509e4a8] Submitted Lab10
+ Committer: ycdjun@gmail.com <yjun1@cs.binghamton.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 27 files changed, 996 insertions(+)
+ create mode 100755 submit/lab10/Makefile
+ create mode 100644 submit/lab10/files/cpuid1/.gitignore
+ create mode 100644 submit/lab10/files/cpuid1/Makefile
+ create mode 100644 submit/lab10/files/cpuid1/cpuid.s
+ create mode 100644 submit/lab10/files/cpuid1/main.c
+ create mode 100644 submit/lab10/files/cpuid2/.gitignore
+ create mode 100644 submit/lab10/files/cpuid2/Makefile
+ create mode 100644 submit/lab10/files/cpuid2/cpuid.s
+ create mode 100644 submit/lab10/files/cpuid2/main.c
+ create mode 100644 submit/lab10/files/parity/Makefile
+ create mode 100644 submit/lab10/files/parity/main.c
+ create mode 100755 submit/lab10/files/parity/parity
+ create mode 100644 submit/lab10/files/parity/parity.s
+ create mode 100644 submit/lab10/files/rip/.gitignore
+ create mode 100644 submit/lab10/files/rip/Makefile
+ create mode 100644 submit/lab10/files/rip/rip.c
+ create mode 100644 submit/lab10/files/rotate/.gitignore
+ create mode 100644 submit/lab10/files/rotate/Makefile
+ create mode 100644 submit/lab10/files/rotate/rotate.c
+ create mode 100644 submit/lab10/files/rsp/.gitignore
+ create mode 100644 submit/lab10/files/rsp/Makefile
+ create mode 100644 submit/lab10/files/rsp/rsp.c
+ create mode 100644 submit/lab10/lab10.html
+ create mode 100644 submit/lab10/lab10.log
+ create mode 100644 submit/lab10/lab10.pdf
+ create mode 100644 submit/lab10/lab10.umt
+ create mode 100644 submit/lab10/lab10_output.txt
+yjun1@g7-37://import/linux/home1/yjun1/git-repos/i220a/submit$ git push
+Enumerating objects: 39, done.
+Counting objects:   2% (1/39)   Counting objects:   5% (2/39)   Counting objects:   7% (3/39)   Counting objects:  10% (4/39)   Counting objects:  12% (5/39)   Counting objects:  15% (6/39)   Counting objects:  17% (7/39)   Counting objects:  20% (8/39)   Counting objects:  23% (9/39)   Counting objects:  25% (10/39)   Counting objects:  28% (11/39)   Counting objects:  30% (12/39)   Counting objects:  33% (13/39)   Counting objects:  35% (14/39)   Counting objects:  38% (15/39)   Counting objects:  41% (16/39)   Counting objects:  43% (17/39)   Counting objects:  46% (18/39)   Counting objects:  48% (19/39)   Counting objects:  51% (20/39)   Counting objects:  53% (21/39)   Counting objects:  56% (22/39)   Counting objects:  58% (23/39)   Counting objects:  61% (24/39)   Counting objects:  64% (25/39)   Counting objects:  66% (26/39)   Counting objects:  69% (27/39)   Counting objects:  71% (28/39)   Counting objects:  74% (29/39)   Counting objects:  76% (30/39)   Counting objects:  79% (31/39)   Counting objects:  82% (32/39)   Counting objects:  84% (33/39)   Counting objects:  87% (34/39)   Counting objects:  89% (35/39)   Counting objects:  92% (36/39)   Counting objects:  94% (37/39)   Counting objects:  97% (38/39)   Counting objects: 100% (39/39)   Counting objects: 100% (39/39), done.
+Delta compression using up to 8 threads
+Compressing objects:   3% (1/33)   Compressing objects:   6% (2/33)   Compressing objects:   9% (3/33)   Compressing objects:  12% (4/33)   Compressing objects:  15% (5/33)   Compressing objects:  18% (6/33)   Compressing objects:  21% (7/33)   Compressing objects:  24% (8/33)   Compressing objects:  27% (9/33)   Compressing
