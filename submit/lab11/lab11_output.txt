@@ -1,0 +1,190 @@
+Exercies 1:
+
+coverage  int-search  matmul-cache  parity
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.003s
+
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time sleep 5
+
+real	0m5.004s
+user	0m0.002s
+sys	0m0.001s
+
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m1.747s
+user	0m0.040s
+sys	0m0.240s
+
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m0.725s
+user	0m0.035s
+sys	0m0.161s
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Exercise 2:
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s 100000000
+49997794
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-c 100000000
+50003700
+----------------------------------------------------------------------------------------------------------------------------------------
+Exercise 3
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ ./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ ./transpose-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ time ./simple-matmul 1500 1
+
+real	0m10.427s
+user	0m10.417s
+sys	0m0.008s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ time ./transpose-matmul 1500 1
+
+real	0m8.452s
+user	0m8.447s
+sys	0m0.004s
+
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ for s in `seq 1000 500 2500`; \
+> do \
+> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ; \
+> echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+> done
+*** Size 1000: simple
+real	0m2.716s
+user	0m2.691s
+sys	0m0.024s
+
+*** Size 1000: transpose
+real	0m2.482s
+user	0m2.477s
+sys	0m0.004s
+
+*** Size 1500: simple
+real	0m10.502s
+user	0m10.488s
+sys	0m0.012s
+
+*** Size 1500: transpose
+real	0m8.461s
+user	0m8.452s
+sys	0m0.008s
+
+*** Size 2000: simple
+real	0m26.179s
+user	0m26.165s
+sys	0m0.012s
+
+*** Size 2000: transpose
+real	0m20.193s
+user	0m20.180s
+sys	0m0.012s
+
+*** Size 2500: simple
+real	0m48.389s
+user	0m48.376s
+sys	0m0.012s
+
+*** Size 2500: transpose
+real	0m39.246s
+user	0m39.228s
+sys	0m0.016s
+-------------------------------------------------------------------------------------------------------------------------
+Exercise 4:
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ time ./linear-search 2000 2000 
+
+real	0m6.666s
+user	0m6.665s
+sys	0m0.000s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ time ./binary-search 2000 2000 
+
+real	0m0.341s
+user	0m0.339s
+sys	0m0.000s
+
+-------------------------------------------------------------------------------------------------------------------------
+Exercise 5:
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ ./coverage 
+8 4545 122
+compute(8, 4545, 122) = 652
+9 1502 100
+compute(9, 1502, 100) = 652
+4 5000 20 
+compute(4, 5000, 20) = 652
+1 20 600
+compute(1, 20, 600) = 1320
+3 4 500
+compute(3, 4, 500) = 1320
+8 9 5000
+compute(8, 9, 5000) = 652
+200 2001 3001
+compute(200, 2001, 3001) = 730
+800 900 1000
+compute(800, 900, 1000) = 730
+444 555 666
+
+
+
+
+
