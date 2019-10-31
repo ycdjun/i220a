@@ -1,0 +1,266 @@
+Script started on 2019-10-31 11:45:20-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11$ cd files
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time -ls ~/cs[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kls  g[K[K~[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs  ~/git-repos/cs220/f[Klabs/lab11/files/
+bash: -ls: command not found
+
+real	0m0.003s
+user	0m0.001s
+sys	0m0.001s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time -ls ~/git-repos/cs220/labs/lab11/files/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls ~[1P/git-repos/cs220/labs/lab11/files/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+coverage  int-search  matmul-cache  parity
+
+real	0m0.006s
+user	0m0.000s
+sys	0m0.003s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd [K[K[Kcd..
+bash: cd..: command not found
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd. [K[K ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11$ touch lab11_ou tput.txt
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11$ emacs lab11[K[K[K[K[K[K[K[K[K[K[Kcd files
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ ^C
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time sle ep 5
+
+real	0m5.004s
+user	0m0.002s
+sys	0m0.001s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ ^C
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m1.747s
+user	0m0.040s
+sys	0m0.240s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ time wc -l `find /etc -type f 2>/dev/null` 2>/dev/null | tail
+     34 /etc/logrotate.conf.dpkg-old
+    618 /etc/matplotlibrc2
+     15 /etc/nftables.conf
+     56 /etc/ntp.conf.dpkg-old
+      3 /etc/sbclrc
+     40 /etc/usb_modeswitch.conf
+      1 /etc/video_format
+     21 /etc/xattr.conf
+     23 /etc/sysfs.conf
+ 166652 total
+
+real	0m0.725s
+user	0m0.035s
+sys	0m0.161s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ ls
+coverage  int-search  matmul-cache  parity
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd parity/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ n aje[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake
+cc -g -Wall -std=c11 -O1   -c -o parity-c.o parity-c.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc   parity-c.o main.o   -o parity-c
+cc -g -Wall -std=c11 -O1   -c -o parity-s.o parity-s.c
+cc   parity-s.o main.o   -o parity-s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ . /parity-c -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ . /parity-s -d 10
+67: 0
+c6: 1
+69: 1
+73: 0
+51: 0
+ff: 1
+4a: 0
+ec: 0
+29: 0
+cd: 0
+3
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s -d 10[1P 10[1P 10[1P10
+3
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s 10-d 10c[C[C[C[C[C[C[1P 10[1P 10[1P10
+3
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-c 100000000000000000000000[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[Cs 10[K00000000000000000
+usage: ./parity-s [-d] NUM_TESTS
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s 1000000000000000000[C[C[C[C[C[C[C[C[4Pc 100000000000000
+138231755
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-c 100000000000000[C[C[C[C[C[C[C[Cs 1000000000000000000[C[C[C[C[C[C[C[C[4Pc 100000000000000[C[C[C[C[C[C[C[Cs 1000000000000000000[K[K[K[K[K0
+138229753
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s 100000000000000[K[K[K[K[K[K[K[K[K[K[K[K000000
+49997794
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ ./parity-s 100000000000000[C[C[C[C[C[C[C[Cc[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K
+50003700
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/parity$ c d ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd matmul-cache/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ emacs simple-matmul.c 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ ls
+main.c	Makefile  matmul.h  simple-matmul.c  transpose-matmul.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ emacs transpose-matmul.c 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ make
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o simple-matmul.o simple-matmul.c
+cc main.o simple-matmul.o  -o simple-matmul
+cc -g -Wall -std=c11 -O1   -c -o transpose-matmul.o transpose-matmul.c
+cc main.o transpose-matmul.o  -o transpose-matmul
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ ./simple-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ ./transpose-matmul 4 1
+2.22116e+17 7.02729e+17 9.76657e+17 2.08306e+17 
+2.17616e+18 2.16772e+18 3.40213e+18 1.2273e+18 
+4.86494e+18 4.48803e+18 7.27046e+18 2.8719e+18 
+7.68709e+18 2.14813e+18 5.99903e+18 4.12269e+18 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ time ,.[K[K./transpose-matmul[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksimple-matmul 1500 1
+
+real	0m10.427s
+user	0m10.417s
+sys	0m0.008s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ time ./simple-matmul 1500 1[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktime ./ [Ktranspose-matmul 1500 1
+
+real	0m8.452s
+user	0m8.447s
+sys	0m0.004s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ for s in `seq 1000 500 2500`; \
+> do [K[K[Kdo \
+> echo -n "*** Size $s: simple"; time ./simple-matmul $s 1 ; echo ; \
+> echo -n "*** Size $s: transpose"; time ./transpose-matmul $s 1 ; echo ; \
+> done[K[K[K[Kdone
+*** Size 1000: simple
+real	0m2.716s
+user	0m2.691s
+sys	0m0.024s
+
+*** Size 1000: transpose
+real	0m2.482s
+user	0m2.477s
+sys	0m0.004s
+
+*** Size 1500: simple
+real	0m10.502s
+user	0m10.488s
+sys	0m0.012s
+
+*** Size 1500: transpose
+real	0m8.461s
+user	0m8.452s
+sys	0m0.008s
+
+*** Size 2000: simple
+real	0m26.179s
+user	0m26.165s
+sys	0m0.012s
+
+*** Size 2000: transpose
+real	0m20.193s
+user	0m20.180s
+sys	0m0.012s
+
+*** Size 2500: simple
+real	0m48.389s
+user	0m48.376s
+sys	0m0.012s
+
+*** Size 2500: transpose
+real	0m39.246s
+user	0m39.228s
+sys	0m0.016s
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/matmul-cache$ cd [K[K[Kcd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ ls
+coverage  int-search  matmul-cache  parity
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd int-search/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ ls
+binary-search.c  int_compare.h	  main.c
+int_compare.c	 linear-search.c  Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ emacs binary-search.c 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ emacs main.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ ew[Kmacs linear-search.c 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ make
+cc -g -Wall -std=c11 -O1   -c -o linear-search.o linear-search.c
+cc -g -Wall -std=c11 -O1   -c -o main.o main.c
+cc -g -Wall -std=c11 -O1   -c -o int_compare.o int_compare.c
+cc   linear-search.o main.o int_compare.o   -o linear-search
+cc -g -Wall -std=c11 -O1   -c -o binary-search.o binary-search.c
+cc   binary-search.o main.o int_compare.o   -o binary-search
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ ./linear search 100 1
+bash: ./linear: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ ./linear search 100 1[1P[C[1@-
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ ./linear-search 100 1[C[C[C[C[C[C[C[C[C[C[C [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K./linear search 100 1[C[C[C[C[C[C[C[C[C[C[C-[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktime ./linear-search 1[K2000 2000 
+
+real	0m6.666s
+user	0m6.665s
+sys	0m0.000s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ time ./linear-search 2000 2000 [1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@b[12@inary-search
+
+real	0m0.341s
+user	0m0.339s
+sys	0m0.000s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files$ cd coverage/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ make
+cc -g -Wall -std=c11 -fprofile-arcs -ftest-coverage    coverage.c   -o coverage
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ ./coverage 200 2000 2999
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ ls
+coverage  coverage.c  coverage.gcda  coverage.gcno  Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ cd [K[K[Kgcov coverage.gcda
+File 'coverage.c'
+Lines executed:12.50% of 24
+Creating 'coverage.c.gcov'
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ eam[K[Kmas[Kcs coverage.c.gcov 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ ./[K[K./coverta[K[Kage 
+8 4545 122
+compute(8, 4545, 122) = 652
+9 1502 100
+compute(9, 1502, 100) = 652
+9   4 5000 200 
+compute(4, 5000, 20) = 652
+1 20 600
+compute(1, 20, 600) = 1320
+3 4 500
+compute(3, 4, 500) = 1320
+8 9 5000
+compute(8, 9, 5000) = 652
+200 2001 3001
+compute(200, 2001, 3001) = 730
+800 900 1000
+compute(800, 900, 1000) = 730
+666 666 666           444 555 666
+compute(444, 555, 666) = 730
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ time ./linear-search 2000 2000 
+bash: yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ realpath 0m6.666s
+/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage/0m6.666s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ users 0m6.665s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ syst0m0.000s
+bash: syst0m0.000s: command not found
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$ time ./binary-search 2000 2000 
+bash: yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/int-search$: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ realpath 0m0.341s
+/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage/0m0.341s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ users 0m0.339s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ syst0m0.000s
+bash: syst0m0.000s: command not found
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab11/files/coverage$ exit
+
+Script done on 2019-10-31 12:17:31-04:00 [COMMAND_EXIT_CODE="127"]
