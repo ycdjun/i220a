@@ -1,0 +1,247 @@
+
+Section A52
+
+Script started on 2019-11-07 11:46:52-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+--------------------------------------------------------------------------------------------------------------------------------
+Excercise 1:
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files$ cd fil[K[K[K[K[K[Kcd quote-files/
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \\
+\
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo '\[K[K\'
+'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \*
+*
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \$Home[K[K[KOME\"\\
+$HOME"\
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \'[K[K'\'
+\
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \[K'\\'
+\\
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo '*#[K$`[K~\
+> bash: unexpected EOF while looking for matching `''
+bash: syntax error: unexpected end of file
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo '*$~'
+*$~
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo '|[K\''
+> '
+\
+
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo "\"\\"
+"\
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo "$HOME"
+/home/yjun1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo \
+> abc |[K\
+> 123
+abc 123
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ [K[Ayjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-fil
+es$ ls $*
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls '$`[K~[K'*
+ls: cannot access '$*': No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls '$'*[K
+ls: cannot access '$': No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls '$'[K[K[K"'s[K$'"*
+ls: cannot access ''\''$'\''*': No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls "'$'"*[K[K[K[K[K[K'[K"4"[K[K$"*
+ls: cannot access '$*': No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls "'"*
+"'12"
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l ~[K*\s[K$*
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '1$2'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 'a$b'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ cd [K[K[Kls -l *'*[K[K\'*
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 "'12"
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 "a'b"
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l *\'*$* [K | wc -l
+2
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l *\$* | wc -l[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls -l \\*
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '\\ab'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l \\*[1P*
+ls: cannot access '*': No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l \*[C[K[K'\'*
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '\\ab'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l **
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '**'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '1$2'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 "'12"
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '1"2'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 'a$b'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '\\ab'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 'a"b'
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 "a'b"
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -l cc[K[K??
+-rw-r--r-- 1 yjun1 yjun1 0 Nov  7 11:39 '**'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls -- ??
+'**'   -l
+--------------------------------------------------------------------------------------------------------------------
+Exercise 2:
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/g7-37:@/tmp/.ICE-unix/15629,unix/g7-37:/tmp/.ICE-unix/15629
+WINDOWID=50331651
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session37
+XDG_MENU_PREFIX=xfce-
+SSH_AUTH_SOCK=/tmp/ssh-7YwJJ6omWmII/agent.15585
+DESKTOP_SESSION=lightdm-xsession
+SSH_AGENT_PID=15619
+GTK_MODULES=gail:atk-bridge
+XDG_SEAT=seat0
+PWD=/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files
+KRB5CCNAME=FILE:/tmp/krb5cc_14384_mRX4IS
+XDG_SESSION_DESKTOP=lightdm-xsession
+LOGNAME=yjun1
+XDG_SESSION_TYPE=x11
+XAUTHORITY=/home/yjun1/.Xauthority
+XDG_GREETER_DATA_DIR=/var/lib/lightdm/data/yjun1
+HOME=/home/yjun1
+LANG=en_US.utf8
+XDG_CURRENT_DESKTOP=XFCE
+VTE_VERSION=5402
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+GLADE_CATALOG_PATH=:
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+USER=yjun1
+DISPLAY=:4.0
+SHLVL=3
+XDG_VTNR=11
+XDG_SESSION_ID=127
+GLADE_MODULE_PATH=:
+XDG_RUNTIME_DIR=/run/user/14384
+GLADE_PIXMAP_PATH=:
+XDG_DATA_DIRS=/usr/share/xfce4:/usr/local/share/:/usr/share/:/usr/share
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+GDMSESSION=lightdm-xsession
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14384/bus
+OLDPWD=/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files
+_=/usr/bin/env
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo $HOme[K[K[KOME
+/home/yjun1
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo #[K$PATh[KH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo $xxx
+
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ xxx ==[K 123
+bash: xxx: command not found
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ xxx = 123[C[C[C[C[Cecho $xxx
+
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ 123[K[K[Kxx=[Kx=123
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo $xxx
+123
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ env | grep xxx
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ export xxx
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ env | grep xxx[K
+xxx=123
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ export xx==[K456
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ e[Kexport xx=456[C[C[C[C[C[Cnv | grep xx
+xxx=123
+xx=456
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo $p
+
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ p=4[K#P[K[K#P[K[K$PATH
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ #[K$PATH ='[K[K[K = 
+bash: /usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games: No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ pATH[K[K[K[Kecho $PATH[C[C[C[C[C[2P$PATH = [C[C[C[C[C[1Pp=$PATH[C$PATH = [1P[C[C[C[C[C[C[1P[C
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo #[K#[K$PATH
+
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+bash: ls: No such file or directory
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ PATH=$p
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ echo [K[K[K[K[Ks[K;s
+bash: syntax error near unexpected token `;'
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+------------------------------------------------------------------------------------------------------------\
+Excercise 3:
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ ls ; wc *
+'**'  '1$2'  "'12"  '1"2'  'a$b'  '\\ab'  'a"b'  "a'b"	 -l
+0 **
+0 1$2
+0 '12
+0 1"2
+0 a$b
+0 \\ab
+0 a"b
+0 a'b
+0 total
+	
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ find / -name '*.c' 2>/dev/null >c-files.lst &
+[1] 23087
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ jobs
+[1]+  Running                 find / -name '*.c' 2> /dev/null > c-files.lst &
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ kill %l
+bash: kill: %l: no such job
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ kill %l[K1
+-------------------------------------------------------------------------------------------------------
+Exercise 4:
+yjun1@g7-37:/import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files$ cd ~
+[1]+  Terminated              find / -name '*.c' 2> /dev/null > c-files.lst  (wd: /import/linux/home1/yjun1/git-repos/i220a/work/lab12/files/quote-files)
+(wd now: ~)
+yjun1@g7-37:~$ pwd
+/home/yjun1
+yjun1@g7-37:~$ xx=123
+yjun1@g7-37:~$ pwd; echo $xx[K[K[K[K[K[K[K[K[K[K[K[K[Kpwd; echo $x
+/home/yjun1
+
+yjun1@g7-37:~$ pwd; echo $xx; (xx=abc; cd /; pwd; echo $xx); pwd; echo $xx
+/home/yjun1
+123
+/
+abc
+/home/yjun1
+123
+
+-------------------------------------------------------------------------------------------------------------------------------------
+Exercise 5:
+yjun1@g7-37:~$ grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`
+/home/yjun1/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+yjun1@g7-37:~$ grep -i 'MAIN(' `find ~/cs220/projects -name '*.[ch]'`[1@g[1P[1@g[1@i[1@t[1@-[1@r[1@e[1@p[1@o[1@s[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@g[1@it-repos/cs220/projects -name '*.[ch]'` [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+/home/yjun1/git-repos/cs220/projects/prj1/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/yjun1/git-repos/cs220/projects/prj1-sol/main.c:main(int argc, const char *argv[])
+/home/yjun1/git-repos/cs220/projects/prj2-sol/main.c:main()
+yjun1@g7-37:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'` | wc -l
+3
+yjun1@g7-37:~$ grep -i 'MAIN(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| w[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc[1P -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc [1P-l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C*(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C'(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: syntax error near unexpected token `('
+yjun1@g7-37:~$ grep -i '*'(' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C' `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc[1P -l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C `find ~/git-repos/cs220/projects -name '*.[ch]'`| wc [1P-l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+525
+--------------------------------------------------------------------------------------------------------------------------------------
+Exercise 6:
+yjun1@g7-37:~$ echo $
+$
+yjun1@g7-37:~$ false; echo 123
+123
+yjun1@g7-37:~$ true [K; echo 123
+123
+yjun1@g7-37:~$ false && echo 123
+yjun1@g7-37:~$ true && echo 23[K[K123
+123
+yjun1@g7-37:~$ false || echo 123
+123
+yjun1@g7-37:~$ treu[K[Kue || echo 123
+yjun1@g7-37:~$ slep[Kep 5 | echo 123
+123
+yjun1@g7-37:~$ echo 123 | sleep 5
+yjun1@g7-37:~$ echo 123 | sleep 5[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksleep 5 | echo 123[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Ptrue |[C[C[C[C[C[C[C[C[C[C[2@sleep 5 [C[C[C[C[C[C[C[C[C[C[1P[1P[1@;
+123
+[2] 26525
+[1]   Exit 1                  ( sleep && echo 123 )
+yjun1@g7-37:~$ exit
+
+Script done on 2019-11-07 12:21:30-05:00 [COMMAND_EXIT_CODE="0"]
