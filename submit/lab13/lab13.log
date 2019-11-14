@@ -1,0 +1,1079 @@
+Script started on 2019-11-14 11:48:45-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13$ cd files/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd stdin-char-count/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ emacs stdin-char-count.c &
+[1] 2325
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ make
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[1]+  Done                    emacs stdin-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ./stdin-char-count < [Kstdin-char-count
+EOF = -1
+^C
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count[C[C[C[C[C[C[C[C[Cmake[Kemacs stdin-char-count.c &
+[1] 2560
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ emacs stdin-char-count.c &[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count[C[C[C[C[C[C[C[C[Cmake[K
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[1]+  Done                    emacs stdin-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ makeemacs stdin-char-count.c &[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count
+EOF = -1
+^C
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count[C[C[C[C[C[C[C[C[Cmake[Kemacs stdin-char-count.c &[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count[C[C[C[C[C[C[C[C[C[10Pemacs stdin-char-count.c &[C[C[C[C[C[C[C[C[Cmake[Kemacs stdin-char-count.c &
+[1] 2934
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ emacs stdin-char-count.c &[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count[C[C[C[C[C[C[C[C[Cmake[K
+gcc -g -Wall -std=c11 -funsigned-char    stdin-char-count.c   -o stdin-char-count
+[1]+  Done                    emacs stdin-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ makeemacs stdin-char-count.c &[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count
+EOF = -1
+4112
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ wc stdin-char-count.c
+ 12  32 205 stdin-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ wc stdin-char-count.c[C[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd [K[K[Ktouch la b12[K3_output.txt
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ ls
+file-char-count  lab13_output.txt  rec-io
+file-copy	 no-buffer-copy    stdin-char-count
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd stdin-char-count/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ls
+Makefile  stdin-char-count  stdin-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ^C
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd file-c
+bash: cd: file-c: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd file-c[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kls
+file-char-count  lab13_output.txt  rec-io
+file-copy	 no-buffer-copy    stdin-char-count
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd file-copy/-c[K[K[K-c[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- char-count/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ emacs file-char-count.c &
+[1] 3676
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ emacs file-char-count.c &[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmk[Kake
+gcc -g -Wall -std=c11    file-char-count.c   -o file-char-count
+[1]+  Done                    emacs file-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ ./file-char-count 
+usage: ./file-char-count FILE_NAME
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ ./file-char-count file-char-count.c
+566
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ wc file-char-count.c
+ 27  81 566 file-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ ./file-char-count xxx
+cannot read xxx: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd stdin-char-count/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ cd [K[K[K./stdin-char-count <stdin-char-count.c
+EOF = -1
+205
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ al[K[Kval[K[K[Kcd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd fie[Kle-c[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ke- char-count/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ ls
+file-char-count  file-char-count.c  Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count
+==4536== Memcheck, a memory error detector
+==4536== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4536== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==4536== Command: ./file-char-count file-char-count
+==4536== 
+19560
+==4536== 
+==4536== HEAP SUMMARY:
+==4536==     in use at exit: 552 bytes in 1 blocks
+==4536==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==4536== 
+==4536== LEAK SUMMARY:
+==4536==    definitely lost: 0 bytes in 0 blocks
+==4536==    indirectly lost: 0 bytes in 0 blocks
+==4536==      possibly lost: 0 bytes in 0 blocks
+==4536==    still reachable: 552 bytes in 1 blocks
+==4536==         suppressed: 0 bytes in 0 blocks
+==4536== Rerun with --leak-check=full to see details of leaked memory
+==4536== 
+==4536== For counts of detected and suppressed errors, rerun with: -v
+==4536== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klscd file-char-count/[C[C[C[C[C[C[C[C[C[C[C..[K./stdin-char-count <stdin-char-count.c[C[C[C[C[C[C[C[Ccd ..[Kfile-char-count/[C[C[C[C[C[C[C[Cls[K[Klscd file-char-count/[C[C[C[C[C[C[C[C[C[C[C..[K./stdin-char-count <stdin-char-count.c[C[C[C[C[C[C[C[C[18Pcd stdin-char-count/[C[C[C[C[C[C[C[C[C[C[C..[Kstdin-char-count/[C[C[C[C[C[C[C[C./stdin-char-count <stdin-char-count.c[C[C[C[C[C[C[C[Ccd ..[Kfile-char-count/[C[C[C[C[C[C[C[Cls[K[Kvalgrind ./file-char-count file-char-count
+==4637== Memcheck, a memory error detector
+==4637== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4637== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==4637== Command: ./file-char-count file-char-count
+==4637== 
+19560
+==4637== 
+==4637== HEAP SUMMARY:
+==4637==     in use at exit: 552 bytes in 1 blocks
+==4637==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==4637== 
+==4637== LEAK SUMMARY:
+==4637==    definitely lost: 0 bytes in 0 blocks
+==4637==    indirectly lost: 0 bytes in 0 blocks
+==4637==      possibly lost: 0 bytes in 0 blocks
+==4637==    still reachable: 552 bytes in 1 blocks
+==4637==         suppressed: 0 bytes in 0 blocks
+==4637== Rerun with --leak-check=full to see details of leaked memory
+==4637== 
+==4637== For counts of detected and suppressed errors, rerun with: -v
+==4637== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count
+==4646== Memcheck, a memory error detector
+==4646== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4646== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==4646== Command: ./file-char-count file-char-count
+==4646== 
+19560
+==4646== 
+==4646== HEAP SUMMARY:
+==4646==     in use at exit: 552 bytes in 1 blocks
+==4646==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==4646== 
+==4646== LEAK SUMMARY:
+==4646==    definitely lost: 0 bytes in 0 blocks
+==4646==    indirectly lost: 0 bytes in 0 blocks
+==4646==      possibly lost: 0 bytes in 0 blocks
+==4646==    still reachable: 552 bytes in 1 blocks
+==4646==         suppressed: 0 bytes in 0 blocks
+==4646== Rerun with --leak-check=full to see details of leaked memory
+==4646== 
+==4646== For counts of detected and suppressed errors, rerun with: -v
+==4646== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ valgrind ./file-char-count file-char-count.c
+==4663== Memcheck, a memory error detector
+==4663== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4663== Using Valgrind-3.14.0 and LibVEX; rerun with -h for copyright info
+==4663== Command: ./file-char-count file-char-count.c
+==4663== 
+566
+==4663== 
+==4663== HEAP SUMMARY:
+==4663==     in use at exit: 552 bytes in 1 blocks
+==4663==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==4663== 
+==4663== LEAK SUMMARY:
+==4663==    definitely lost: 0 bytes in 0 blocks
+==4663==    indirectly lost: 0 bytes in 0 blocks
+==4663==      possibly lost: 0 bytes in 0 blocks
+==4663==    still reachable: 552 bytes in 1 blocks
+==4663==         suppressed: 0 bytes in 0 blocks
+==4663== Rerun with --leak-check=full to see details of leaked memory
+==4663== 
+==4663== For counts of detected and suppressed errors, rerun with: -v
+==4663== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ man valgrind
+[?1049h[22;0;0t[?1h=VALGRIND(1)                     Release 3.14.0                     VALGRIND(1)[m
+[m
+[1mNAME[0m[m
+       valgrind - a suite of tools for debugging and profiling programs[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mvalgrind[0m [[4mvalgrind-options[24m] [[1myour-program[0m] [[4myour-program-options[24m][m
+[m
+[1mDESCRIPTION[0m[m
+       [1mValgrind[0m is a flexible program for debugging and profiling Linux[m
+       executables. It consists of a core, which provides a synthetic CPU in[m
+       software, and a series of debugging and profiling tools. The[m
+       architecture is modular, so that new tools can be created easily and[m
+       without disturbing the existing structure.[m
+[m
+       Some of the options described below work with all Valgrind tools, and[m
+       some only work with a few or one. The section MEMCHECK OPTIONS and[m
+       those below it describe tool-specific options.[m
+[m
+       This manual page covers only basic usage and options. For more[m
+       comprehensive information, please see the HTML documentation on your[m
+       system: $INSTALL/share/doc/valgrind/html/index.html, or online:[m
+       http://www.valgrind.org/docs/manual/index.html.[m
+[7m Manual page valgrind(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mTOOL[0m [1mSELECTION[0m [1mOPTIONS[0m[m
+[7m Manual page valgrind(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       The single most important option.[m
+[7m Manual page valgrind(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--tool=<toolname>[0m [1m[default:[0m [1mmemcheck][0m[m
+[7m Manual page valgrind(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Run the Valgrind tool called [4mtoolname[24m, e.g. memcheck, cachegrind,[m
+[7m Manual page valgrind(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           callgrind, helgrind, drd, massif, lackey, none, exp-sgcheck,[m
+[7m Manual page valgrind(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exp-bbv, exp-dhat, etc.[m
+[7m Manual page valgrind(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mBASIC[0m [1mOPTIONS[0m[m
+[7m Manual page valgrind(1) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       These options work with all tools.[m
+[7m Manual page valgrind(1) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-h[0m [1m--help[0m[m
+[7m Manual page valgrind(1) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Show help for all options, both for the core and for the selected[m
+[7m Manual page valgrind(1) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           tool. If the option is repeated it is equivalent to giving[m
+[7m Manual page valgrind(1) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--help-debug[0m.[m
+[7m Manual page valgrind(1) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--help-debug[0m[m
+[7m Manual page valgrind(1) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Same as [1m--help[0m, but also lists debugging options which usually are[m
+[7m Manual page valgrind(1) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           only of use to Valgrind's developers.[m
+[7m Manual page valgrind(1) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--version[0m[m
+[7m Manual page valgrind(1) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Show the version number of the Valgrind core. Tools can have their[m
+[7m Manual page valgrind(1) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           own version numbers. There is a scheme in place to ensure that[m
+[7m Manual page valgrind(1) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           tools only execute when the core version is one they are known to[m
+[7m Manual page valgrind(1) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           work with. This was done to minimise the chances of strange[m
+[7m Manual page valgrind(1) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           problems arising from tool-vs-core version incompatibilities.[m
+[7m Manual page valgrind(1) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-q[0m, [1m--quiet[0m[m
+[7m Manual page valgrind(1) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Run silently, and only print error messages. Useful if you are[m
+[7m Manual page valgrind(1) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           running regression tests or have some other automated test[m
+[7m Manual page valgrind(1) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           machinery.[m
+[7m Manual page valgrind(1) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 34 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-v[0m, [1m--verbose[0m[m
+[7m Manual page valgrind(1) line 35 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Be more verbose. Gives extra information on various aspects of your[m
+[7m Manual page valgrind(1) line 36 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program, such as: the shared objects loaded, the suppressions used,[m
+[7m Manual page valgrind(1) line 37 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the progress of the instrumentation and execution engines, and[m
+[7m Manual page valgrind(1) line 38 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           warnings about unusual behaviour. Repeating the option increases[m
+[7m Manual page valgrind(1) line 39 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the verbosity level.[m
+[7m Manual page valgrind(1) line 40 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 41 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--trace-children=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+[7m Manual page valgrind(1) line 42 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When enabled, Valgrind will trace into sub-processes initiated via[m
+[7m Manual page valgrind(1) line 43 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the [4mexec[24m system call. This is necessary for multi-process programs.[m
+[7m Manual page valgrind(1) line 44 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 45 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that Valgrind does trace into the child of a [4mfork[24m (it would be[m
+[7m Manual page valgrind(1) line 46 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           difficult not to, since [4mfork[24m makes an identical copy of a process),[m
+[7m Manual page valgrind(1) line 47 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           so this option is arguably badly named. However, most children of[m
+[7m Manual page valgrind(1) line 48 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mfork[24m calls immediately call [4mexec[24m anyway.[m
+[7m Manual page valgrind(1) line 49 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 50 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--trace-children-skip=patt1,patt2,...[0m[m
+[7m Manual page valgrind(1) line 51 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option only has an effect when [1m--trace-children=yes[0m is[m
+[7m Manual page valgrind(1) line 52 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specified. It allows for some children to be skipped. The option[m
+[7m Manual page valgrind(1) line 53 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           takes a comma separated list of patterns for the names of child[m
+[7m Manual page valgrind(1) line 54 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           executables that Valgrind should not trace into. Patterns may[m
+[7m Manual page valgrind(1) line 55 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           include the metacharacters ?  and *, which have the usual meaning.[m
+[7m Manual page valgrind(1) line 56 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 57 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This can be useful for pruning uninteresting branches from a tree[m
+[7m Manual page valgrind(1) line 58 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of processes being run on Valgrind. But you should be careful when[m
+[7m Manual page valgrind(1) line 59 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           using it. When Valgrind skips tracing into an executable, it[m
+[7m Manual page valgrind(1) line 60 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           doesn't just skip tracing that executable, it also skips tracing[m
+[7m Manual page valgrind(1) line 61 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           any of that executable's child processes. In other words, the flag[m
+[7m Manual page valgrind(1) line 62 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           doesn't merely cause tracing to stop at the specified executables[m
+[7m Manual page valgrind(1) line 63 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           -- it skips tracing of entire process subtrees rooted at any of the[m
+[7m Manual page valgrind(1) line 64 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specified executables.[m
+[7m Manual page valgrind(1) line 65 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 66 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--trace-children-skip-by-arg=patt1,patt2,...[0m[m
+[7m Manual page valgrind(1) line 67 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This is the same as [1m--trace-children-skip[0m, with one difference: the[m
+[7m Manual page valgrind(1) line 68 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           decision as to whether to trace into a child process is made by[m
+[7m Manual page valgrind(1) line 69 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           examining the arguments to the child process, rather than the name[m
+[7m Manual page valgrind(1) line 70 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           of its executable.[m
+[7m Manual page valgrind(1) line 71 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 72 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--child-silent-after-fork=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+[7m Manual page valgrind(1) line 73 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When enabled, Valgrind will not show any debugging or logging[m
+[7m Manual page valgrind(1) line 74 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           output for the child process resulting from a [4mfork[24m call. This can[m
+[7m Manual page valgrind(1) line 75 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           make the output less confusing (although more misleading) when[m
+[7m Manual page valgrind(1) line 76 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           dealing with processes that create children. It is particularly[m
+[7m Manual page valgrind(1) line 77 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           useful in conjunction with [4m--trace-children=[24m. Use of this option is[m
+[7m Manual page valgrind(1) line 78 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           also strongly recommended if you are requesting XML output[m
+[7m Manual page valgrind(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KDD[H[2J[H[m
+           This can be useful for pruning uninteresting branches from a tree[m
+           of processes being run on Valgrind. But you should be careful when[m
+           using it. When Valgrind skips tracing into an executable, it[m
+           doesn't just skip tracing that executable, it also skips tracing[m
+           any of that executable's child processes. In other words, the flag[m
+           doesn't merely cause tracing to stop at the specified executables[m
+           -- it skips tracing of entire process subtrees rooted at any of the[m
+           specified executables.[m
+[m
+       [1m--trace-children-skip-by-arg=patt1,patt2,...[0m[m
+           This is the same as [1m--trace-children-skip[0m, with one difference: the[m
+           decision as to whether to trace into a child process is made by[m
+           examining the arguments to the child process, rather than the name[m
+           of its executable.[m
+[m
+       [1m--child-silent-after-fork=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+           When enabled, Valgrind will not show any debugging or logging[m
+           output for the child process resulting from a [4mfork[24m call. This can[m
+           make the output less confusing (although more misleading) when[m
+           dealing with processes that create children. It is particularly[m
+           useful in conjunction with [4m--trace-children=[24m. Use of this option is[m
+           also strongly recommended if you are requesting XML output[m
+[7m Manual page valgrind(1) line 79 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           ([4m--xml=yes[24m), since otherwise the XML from child and parent may[m
+[7m Manual page valgrind(1) line 80 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           become mixed up, which usually makes it useless.[m
+[7m Manual page valgrind(1) line 81 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 82 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--vgdb=<no|yes|full>[0m [1m[default:[0m [1myes][0m[m
+[7m Manual page valgrind(1) line 83 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Valgrind will provide "gdbserver" functionality when [1m--vgdb=yes[0m or[m
+[7m Manual page valgrind(1) line 84 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--vgdb=full[0m is specified. This allows an external GNU GDB debugger[m
+[7m Manual page valgrind(1) line 85 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to control and debug your program when it runs on Valgrind.[m
+[7m Manual page valgrind(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KDD[H[2J[H           -- it skips tracing of entire process subtrees rooted at any of the[m
+           specified executables.[m
+[m
+       [1m--trace-children-skip-by-arg=patt1,patt2,...[0m[m
+           This is the same as [1m--trace-children-skip[0m, with one difference: the[m
+           decision as to whether to trace into a child process is made by[m
+           examining the arguments to the child process, rather than the name[m
+           of its executable.[m
+[m
+       [1m--child-silent-after-fork=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+           When enabled, Valgrind will not show any debugging or logging[m
+           output for the child process resulting from a [4mfork[24m call. This can[m
+           make the output less confusing (although more misleading) when[m
+           dealing with processes that create children. It is particularly[m
+           useful in conjunction with [4m--trace-children=[24m. Use of this option is[m
+           also strongly recommended if you are requesting XML output[m
+           ([4m--xml=yes[24m), since otherwise the XML from child and parent may[m
+           become mixed up, which usually makes it useless.[m
+[m
+       [1m--vgdb=<no|yes|full>[0m [1m[default:[0m [1myes][0m[m
+           Valgrind will provide "gdbserver" functionality when [1m--vgdb=yes[0m or[m
+           [1m--vgdb=full[0m is specified. This allows an external GNU GDB debugger[m
+           to control and debug your program when it runs on Valgrind.[m
+[7m Manual page valgrind(1) line 86 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--vgdb=full[0m incurs significant performance overheads, but provides[m
+[7m Manual page valgrind(1) line 87 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           more precise breakpoints and watchpoints. See Debugging your[m
+[7m Manual page valgrind(1) line 88 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program using Valgrind's gdbserver and GDB for a detailed[m
+[7m Manual page valgrind(1) line 89 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           description.[m
+[7m Manual page valgrind(1) line 90 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 91 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the embedded gdbserver is enabled but no gdb is currently being[m
+[7m Manual page valgrind(1) line 92 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           used, the vgdb command line utility can send "monitor commands" to[m
+[7m Manual page valgrind(1) line 93 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Valgrind from a shell. The Valgrind core provides a set of Valgrind[m
+[7m Manual page valgrind(1) line 94 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           monitor commands. A tool can optionally provide tool specific[m
+[7m Manual page valgrind(1) line 95 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           monitor commands, which are documented in the tool specific[m
+[7m Manual page valgrind(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KDD[H[2J[H           When enabled, Valgrind will not show any debugging or logging[m
+           output for the child process resulting from a [4mfork[24m call. This can[m
+           make the output less confusing (although more misleading) when[m
+           dealing with processes that create children. It is particularly[m
+           useful in conjunction with [4m--trace-children=[24m. Use of this option is[m
+           also strongly recommended if you are requesting XML output[m
+           ([4m--xml=yes[24m), since otherwise the XML from child and parent may[m
+           become mixed up, which usually makes it useless.[m
+[m
+       [1m--vgdb=<no|yes|full>[0m [1m[default:[0m [1myes][0m[m
+           Valgrind will provide "gdbserver" functionality when [1m--vgdb=yes[0m or[m
+           [1m--vgdb=full[0m is specified. This allows an external GNU GDB debugger[m
+           to control and debug your program when it runs on Valgrind.[m
+           [1m--vgdb=full[0m incurs significant performance overheads, but provides[m
+           more precise breakpoints and watchpoints. See Debugging your[m
+           program using Valgrind's gdbserver and GDB for a detailed[m
+           description.[m
+[m
+           If the embedded gdbserver is enabled but no gdb is currently being[m
+           used, the vgdb command line utility can send "monitor commands" to[m
+           Valgrind from a shell. The Valgrind core provides a set of Valgrind[m
+           monitor commands. A tool can optionally provide tool specific[m
+           monitor commands, which are documented in the tool specific[m
+[7m Manual page valgrind(1) line 96 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           chapter.[m
+[7m Manual page valgrind(1) line 97 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 98 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--vgdb-error=<number>[0m [1m[default:[0m [1m999999999][0m[m
+[7m Manual page valgrind(1) line 99 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Use this option when the Valgrind gdbserver is enabled with[m
+[7m Manual page valgrind(1) line 100 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--vgdb=yes[0m or [1m--vgdb=full[0m. Tools that report errors will wait for[m
+[7m Manual page valgrind(1) line 101 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           "number" errors to be reported before freezing the program and[m
+[7m Manual page valgrind(1) line 102 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           waiting for you to connect with GDB. It follows that a value of[m
+[7m Manual page valgrind(1) line 103 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           zero will cause the gdbserver to be started before your program is[m
+[7m Manual page valgrind(1) line 104 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           executed. This is typically used to insert GDB breakpoints before[m
+[7m Manual page valgrind(1) line 105 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           execution, and also works with tools that do not report errors,[m
+[7m Manual page valgrind(1) line 106 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           such as Massif.[m
+[7m Manual page valgrind(1) line 107 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 108 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--vgdb-stop-at=<set>[0m [1m[default:[0m [1mnone][0m[m
+[7m Manual page valgrind(1) line 109 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Use this option when the Valgrind gdbserver is enabled with[m
+[7m Manual page valgrind(1) line 110 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--vgdb=yes[0m or [1m--vgdb=full[0m. The Valgrind gdbserver will be invoked[m
+[7m Manual page valgrind(1) line 111 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           for each error after [1m--vgdb-error[0m have been reported. You can[m
+[7m Manual page valgrind(1) line 112 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           additionally ask the Valgrind gdbserver to be invoked for other[m
+[7m Manual page valgrind(1) line 113 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           events, specified in one of the following ways:[m
+[7m Manual page valgrind(1) line 114 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 115 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           •   a comma separated list of one or more of [1mstartup[0m [1mexit[0m[m
+[7m Manual page valgrind(1) line 116 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               [1mvalgrindabexit[0m.[m
+[7m Manual page valgrind(1) line 117 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 118 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               The values [1mstartup[0m [1mexit[0m [1mvalgrindabexit[0m respectively indicate to[m
+[7m Manual page valgrind(1) line 119 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               invoke gdbserver before your program is executed, after the[m
+[7m Manual page valgrind(1) line 120 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               last instruction of your program, on Valgrind abnormal exit[m
+[7m Manual page valgrind(1) line 121 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               (e.g. internal error, out of memory, ...).[m
+[7m Manual page valgrind(1) line 122 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 123 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               Note: [1mstartup[0m and [1m--vgdb-error=0[0m will both cause Valgrind[m
+[7m Manual page valgrind(1) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               gdbserver to be invoked before your program is executed. The[m
+[7m Manual page valgrind(1) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               [1m--vgdb-error=0[0m will in addition cause your program to stop on[m
+[7m Manual page valgrind(1) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               all subsequent errors.[m
+[7m Manual page valgrind(1) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           •   [1mall[0m to specify the complete set. It is equivalent to[m
+[7m Manual page valgrind(1) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K               [1m--vgdb-stop-at=startup,exit,valgrindabexit[0m.[m
+[7m Manual page valgrind(1) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           •   [1mnone[0m for the empty set.[m
+[7m Manual page valgrind(1) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--track-fds=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+[7m Manual page valgrind(1) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When enabled, Valgrind will print out a list of open file[m
+[7m Manual page valgrind(1) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           descriptors on exit or on request, via the gdbserver monitor[m
+[7m Manual page valgrind(1) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           command [4mv.info[24m [4mopen_fds[24m. Along with each file descriptor is printed[m
+[7m Manual page valgrind(1) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           a stack backtrace of where the file was opened and any details[m
+[7m Manual page valgrind(1) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           relating to the file descriptor such as the file name or socket[m
+[7m Manual page valgrind(1) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           details.[m
+[7m Manual page valgrind(1) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--time-stamp=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+[7m Manual page valgrind(1) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When enabled, each message is preceded with an indication of the[m
+[7m Manual page valgrind(1) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           elapsed wallclock time since startup, expressed as days, hours,[m
+[7m Manual page valgrind(1) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           minutes, seconds and milliseconds.[m
+[7m Manual page valgrind(1) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--log-fd=<number>[0m [1m[default:[0m [1m2,[0m [1mstderr][0m[m
+[7m Manual page valgrind(1) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send all of its messages to the[m
+[7m Manual page valgrind(1) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specified file descriptor. The default, 2, is the standard error[m
+[7m Manual page valgrind(1) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           channel (stderr). Note that this may interfere with the client's[m
+[7m Manual page valgrind(1) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           own use of stderr, as Valgrind's output will be interleaved with[m
+[7m Manual page valgrind(1) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           any output that the client sends to stderr.[m
+[7m Manual page valgrind(1) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--log-file=<filename>[0m[m
+[7m Manual page valgrind(1) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send all of its messages to the[m
+[7m Manual page valgrind(1) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specified file. If the file name is empty, it causes an abort.[m
+[7m Manual page valgrind(1) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           There are three special format specifiers that can be used in the[m
+[7m Manual page valgrind(1) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           file name.[m
+[7m Manual page valgrind(1) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m%p[0m is replaced with the current process ID. This is very useful for[m
+[7m Manual page valgrind(1) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program that invoke multiple processes. WARNING: If you use[m
+[7m Manual page valgrind(1) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--trace-children=yes[0m and your program invokes multiple processes OR[m
+[7m Manual page valgrind(1) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           your program forks without calling exec afterwards, and you don't[m
+[7m Manual page valgrind(1) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           use this specifier (or the [1m%q[0m specifier below), the Valgrind output[m
+[7m Manual page valgrind(1) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           from all those processes will go into one file, possibly jumbled[m
+[7m Manual page valgrind(1) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           up, and possibly incomplete. Note: If the program forks and calls[m
+[7m Manual page valgrind(1) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exec afterwards, Valgrind output of the child from the period[m
+[7m Manual page valgrind(1) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           between fork and exec will be lost. Fortunately this gap is really[m
+[7m Manual page valgrind(1) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           tiny for most programs; and modern programs use posix_spawn anyway.[m
+[7m Manual page valgrind(1) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m%n[0m is replaced with a file sequence number unique for this process.[m
+[7m Manual page valgrind(1) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This is useful for processes that produces several files from the[m
+[7m Manual page valgrind(1) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           same filename template.[m
+[7m Manual page valgrind(1) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m%q{FOO}[0m is replaced with the contents of the environment variable[m
+[7m Manual page valgrind(1) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [4mFOO[24m. If the [1m{FOO}[0m part is malformed, it causes an abort. This[m
+[7m Manual page valgrind(1) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specifier is rarely needed, but very useful in certain[m
+[7m Manual page valgrind(1) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           circumstances (eg. when running MPI programs). The idea is that you[m
+[7m Manual page valgrind(1) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specify a variable which will be set differently for each process[m
+[7m Manual page valgrind(1) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in the job, for example BPROC_RANK or whatever is applicable in[m
+[7m Manual page valgrind(1) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           your MPI setup. If the named environment variable is not set, it[m
+[7m Manual page valgrind(1) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           causes an abort. Note that in some shells, the [1m{[0m and [1m}[0m characters[m
+[7m Manual page valgrind(1) line 182 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           may need to be escaped with a backslash.[m
+[7m Manual page valgrind(1) line 183 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 184 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m%%[0m is replaced with [1m%[0m.[m
+[7m Manual page valgrind(1) line 185 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 186 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If an [1m%[0m is followed by any other character, it causes an abort.[m
+[7m Manual page valgrind(1) line 187 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 188 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           If the file name specifies a relative file name, it is put in the[m
+[7m Manual page valgrind(1) line 189 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           program's initial working directory: this is the current directory[m
+[7m Manual page valgrind(1) line 190 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           when the program started its execution after the fork or after the[m
+[7m Manual page valgrind(1) line 191 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           exec. If it specifies an absolute file name (ie. starts with '/')[m
+[7m Manual page valgrind(1) line 192 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           then it is put there.[m
+[7m Manual page valgrind(1) line 193 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 194 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--log-socket=<ip-address:port-number>[0m[m
+[7m Manual page valgrind(1) line 195 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send all of its messages to the[m
+[7m Manual page valgrind(1) line 196 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           specified port at the specified IP address. The port may be[m
+[7m Manual page valgrind(1) line 197 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           omitted, in which case port 1500 is used. If a connection cannot be[m
+[7m Manual page valgrind(1) line 198 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           made to the specified socket, Valgrind falls back to writing output[m
+[7m Manual page valgrind(1) line 199 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           to the standard error (stderr). This option is intended to be used[m
+[7m Manual page valgrind(1) line 200 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in conjunction with the valgrind-listener program. For further[m
+[7m Manual page valgrind(1) line 201 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           details, see the commentary in the manual.[m
+[7m Manual page valgrind(1) line 202 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 203 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mERROR-RELATED[0m [1mOPTIONS[0m[m
+[7m Manual page valgrind(1) line 204 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       These options are used by all tools that can report errors, e.g.[m
+[7m Manual page valgrind(1) line 205 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       Memcheck, but not Cachegrind.[m
+[7m Manual page valgrind(1) line 206 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 207 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--xml=<yes|no>[0m [1m[default:[0m [1mno][0m[m
+[7m Manual page valgrind(1) line 208 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When enabled, the important parts of the output (e.g. tool error[m
+[7m Manual page valgrind(1) line 209 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           messages) will be in XML format rather than plain text.[m
+[7m Manual page valgrind(1) line 210 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Furthermore, the XML output will be sent to a different output[m
+[7m Manual page valgrind(1) line 211 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           channel than the plain text output. Therefore, you also must use[m
+[7m Manual page valgrind(1) line 212 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           one of [1m--xml-fd[0m, [1m--xml-file[0m or [1m--xml-socket[0m to specify where the[m
+[7m Manual page valgrind(1) line 213 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           XML is to be sent.[m
+[7m Manual page valgrind(1) line 214 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 215 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Less important messages will still be printed in plain text, but[m
+[7m Manual page valgrind(1) line 216 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           because the XML output and plain text output are sent to different[m
+[7m Manual page valgrind(1) line 217 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           output channels (the destination of the plain text output is still[m
+[7m Manual page valgrind(1) line 218 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           controlled by [1m--log-fd[0m, [1m--log-file[0m and [1m--log-socket[0m) this should[m
+[7m Manual page valgrind(1) line 219 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           not cause problems.[m
+[7m Manual page valgrind(1) line 220 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 221 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           This option is aimed at making life easier for tools that consume[m
+[7m Manual page valgrind(1) line 222 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Valgrind's output as input, such as GUI front ends. Currently this[m
+[7m Manual page valgrind(1) line 223 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           option works with Memcheck, Helgrind, DRD and SGcheck. The output[m
+[7m Manual page valgrind(1) line 224 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           format is specified in the file[m
+[7m Manual page valgrind(1) line 225 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           docs/internals/xml-output-protocol4.txt in the source tree for[m
+[7m Manual page valgrind(1) line 226 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Valgrind 3.5.0 or later.[m
+[7m Manual page valgrind(1) line 227 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 228 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The recommended options for a GUI to pass, when requesting XML[m
+[7m Manual page valgrind(1) line 229 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           output, are: [1m--xml=yes[0m to enable XML output, [1m--xml-file[0m to send the[m
+[7m Manual page valgrind(1) line 230 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           XML output to a (presumably GUI-selected) file, [1m--log-file[0m to send[m
+[7m Manual page valgrind(1) line 231 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the plain text output to a second GUI-selected file,[m
+[7m Manual page valgrind(1) line 232 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           [1m--child-silent-after-fork=yes[0m, and [1m-q[0m to restrict the plain text[m
+[7m Manual page valgrind(1) line 233 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           output to critical error messages created by Valgrind itself. For[m
+[7m Manual page valgrind(1) line 234 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           example, failure to read a specified suppressions file counts as a[m
+[7m Manual page valgrind(1) line 235 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           critical error message. In this way, for a successful run the text[m
+[7m Manual page valgrind(1) line 236 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           output file will be empty. But if it isn't empty, then it will[m
+[7m Manual page valgrind(1) line 237 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           contain important information which the GUI user should be made[m
+[7m Manual page valgrind(1) line 238 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           aware of.[m
+[7m Manual page valgrind(1) line 239 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 240 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--xml-fd=<number>[0m [1m[default:[0m [1m-1,[0m [1mdisabled][0m[m
+[7m Manual page valgrind(1) line 241 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send its XML output to the specified[m
+[7m Manual page valgrind(1) line 242 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           file descriptor. It must be used in conjunction with [1m--xml=yes[0m.[m
+[7m Manual page valgrind(1) line 243 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 244 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--xml-file=<filename>[0m[m
+[7m Manual page valgrind(1) line 245 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send its XML output to the specified[m
+[7m Manual page valgrind(1) line 246 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           file. It must be used in conjunction with [1m--xml=yes[0m. Any [1m%p[0m or [1m%q[0m[m
+[7m Manual page valgrind(1) line 247 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           sequences appearing in the filename are expanded in exactly the[m
+[7m Manual page valgrind(1) line 248 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           same way as they are for [1m--log-file[0m. See the description of --log-[m
+[7m Manual page valgrind(1) line 249 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           file for details.[m
+[7m Manual page valgrind(1) line 250 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 251 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--xml-socket=<ip-address:port-number>[0m[m
+[7m Manual page valgrind(1) line 252 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies that Valgrind should send its XML output the specified[m
+[7m Manual page valgrind(1) line 253 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           port at the specified IP address. It must be used in conjunction[m
+[7m Manual page valgrind(1) line 254 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           with [1m--xml=yes[0m. The form of the argument is the same as that used[m
+[7m Manual page valgrind(1) line 255 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           by [1m--log-socket[0m. See the description of [1m--log-socket[0m for further[m
+[7m Manual page valgrind(1) line 256 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           details.[m
+[7m Manual page valgrind(1) line 257 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 258 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--xml-user-comment=<string>[0m[m
+[7m Manual page valgrind(1) line 259 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Embeds an extra user comment string at the start of the XML output.[m
+[7m Manual page valgrind(1) line 260 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Only works when [1m--xml=yes[0m is specified; ignored otherwise.[m
+[7m Manual page valgrind(1) line 261 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 262 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--demangle=<yes|no>[0m [1m[default:[0m [1myes][0m[m
+[7m Manual page valgrind(1) line 263 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enable/disable automatic demangling (decoding) of C++ names.[m
+[7m Manual page valgrind(1) line 264 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Enabled by default. When enabled, Valgrind will attempt to[m
+[7m Manual page valgrind(1) line 265 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           translate encoded C++ names back to something approaching the[m
+[7m Manual page valgrind(1) line 266 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           original. The demangler handles symbols mangled by g++ versions[m
+[7m Manual page valgrind(1) line 267 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           2.X, 3.X and 4.X.[m
+[7m Manual page valgrind(1) line 268 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 269 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           An important fact about demangling is that function names mentioned[m
+[7m Manual page valgrind(1) line 270 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           in suppressions files should be in their mangled form. Valgrind[m
+[7m Manual page valgrind(1) line 271 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           does not demangle function names when searching for applicable[m
+[7m Manual page valgrind(1) line 272 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           suppressions, because to do otherwise would make suppression file[m
+[7m Manual page valgrind(1) line 273 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           contents dependent on the state of Valgrind's demangling machinery,[m
+[7m Manual page valgrind(1) line 274 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           and also slow down suppression matching.[m
+[7m Manual page valgrind(1) line 275 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 276 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--num-callers=<number>[0m [1m[default:[0m [1m12][0m[m
+[7m Manual page valgrind(1) line 277 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Specifies the maximum number of entries shown in stack traces that[m
+[7m Manual page valgrind(1) line 278 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           identify program locations. Note that errors are commoned up using[m
+[7m Manual page valgrind(1) line 279 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           only the top four function locations (the place in the current[m
+[7m Manual page valgrind(1) line 280 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           function, and that of its three immediate callers). So this doesn't[m
+[7m Manual page valgrind(1) line 281 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           affect the total number of errors reported.[m
+[7m Manual page valgrind(1) line 282 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 283 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The maximum value for this is 500. Note that higher settings will[m
+[7m Manual page valgrind(1) line 284 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           make Valgrind run a bit more slowly and take a bit more memory, but[m
+[7m Manual page valgrind(1) line 285 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           can be useful when working with programs with deeply-nested call[m
+[7m Manual page valgrind(1) line 286 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           chains.[m
+[7m Manual page valgrind(1) line 287 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 288 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--unw-stack-scan-thresh=<number>[0m [1m[default:[0m [1m0][0m ,[m
+[7m Manual page valgrind(1) line 289 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--unw-stack-scan-frames=<number>[0m [1m[default:[0m [1m5][0m[m
+[7m Manual page valgrind(1) line 290 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Stack-scanning support is available only on ARM targets.[m
+[7m Manual page valgrind(1) line 291 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 292 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           These flags enable and control stack unwinding by stack scanning.[m
+[7m Manual page valgrind(1) line 293 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           When the normal stack unwinding mechanisms -- usage of Dwarf CFI[m
+[7m Manual page valgrind(1) line 294 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           records, and frame-pointer following -- fail, stack scanning may be[m
+[7m Manual page valgrind(1) line 295 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           able to recover a stack trace.[m
+[7m Manual page valgrind(1) line 296 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 297 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Note that stack scanning is an imprecise, heuristic mechanism that[m
+[7m Manual page valgrind(1) line 298 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           may give very misleading results, or none at all. It should be used[m
+[7m Manual page valgrind(1) line 299 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           only in emergencies, when normal unwinding fails, and it is[m
+[7m Manual page valgrind(1) line 300 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           important to nevertheless have stack traces.[m
+[7m Manual page valgrind(1) line 301 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 302 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           Stack scanning is a simple technique: the unwinder reads words from[m
+[7m Manual page valgrind(1) line 303 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           the stack, and tries to guess which of them might be return[m
+[7m Manual page valgrind(1) line 304 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           addresses, by checking to see if they point just after ARM or Thumb[m
+[7m Manual page valgrind(1) line 305 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           call instructions. If so, the word is added to the backtrace.[m
+[7m Manual page valgrind(1) line 306 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 307 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           The main danger occurs when a function call returns, leaving its[m
+[7m Manual page valgrind(1) line 308 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           return address exposed, and a new function is called, but the new[m
+[7m Manual page valgrind(1) line 309 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           function does not overwrite the old address. The result of this is[m
+[7m Manual page valgrind(1) line 310 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           that the backtrace may contain entries for functions which have[m
+[7m Manual page valgrind(1) line 311 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           already returned, and so be very confusing.[m
+[7m Manual page valgrind(1) line 312 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page valgrind(1) line 313 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           A second limitation of this implementation is that it will scan[m
+[7m Manual page valgrind(1) line 314 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           only the page (4KB, normally) containing the starting stack[m
+[7m Manual page valgrind(1) line 315 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           pointer. If the stack frames are large, this may result in only a[m
+[7m Manual page valgrind(1) line 316 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           few (or not even any) being present in the trace. Also, if you are[m
+[7m Manual page valgrind(1) line 317 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K           unlucky and have an initial stack pointer near the end of its[m
+[7m Manual page valgrind(1) line 318 (press h for help or q to quit)[27m[K[K           containing page, the scan may miss all interesting frames.[m
+[m
+           By default stack scanning is disabled. The normal use case is to[m
+           ask for it when a stack trace would otherwise be very short. So, to[m
+           enable it, use --unw-stack-scan-thresh=number. This requests[m
+           Valgrind to try using stack scanning to "extend" stack traces which[m
+           contain fewer than number frames.[m
+[m
+           If stack scanning does take place, it will only generate at most[m
+           the number of frames specified by --unw-stack-scan-frames.[m
+           Typically, stack scanning generates so many garbage entries that[m
+           this value is set to a low value (5) by default. In no case will a[m
+[7m Manual page valgrind(1) line 330 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0tyjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ g[Kvalgrind -v --leak-check [K=yes ./file-char-count files[K-char-count.c
+==5035== Memcheck, a memory error detector
+==5035== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5035== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==5035== Command: ./file-char-count file-char-count.c
+==5035== 
+--5035-- Valgrind options:
+--5035--    -v
+--5035--    --leak-check=yes
+--5035-- Contents of /proc/version:
+--5035--   Linux version 4.19.0-5-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-7)) #1 SMP Debian 4.19.37-5 (2019-06-19)
+--5035-- 
+--5035-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--5035-- Page sizes: currently 4096, max supported 4096
+--5035-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--5035-- Reading syms from /import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count/file-char-count
+--5035-- Reading syms from /lib/x86_64-linux-gnu/ld-2.28.so
+--5035--   Considering /usr/lib/debug/.build-id/f2/5dfd7b95be4ba386fd71080accae8c0732b711.debug ..
+--5035--   .. build-id is valid
+--5035-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--5035--   Considering /usr/lib/debug/.build-id/32/2e77af97f403c3d34ff09edf60b089e72ec889.debug ..
+--5035--   .. build-id is valid
+--5035--    object doesn't have a dynamic symbol table
+--5035-- Scheduler: using generic scheduler lock implementation.
+--5035-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==5035== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-5035-by-yjun1-on-???
+==5035== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-5035-by-yjun1-on-???
+==5035== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-5035-by-yjun1-on-???
+==5035== 
+==5035== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==5035== don't want to do, unless you know exactly what you're doing,
+==5035== or are doing some strange experiment):
+==5035==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=5035 ...command...
+==5035== 
+==5035== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==5035==   /path/to/gdb ./file-char-count
+==5035== and then give GDB the following command
+==5035==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=5035
+==5035== --pid is optional if only one valgrind process is running
+==5035== 
+--5035-- REDIR: 0x401e2f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--5035-- REDIR: 0x401e0d0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (vgPlain_amd64_linux_REDIR_FOR_index)
+--5035-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--5035--   Considering /usr/lib/debug/.build-id/34/fbc4cdfbfce1bfc3d2e522a01a050bf724c930.debug ..
+--5035--   .. build-id is valid
+--5035-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--5035--   Considering /usr/lib/debug/.build-id/ca/bb7898ea982d936cbfadd70ae831c6eb63623f.debug ..
+--5035--   .. build-id is valid
+==5035== WARNING: new redirection conflicts with existing -- ignoring it
+--5035--     old: 0x0401e2f0 (strlen              ) R-> (0000.0) 0x580c9ce2 vgPlain_amd64_linux_REDIR_FOR_strlen
+--5035--     new: 0x0401e2f0 (strlen              ) R-> (2007.0) 0x04838d80 strlen
+--5035-- REDIR: 0x401ab10 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4839e40 (strcmp)
+--5035-- REDIR: 0x401e830 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x483d860 (mempcpy)
+--5035-- Reading syms from /lib/x86_64-linux-gnu/libc-2.28.so
+--5035--   Considering /usr/lib/debug/.build-id/18/b9a9a8c523e5cfe5b5d946d605d09242f09798.debug ..
+--5035--   .. build-id is valid
+--5035-- REDIR: 0x4903f70 (libc.so.6:memmove) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903160 (libc.so.6:strncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4904250 (libc.so.6:strcasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4902b70 (libc.so.6:strcat) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903190 (libc.so.6:rindex) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4905890 (libc.so.6:rawmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x491e230 (libc.so.6:wmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x491dcd0 (libc.so.6:wcscmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49040e0 (libc.so.6:mempcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903f10 (libc.so.6:bcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903100 (libc.so.6:strncmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4902be0 (libc.so.6:strcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4904040 (libc.so.6:memset) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x491dca0 (libc.so.6:wcschr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49030a0 (libc.so.6:strnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4902c70 (libc.so.6:strcspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49042a0 (libc.so.6:strncasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4902c40 (libc.so.6:strcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49043e0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x491f4d0 (libc.so.6:wcsnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49031c0 (libc.so.6:strpbrk) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4902ba0 (libc.so.6:index) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903070 (libc.so.6:strlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x490a280 (libc.so.6:memrchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49042f0 (libc.so.6:strcasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903ee0 (libc.so.6:memchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x491ddb0 (libc.so.6:wcslen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4903460 (libc.so.6:strspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4904220 (libc.so.6:stpncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49041f0 (libc.so.6:stpcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x49058c0 (libc.so.6:strchrnul) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4904340 (libc.so.6:strncasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5035-- REDIR: 0x4912ef0 (libc.so.6:__strrchr_sse2) redirected to 0x48387d0 (__strrchr_sse2)
+--5035-- REDIR: 0x48ff350 (libc.so.6:malloc) redirected to 0x4835710 (malloc)
+--5035-- REDIR: 0x4903980 (libc.so.6:__GI_strstr) redirected to 0x483dac0 (__strstr_sse2)
+--5035-- REDIR: 0x4912ce0 (libc.so.6:__strchrnul_sse2) redirected to 0x483d390 (strchrnul)
+--5035-- REDIR: 0x491d000 (libc.so.6:__mempcpy_sse2_unaligned) redirected to 0x483d4a0 (mempcpy)
+566
+--5035-- REDIR: 0x48ff9a0 (libc.so.6:free) redirected to 0x4836940 (free)
+==5035== 
+==5035== HEAP SUMMARY:
+==5035==     in use at exit: 552 bytes in 1 blocks
+==5035==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==5035== 
+==5035== Searching for pointers to 1 not-freed blocks
+==5035== Checked 68,440 bytes
+==5035== 
+==5035== LEAK SUMMARY:
+==5035==    definitely lost: 0 bytes in 0 blocks
+==5035==    indirectly lost: 0 bytes in 0 blocks
+==5035==      possibly lost: 0 bytes in 0 blocks
+==5035==    still reachable: 552 bytes in 1 blocks
+==5035==         suppressed: 0 bytes in 0 blocks
+==5035== Reachable blocks (those to which a pointer was found) are not shown.
+==5035== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==5035== 
+==5035== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5035== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ emacs file-char-count.c&
+[1] 5105
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ emacs file-char-count.c&[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./file-char-count file-char-count.c[C[C[C[C[C[C[C[Cman valgrind[K[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./file-char-count file-char-count.c[C[C[C[C[C[C[C[C[40Pemacs file-char-count.c&[C[C[C[C[C[C[C[Cvalgrind -v --leak-check=yes ./file-char-count file-char-count.c
+==5241== Memcheck, a memory error detector
+==5241== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5241== Using Valgrind-3.14.0-353a3587bb-20181007X and LibVEX; rerun with -h for copyright info
+==5241== Command: ./file-char-count file-char-count.c
+==5241== 
+--5241-- Valgrind options:
+--5241--    -v
+--5241--    --leak-check=yes
+--5241-- Contents of /proc/version:
+--5241--   Linux version 4.19.0-5-amd64 (debian-kernel@lists.debian.org) (gcc version 8.3.0 (Debian 8.3.0-7)) #1 SMP Debian 4.19.37-5 (2019-06-19)
+--5241-- 
+--5241-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-rdtscp-sse3-avx
+--5241-- Page sizes: currently 4096, max supported 4096
+--5241-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--5241-- Reading syms from /import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count/file-char-count
+--5241-- Reading syms from /lib/x86_64-linux-gnu/ld-2.28.so
+--5241--   Considering /usr/lib/debug/.build-id/f2/5dfd7b95be4ba386fd71080accae8c0732b711.debug ..
+--5241--   .. build-id is valid
+--5241-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--5241--   Considering /usr/lib/debug/.build-id/32/2e77af97f403c3d34ff09edf60b089e72ec889.debug ..
+--5241--   .. build-id is valid
+--5241--    object doesn't have a dynamic symbol table
+--5241-- Scheduler: using generic scheduler lock implementation.
+--5241-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==5241== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-5241-by-yjun1-on-???
+==5241== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-5241-by-yjun1-on-???
+==5241== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-5241-by-yjun1-on-???
+==5241== 
+==5241== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==5241== don't want to do, unless you know exactly what you're doing,
+==5241== or are doing some strange experiment):
+==5241==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=5241 ...command...
+==5241== 
+==5241== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==5241==   /path/to/gdb ./file-char-count
+==5241== and then give GDB the following command
+==5241==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=5241
+==5241== --pid is optional if only one valgrind process is running
+==5241== 
+--5241-- REDIR: 0x401e2f0 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (vgPlain_amd64_linux_REDIR_FOR_strlen)
+--5241-- REDIR: 0x401e0d0 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (vgPlain_amd64_linux_REDIR_FOR_index)
+--5241-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--5241--   Considering /usr/lib/debug/.build-id/34/fbc4cdfbfce1bfc3d2e522a01a050bf724c930.debug ..
+--5241--   .. build-id is valid
+--5241-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--5241--   Considering /usr/lib/debug/.build-id/ca/bb7898ea982d936cbfadd70ae831c6eb63623f.debug ..
+--5241--   .. build-id is valid
+==5241== WARNING: new redirection conflicts with existing -- ignoring it
+--5241--     old: 0x0401e2f0 (strlen              ) R-> (0000.0) 0x580c9ce2 vgPlain_amd64_linux_REDIR_FOR_strlen
+--5241--     new: 0x0401e2f0 (strlen              ) R-> (2007.0) 0x04838d80 strlen
+--5241-- REDIR: 0x401ab10 (ld-linux-x86-64.so.2:strcmp) redirected to 0x4839e40 (strcmp)
+--5241-- REDIR: 0x401e830 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x483d860 (mempcpy)
+--5241-- Reading syms from /lib/x86_64-linux-gnu/libc-2.28.so
+--5241--   Considering /usr/lib/debug/.build-id/18/b9a9a8c523e5cfe5b5d946d605d09242f09798.debug ..
+--5241--   .. build-id is valid
+--5241-- REDIR: 0x4903f70 (libc.so.6:memmove) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903160 (libc.so.6:strncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4904250 (libc.so.6:strcasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4902b70 (libc.so.6:strcat) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903190 (libc.so.6:rindex) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4905890 (libc.so.6:rawmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x491e230 (libc.so.6:wmemchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x491dcd0 (libc.so.6:wcscmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49040e0 (libc.so.6:mempcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903f10 (libc.so.6:bcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903100 (libc.so.6:strncmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4902be0 (libc.so.6:strcmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4904040 (libc.so.6:memset) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x491dca0 (libc.so.6:wcschr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49030a0 (libc.so.6:strnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4902c70 (libc.so.6:strcspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49042a0 (libc.so.6:strncasecmp) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4902c40 (libc.so.6:strcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49043e0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x491f4d0 (libc.so.6:wcsnlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49031c0 (libc.so.6:strpbrk) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4902ba0 (libc.so.6:index) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903070 (libc.so.6:strlen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x490a280 (libc.so.6:memrchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49042f0 (libc.so.6:strcasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903ee0 (libc.so.6:memchr) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x491ddb0 (libc.so.6:wcslen) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4903460 (libc.so.6:strspn) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4904220 (libc.so.6:stpncpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49041f0 (libc.so.6:stpcpy) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x49058c0 (libc.so.6:strchrnul) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4904340 (libc.so.6:strncasecmp_l) redirected to 0x482b1b0 (_vgnU_ifunc_wrapper)
+--5241-- REDIR: 0x4912ef0 (libc.so.6:__strrchr_sse2) redirected to 0x48387d0 (__strrchr_sse2)
+--5241-- REDIR: 0x48ff350 (libc.so.6:malloc) redirected to 0x4835710 (malloc)
+--5241-- REDIR: 0x4903980 (libc.so.6:__GI_strstr) redirected to 0x483dac0 (__strstr_sse2)
+--5241-- REDIR: 0x4912ce0 (libc.so.6:__strchrnul_sse2) redirected to 0x483d390 (strchrnul)
+--5241-- REDIR: 0x491d000 (libc.so.6:__mempcpy_sse2_unaligned) redirected to 0x483d4a0 (mempcpy)
+579
+--5241-- REDIR: 0x48ff9a0 (libc.so.6:free) redirected to 0x4836940 (free)
+==5241== 
+==5241== HEAP SUMMARY:
+==5241==     in use at exit: 552 bytes in 1 blocks
+==5241==   total heap usage: 3 allocs, 2 frees, 9,768 bytes allocated
+==5241== 
+==5241== Searching for pointers to 1 not-freed blocks
+==5241== Checked 68,440 bytes
+==5241== 
+==5241== LEAK SUMMARY:
+==5241==    definitely lost: 0 bytes in 0 blocks
+==5241==    indirectly lost: 0 bytes in 0 blocks
+==5241==      possibly lost: 0 bytes in 0 blocks
+==5241==    still reachable: 552 bytes in 1 blocks
+==5241==         suppressed: 0 bytes in 0 blocks
+==5241== Reachable blocks (those to which a pointer was found) are not shown.
+==5241== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==5241== 
+==5241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==5241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+[1]+  Done                    emacs file-char-count.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-char-count$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd file-c
+bash: cd: file-c: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd file- copy/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ls
+file-copy.c  Makefile
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy 
+usage: ./file-copy SRC_NAME DEST_NAME
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ls -l file-copy t
+ls: cannot access 't': No such file or directory
+-rwxr-xr-x 1 yjun1 yjun1 19856 Nov 14 12:12 file-copy
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./ls -l file-copy t[C[C[5P./file-copy -l file[K[K[K[K[K[K[Kfile-copy.c t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy file-copy.c t[C[C[8Pls -l file-copy[C[C
+-rwxr-xr-x 1 yjun1 yjun1 19856 Nov 14 12:12 file-copy
+-rw-r--r-- 1 yjun1 yjun1  1195 Nov 14 12:13 t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cmp file-copy.c t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy Makefile t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cmp m[KMakefile t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cm[Khmod a-2[Kw t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy file-copy.c t
+cannot write t: Permission denied
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cmp m[KMakefile T[KT
+cmp: T: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cmp Makefile T[C[KT
+cmp: T: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cmp Makefile T[Kt
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ emacs file-copy.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ rm -f t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy file-copy.c t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy Makefile t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ wc -l file-copy.c Makefile 
+  50 file-copy.c
+  10 Makefile
+  60 total
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ wc -l t
+10 t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ rm -f t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ emacs file-copy.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ make
+gcc -g -Wall -std=c11    file-copy.c   -o file-copy
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./[K[K./file-copy file-copy.c t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ ./file-copy file-copy.c t[1P t[1P t[1P t[1P t[1P t[1P t[1P t[1P t[1P t[1P t[1P tM takefile t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ wc -l file-copy.c m[KMakefile 
+  50 file-copy.c
+  10 Makefile
+  60 total
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ wc -l file-copy.c Makefile [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kt
+60 t
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/file-copy$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd no-buffer-copy/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ emacs no-buffer-copy.c 
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ make
+gcc -g -Wall -std=c11    no-buffer-copy.c   -o no-buffer-copy
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ tim ./no-buffer-copy 'which gcc' /dev/null 1
+bash: tim: command not found
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ tim ./no-buffer-copy 'which gcc' /dev/null 1[C[1@e
+cannot read which gcc: No such file or directory
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.000s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ time ./no-buffer-copy 'which gcc' /dev/null 1[K0
+cannot read which gcc: No such file or directory
+
+real	0m0.002s
+user	0m0.000s
+sys	0m0.002s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ time ./no-buffer-copy 'which gcc' /dev/null 01[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@'[1@w[1@c[1@h[1@i[C[1@ [1P[1P[1P[1P[1@h[1@i[1@c[1@h[C[1@ [1@g[1@c[1@c[C[1@ [1@'[1P[1P[1@'
+cannot read which gcc: No such file or directory
+
+real	0m0.003s
+user	0m0.002s
+sys	0m0.000s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ ls
+Makefile  no-buffer-copy  no-buffer-copy.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ lstime ./no-buffer-copy 'which gcc' /dev/null 1[1P[1@~[1P[1@`[C[1P[1@`
+
+real	0m0.021s
+user	0m0.014s
+sys	0m0.004s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1[C[K0
+
+real	0m0.868s
+user	0m0.284s
+sys	0m0.582s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ cd ..
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files$ cd rec-io/
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ e macs gen-rand-points.c &
+[1] 9125
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ m ake
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc -g -Wall -std=c11   -c -o dyn-array.o dyn-array.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+[1]+  Done                    emacs gen-rand-points.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ . /gwe[K[Ken-rand-points 100 points.dat
+average magnitude = 752.156
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ e mas[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce macs points.dat
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ m an frw[K[Kwrite
+[?1049h[22;0;0t[?1h=FREAD(3)                   Linux Programmer's Manual                  FREAD(3)[m
+[m
+[1mNAME[0m[m
+       fread, fwrite - binary stream input/output[m
+[m
+[1mSYNOPSIS[0m[m
+       [1m#include[0m [1m<stdio.h>[0m[m
+[m
+       [1msize_t[0m [1mfread(void[0m [1m*[0m[4mptr[24m[1m,[0m [1msize_t[0m [4msize[24m[1m,[0m [1msize_t[0m [4mnmemb[24m[1m,[0m [1mFILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+       [1msize_t[0m [1mfwrite(const[0m [1mvoid[0m [1m*[0m[4mptr[24m[1m,[0m [1msize_t[0m [4msize[24m[1m,[0m [1msize_t[0m [4mnmemb[24m[1m,[0m[m
+                     [1mFILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[m
+[1mDESCRIPTION[0m[m
+       The  function  [1mfread[0m() reads [4mnmemb[24m items of data, each [4msize[24m bytes long,[m
+       from the stream pointed to by [4mstream[24m,  storing  them  at  the  location[m
+       given by [4mptr[24m.[m
+[m
+       The function [1mfwrite[0m() writes [4mnmemb[24m items of data, each [4msize[24m bytes long,[m
+       to the stream pointed to by [4mstream[24m, obtaining them  from  the  location[m
+       given by [4mptr[24m.[m
+[m
+       For nonlocking counterparts, see [1munlocked_stdio[0m(3).[m
+[7m Manual page fwrite(3) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mRETURN[0m [1mVALUE[0m[m
+[7m Manual page fwrite(3) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       On  success,  [1mfread[0m()  and  [1mfwrite[0m() return the number of items read or[m
+[7m Manual page fwrite(3) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       written.  This number equals the number of bytes transferred only  when[m
+[7m Manual page fwrite(3) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4msize[24m  is 1.  If an error occurs, or the end of the file is reached, the[m
+[7m Manual page fwrite(3) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       return value is a short item count (or zero).[m
+[7m Manual page fwrite(3) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mfread[0m() does not distinguish between end-of-file and error, and callers[m
+[7m Manual page fwrite(3) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       must use [1mfeof[0m(3) and [1mferror[0m(3) to determine which occurred.[m
+[7m Manual page fwrite(3) line 10 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 11 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mATTRIBUTES[0m[m
+[7m Manual page fwrite(3) line 12 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       For  an  explanation  of  the  terms  used  in  this  section,  see [1mat‐[0m[m
+[7m Manual page fwrite(3) line 13 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mtributes[0m(7).[m
+[7m Manual page fwrite(3) line 14 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 15 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ┌──────────────────┬───────────────┬─────────┐[m
+[7m Manual page fwrite(3) line 16 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       │[1mInterface[0m         │ [1mAttribute[0m     │ [1mValue[0m   │[m
+[7m Manual page fwrite(3) line 17 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       ├──────────────────┼───────────────┼─────────┤[m
+[7m Manual page fwrite(3) line 18 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       │[1mfread[0m(), [1mfwrite[0m() │ Thread safety │ MT-Safe │[m
+[7m Manual page fwrite(3) line 19 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       └──────────────────┴───────────────┴─────────┘[m
+[7m Manual page fwrite(3) line 20 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCONFORMING[0m [1mTO[0m[m
+[7m Manual page fwrite(3) line 21 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       POSIX.1-2001, POSIX.1-2008, C89.[m
+[7m Manual page fwrite(3) line 22 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 23 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mSEE[0m [1mALSO[0m[m
+[7m Manual page fwrite(3) line 24 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mread[0m(2), [1mwrite[0m(2), [1mfeof[0m(3), [1mferror[0m(3), [1munlocked_stdio[0m(3)[m
+[7m Manual page fwrite(3) line 25 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 26 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOLOPHON[0m[m
+[7m Manual page fwrite(3) line 27 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       This page is part of release 4.16 of the Linux  [4mman-pages[24m  project.   A[m
+[7m Manual page fwrite(3) line 28 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       description  of  the project, information about reporting bugs, and the[m
+[7m Manual page fwrite(3) line 29 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       latest    version    of    this    page,    can     be     found     at[m
+[7m Manual page fwrite(3) line 30 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       https://www.kernel.org/doc/man-pages/.[m
+[7m Manual page fwrite(3) line 31 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 32 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[KGNU                               2015-07-23                          FREAD(3)[m
+[7m Manual page fwrite(3) line 33 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[K[7m Manual page fwrite(3) line 33/55 (END) (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       must use [1mfeof[0m(3) and [1mferror[0m(3) to determine which occurred.[m
+[24;1H[K[7m Manual page fwrite(3) line 32/55 98% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mfread[0m() does not distinguish between end-of-file and error, and callers[m
+[24;1H[K[7m Manual page fwrite(3) line 31/55 97% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 30/55 96% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       return value is a short item count (or zero).[m
+[24;1H[K[7m Manual page fwrite(3) line 29/55 94% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [4msize[24m  is 1.  If an error occurs, or the end of the file is reached, the[m
+[24;1H[K[7m Manual page fwrite(3) line 28/55 91% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       written.  This number equals the number of bytes transferred only  when[m
+[24;1H[K[7m Manual page fwrite(3) line 27/55 88% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       On  success,  [1mfread[0m()  and  [1mfwrite[0m() return the number of items read or[m
+[24;1H[K[7m Manual page fwrite(3) line 26/55 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mRETURN[0m [1mVALUE[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 25/55 87% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 24/55 83% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       For nonlocking counterparts, see [1munlocked_stdio[0m(3).[m
+[24;1H[K[7m Manual page fwrite(3) line 23/55 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 22/55 82% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       given by [4mptr[24m.[m
+[24;1H[K[7m Manual page fwrite(3) line 21/55 81% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       to the stream pointed to by [4mstream[24m, obtaining them  from  the  location[m
+[24;1H[K[7m Manual page fwrite(3) line 20/55 80% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The function [1mfwrite[0m() writes [4mnmemb[24m items of data, each [4msize[24m bytes long,[m
+[24;1H[K[7m Manual page fwrite(3) line 19/55 75% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 18/55 73% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       given by [4mptr[24m.[m
+[24;1H[K[7m Manual page fwrite(3) line 17/55 68% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       from the stream pointed to by [4mstream[24m,  storing  them  at  the  location[m
+[24;1H[K[7m Manual page fwrite(3) line 16/55 65% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       The  function  [1mfread[0m() reads [4mnmemb[24m items of data, each [4msize[24m bytes long,[m
+[24;1H[K[7m Manual page fwrite(3) line 15/55 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mDESCRIPTION[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 14/55 60% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 13/55 59% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                     [1mFILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 12/55 56% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1msize_t[0m [1mfwrite(const[0m [1mvoid[0m [1m*[0m[4mptr[24m[1m,[0m [1msize_t[0m [4msize[24m[1m,[0m [1msize_t[0m [4mnmemb[24m[1m,[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 11/55 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 10/55 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1msize_t[0m [1mfread(void[0m [1m*[0m[4mptr[24m[1m,[0m [1msize_t[0m [4msize[24m[1m,[0m [1msize_t[0m [4mnmemb[24m[1m,[0m [1mFILE[0m [1m*[0m[4mstream[24m[1m);[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 9/55 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 8/55 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1m#include[0m [1m<stdio.h>[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 7/55 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 6/55 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 5/55 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       fread, fwrite - binary stream input/output[m
+[24;1H[K[7m Manual page fwrite(3) line 4/55 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       written.  This number equals the number of bytes transferred only  when[m
+[7m Manual page fwrite(3) line 5/55 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4msize[24m  is 1.  If an error occurs, or the end of the file is reached, the[m
+[7m Manual page fwrite(3) line 6/55 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       return value is a short item count (or zero).[m
+[7m Manual page fwrite(3) line 7/55 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 6/55 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 5/55 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       fread, fwrite - binary stream input/output[m
+[24;1H[K[7m Manual page fwrite(3) line 4/55 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[24;1H[K[7m Manual page fwrite(3) line 3/55 40% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[24;1H[K[7m Manual page fwrite(3) line 2/55 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMFREAD(3)                   Linux Programmer's Manual                  FREAD(3)[m
+[24;1H[K[7m Manual page fwrite(3) line 1/55 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page fwrite(3) line 1/55 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page fwrite(3) line 1/55 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 2/55 38% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mRETURN[0m [1mVALUE[0m[m
+[7m Manual page fwrite(3) line 3/55 40% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       On  success,  [1mfread[0m()  and  [1mfwrite[0m() return the number of items read or[m
+[7m Manual page fwrite(3) line 4/55 43% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       written.  This number equals the number of bytes transferred only  when[m
+[7m Manual page fwrite(3) line 5/55 45% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [4msize[24m  is 1.  If an error occurs, or the end of the file is reached, the[m
+[7m Manual page fwrite(3) line 6/55 48% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       return value is a short item count (or zero).[m
+[7m Manual page fwrite(3) line 7/55 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 8/55 50% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1mfread[0m() does not distinguish between end-of-file and error, and callers[m
+[7m Manual page fwrite(3) line 9/55 52% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       must use [1mfeof[0m(3) and [1mferror[0m(3) to determine which occurred.[m
+[7m Manual page fwrite(3) line 10/55 55% (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page fwrite(3) line 11/55 55% (press h for help or q to quit)[27m[K[K [K::[Kqq[K[?1l>[?1049l[23;0;0tyjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ l s
+dyn-array.c  gen-rand-points	Makefile    stat-points
+dyn-array.h  gen-rand-points.c	point2.h    stat-points.c
+dyn-array.o  gen-rand-points.o	points.dat  stat-points.o
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ . /stat-points point.dat
+cannot read point.dat: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ ./stat-points point.dat[C[C[C[C[C[K[K[K[Ks.dat 
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ e macs gen-rand-points &
+[1] 9878
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ emacs gen-rand-points &[C. &c &
+[2] 9983
+[1]   Done                    emacs gen-rand-points
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ g edit gen-rand-points.c &
+[3] 10122
+[2]   Done                    emacs gen-rand-points.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ 
+(gedit:10122): Gtk-[1;33mWARNING[0m **: [34m12:38:19.509[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+gedit gen-rand-points.c &[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[3]+  Done                    gedit gen-rand-points.c
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ s t[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ce ma[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg edit stat-points.c 
+
+(gedit:10292): Gtk-[1;33mWARNING[0m **: [34m12:39:06.205[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ gedit stat-points.c [C[C[C[C[Cgen-rand-points.c &[C[C[C[C[C[C[5Pstat-points.c 
+
+(gedit:10385): Gtk-[1;33mWARNING[0m **: [34m12:39:48.648[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ m ake
+gcc -g -Wall -std=c11   -c -o gen-rand-points.o gen-rand-points.c
+gcc   gen-rand-points.o  -lm -o gen-rand-points
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ . /[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit stat-points.c [C[C[C[C[Cgen-rand-points.c &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2P &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./stat-points points.dat [2P.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cman fwrite[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./[16@gen-rand-points 100[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cemacs gen-rand-points.c &[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./gen-rand-points 100 points.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cem[16Pacs[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cma[6Pn fwrite[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./stat-points point.dat point.[K[K[K[K[K[Kpoint.dad[Kt[K[K[K[K[K[K[K[K[Ktest
+cannot read point.dat: No such file or directory
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ ./stat-points point.dat test[1@s
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+cannot write (null): Bad address
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ ./stat-points points.dat test[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cm ake
+gcc -g -Wall -std=c11   -c -o stat-points.o stat-points.c
+gcc   stat-points.o dyn-array.o  -lm -o stat-points
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ make[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./stat-points points.dat test
+min = 43.4166
+average = 752.156
+median = 773.59
+max = 1306.49
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/rec-io$ exit
+
+Script done on 2019-11-14 12:45:43-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,29 @@
+Yongchan Jun
+
+Section A
+
+Standard Input Character Count:
+My output:
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ ./stdin-char-count <stdin-char-count.c
+EOF = -1
+205
+
+Given Output:
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/stdin-char-count$ wc stdin-char-count.c
+ 12  32 205 stdin-char-count.c
+ ----------------------------------------------------------------------------------------------------------------------------
+File Character Count:
+The memory leak is caused because the file is not closed after it is opened. The fclose function needs to be called before the return. 
+-----------------------------------------------------------------------------------------------------------------------------
+Buffering:
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 1
+
+real	0m0.021s
+user	0m0.014s
+sys	0m0.004s
+yjun1@g7-38:/import/linux/home1/yjun1/git-repos/cs220/labs/lab13/files/no-buffer-copy$ time ./no-buffer-copy `which gcc` /dev/null 0
+
+real	0m0.868s
+user	0m0.284s
+sys	0m0.582s
+-----------------------------------------------------------------------------------------------------------------------------
