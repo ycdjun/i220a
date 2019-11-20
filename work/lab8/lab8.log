@@ -1,0 +1,53 @@
+Script started on 2019-10-10 10:46:58-0400
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos/i220a/work/lab8[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos/i220a/work/lab8[00m$ cd ~/git-repos
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos[00m$ mkdir lab8.git
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos[00m$ cd lab8.git
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos/lab8.git[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos/lab8.git[00m$ cd lab8.git[K[K[K[K[K[K[K[K[K[K[Kgit inii[Kt =[K--bare
+Initialized empty Git repository in /home/ycdjun/git-repos/lab8.git/
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos/lab8.git[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos/lab8.git[00m$ mkdir -p ~/tmp
+]0;ycdjun@DESKTOP-23I9KR1: ~/git-repos/lab8.git[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/git-repos/lab8.git[00m$ cd ~/tmp
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ git clone \
+>  ssh://LOGIN@remote.cs.binghamton.edu/home/LOGIN/git-repos/lab8.git[K[K[Kgit[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gity/git-repos/lab8.gitc/git-repos/lab8.gitd/git-repos/lab8.gitj/git-repos/lab8.gitu/git-repos/lab8.gitn/git-repos/lab8.git
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.200' to the list of known hosts.
+LOGIN@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+LOGIN@remote.cs.binghamton.edu's password: 
+
+0811Jyhc
+Connection closed by 128.226.114.200 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ 
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ 0811Jyhc
+0811Jyhc: command not found
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ 0811Jyhcgit clone  ssh://LOGIN@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ~/tmp[Kgit clone  ssh://LOGIN@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[1P@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cc@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.202' to the list of known hosts.
+ycdjun@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+ycdjun@remote.cs.binghamton.edu's password: 
+Connection closed by 128.226.114.202 port 22
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ git clone  ssh://ycdjun@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0811Jyhc[Kgit clone  ssh://ycdjun@remote.cs.binghamton.edu/home/ycdjun/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gitj/git-repos/lab8.gitu/git-repos/lab8.gitn/git-repos/lab8.git1/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gitu/git-repos/lab8.gitn/git-repos/lab8.git1/git-repos/lab8.git[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Cloning into 'lab8'...
+Warning: Permanently added the ECDSA host key for IP address '128.226.114.205' to the list of known hosts.
+yjun1@remote.cs.binghamton.edu's password: 
+fatal: '/home/yjun1/git-repos/lab8.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+]0;ycdjun@DESKTOP-23I9KR1: ~/tmp[01;32mycdjun@DESKTOP-23I9KR1[00m:[01;34m~/tmp[00m$ git clone  ssh://yjun1@remote.cs.binghamton.edu/home/yjun1/git-repos/lab8.git[C[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.git[1P/git-repos/lab8.gitc/git-repos/lab8.gitd/git-repos/lab8.gitj/git-repos/lab8.gitu/git-repos/lab8.gitn/git-repos/lab8.git
+Cloning into 'lab8'...
+yjun1@remote.cs.binghamton.edu's password: 
+fatal: '/home/ycdjun/git-repos/lab8.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and t
